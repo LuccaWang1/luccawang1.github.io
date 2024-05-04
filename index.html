@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lucca Wang Portfolio">
+    <meta name="description" content="Lucca Wang Dev Site">
     <meta name="author" content="Lucca Wang">
     
     <!-- Welcome tab -->
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="#top">Top</a></li>
             <li><a href="#cat">Cat</a></li>
@@ -34,23 +34,21 @@
             <!-- <li><a href="#blog">Blog</a></li> -->
             <li><a href="assets/pdf/Lucca_Wang_Resume.pdf" target="_blank">Resume</a></li> 
             <!-- _blank is a new tab in the saw browsing context aka window as opposed to _self, which is also the default w/out a specified target opening in the same tab -->
-            <li><a hreh="https://luccawang.dev/#about">Lucca Wang 2024</a></li>
+            <li><a href="#about" style="color: #E8C2CF;">Lucca Wang 2024</a></li>
         </ul>
     </nav>
 
-    <h1 id="top" class="change-me-1">Hi, I'm Lucca Wang.</h1>
+    <div><h1 id="top" class="change-me-1">Hi, I'm Lucca Wang.</h1></div>
     
-    <img src="assets/img/Lily_blue_pillow.png" id="cat" alt="cat image">
+    <img src="assets/img/Lily_blue_pillow_crop.png" id="cat" alt="Cat image">
 
     <h2 class="change-me-2" id="about">I am a software engineer with a background in nonprofit communications and visual art.</h2>
 
     <div class="container">
         <div class="text">
-            <p>After graduating with my 3 undergraduate degrees in journalism and mass <strong>communication and fine arts</strong> in 5 years, I started my career as a <strong>nonprofit communications</strong> professional (and separately as a visual artist) and was able to use my expertise and <strong>problem-solving skills in communities</strong> to help underprivileged people by increasing awareness, collaborating with cross-diciplinary teams, and meeting business needs by reporting metrics and performance to stakeholders.<p>
+            <p>While my former career was rewarding, I found myself increasingly diving into technology, especially surrounding websites, databases, and emails. I transitioned into software engineering, because I want to use my problem solving skills to build meaningful products.</p>
             
-            <p>While that was rewarding, I found myself increasingly <strong>diving into technology</strong>, <strong>collaborating</strong> with IT, tech leads, and software engineers on <strong>websites</strong>, <strong>databases</strong>, and more and really enjoying it. I <strong>transitioned into software engineering</strong>, because I want to use my problem solving skills to <strong>build meaningful products</strong> that people will love and trust.</p>
-            
-            <p>I am excited for this new chapter of my journey and <strong>look forward to continue learning and expanding</strong> my skills!</p>
+            <p>I am excited for this new chapter of my journey, and I look forward to continue learning and expanding my <a href="#skills" class="inline-link">skills!</a></p>
         </div>
 
         <div class="image-container">
@@ -58,17 +56,42 @@
         </div>
     </div>
     
+    <h1 id="skills" class="change-me-3">Tech stack:</h1>
 
-    <p>
-        <h1 id="skills">Tech stack:</h1>
-        <img src="assets/img/tech_stack.png" alt="Lucca's tech stack includes: Python, Flask, JavaScript, PostgreSQL, HTML, CSS, React, SQL, SQLAlchemy, Markdown, and working with APIs">
-    </p>
+    <div class="container-2">
+        <div class="image-container-2">
+            <img src="assets/img/tech_stack.png" alt="Diagram image">
+        </div>
+        
+        <div class="text-2">
+            <p>Main language: <strong>Python</strong>.</p>
+            
+            <p>1 year of previous professional experience coding with <strong>HTML</strong>.</p>
+            
+            <p>Background in <strong>website content</strong> management and using <strong>databases</strong>.</p>
+            
+            <!-- below class isn't active code right now, since I want to figure out the spacing between columns before making that active - for responsiveness and smaller screens -->
+            <ul class="tech-stack-list wrapper">
+                <li>Python</li>
+                <li>Working with APIs</li>
+                <li>AWS</li>
+                <li>CSS</li>
+                <li>Docker</li>
+                <li>Flask</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>NotePad++</li>
+                <li>PostgreSQL</li>
+                <li>React</li>
+                <li>SQL</li>
+                <li>SQLAlchemy</li>
+                <li>Testing</li>
+                <li>Trello</li>
+            </ul>
+        </div>
+    </div>
 
-    <p>Main language: <strong>Python</strong>.</p>
-    <p>1 year of previous professional experience coding with <strong>HTML</strong>.</p>
-    <p>Background in <strong>website content</strong> management and using <strong>databases</strong>.</p>
-
-    <h1 id="projects">Projects:</h1>
+    <h1 id="projects" class="change-me-4">Projects:</h1>
 
     <h2>PetPlanner</h2>
 
@@ -78,6 +101,8 @@
 
     <p><strong>Technologies Used:</strong> Python, Flask, Javascript, React, HTML, CSS & flexbox, PostgreSQL, SQL, SQLAlchemy, Jinja2, Bootstrap, Passlib and Argon2, datasets through research, Cloudinary API, and Full Calendar API. </p>
 
+    <p><a href="https://luccawang.dev/PetPlanner/" class="inline-link">More details</a></p>
+
     <h2>Tell Me Where To Eat</h2>
 
     <img src="/assets/img/projects/tellmewheretoeat.png" alt="Tell Me Where To Eat">
@@ -86,6 +111,8 @@
 
     <p><strong>Technologies Used:</strong> Python, Flask, Javascript, HTML, CSS, datasets through research - and looking to add more as I build out this project further. </p>
 
+    <p><a href="https://luccawang.dev/Tell-Me-Where-To-Eat/" class="inline-link">More details</a></p>
+
     <h2>Cherry Cloud</h2>
 
     <img src="/assets/img/projects/cherrycloud.webp">
@@ -93,6 +120,8 @@
     <p>Cherry Cloud is a full stack <strong>collaborative</strong> web app project that's a <strong>platform</strong>, where users can create an account, shop, blog, and play the game Flappy Cherry. I'm in the process of building it from scratch with collaborator Agne Djacenko.</p>
 
     <p><strong>Technologies Used:</strong> Python, CSS, DALL·E, Flask, HTML, JavaScript, Jinja2, Markdown, payment processing API, Passlib and Argon2, PostgreSQL, React, weather API.</p>
+
+    <p><a href="https://github.com/LuccaWang1/cherry-cloud" class="inline-link">More details</a></p>
 
     <!-- <div class="wrapper">
         <img src="/assets/img/icons8-copyright-24.png" class="cr-icon">

@@ -10,20 +10,20 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
  */
 
 /* navbar */
-a { 
+.navbar a { 
     color: #006171;
 }
 
-a:hover {
+.navbar a:hover {
     color: #E8C2CF;
 }
 
-a:active {
+.navbar a:active {
     color: #E7769D;
     transition: 3ms;
 }
 
-ul {
+.navbar ul {
     list-style-type: none; /* no style set for list bullets, so they won't show up at all */
     margin: 0; /* see padding below in li a styles */
     padding: 0; /* see padding below in li a styles */
@@ -34,11 +34,11 @@ ul {
     width: 100%; /* covers the entire width of the browser */
 }
 
-li {
+.navbar li {
     float: left; /* organize to the left & so the "tabs" lay horizontally */
 }
 
-li a {
+.navbar li a {
     display: block; /* behaves like block */
     color:#DAFAFF; /* color of text */
     text-align: center; /* puts the text inside each list item spacing */
@@ -79,6 +79,25 @@ img {
     height: auto;
 }
 
+/* for tech stack, but can be applied to another list as needed (any non-navbar lists) */
+.tech-stack-list {
+    list-style-type: disc; /* no style set for list bullets, so they won't show up at all */
+    width: 100%;
+}
+
+/* any body links not navbar */
+.inline-link {
+    color: #006171; /* setting font color to not be the default and stay on color palette */
+}
+
+.inline-link:hover {
+    color: #E0004E;
+}
+
+.inline-link:active {
+    color: #E7769D;
+}
+
 /* css animation on change-me 1 & 2 classes for header 1 and subheader 2 bc i love css ✨ */
 .change-me-1 {
     animation-name: change-me-1-animation;
@@ -96,6 +115,26 @@ to {color: #006171;}
 }
 
 @keyframes change-me-2-animation {
+from {color: #006171;}
+to {color: #E0004E;}
+}
+
+.change-me-3 {
+    animation-name: change-me-3-animation;
+    animation-duration: 20s;
+}
+
+@keyframes change-me-3-animation {
+from {color: #E0004E;}
+to {color: #006171;}
+}
+
+.change-me-4 {
+    animation-name: change-me-4-animation;
+    animation-duration: 20s;
+}
+
+@keyframes change-me-4-animation {
 from {color: #006171;}
 to {color: #E0004E;}
 }
@@ -121,9 +160,36 @@ to {color: #E0004E;}
     margin-right: 0; 
 }
 
+/* Tech stack section: diagram and text */
+.container-2 {
+    display: flex;
+    align-items: flex-start; /* align items at the top */
+    flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
+}
+
+.image-container-2 {
+    max-width: 40%; /* the portrait image won't ever be bigger than 40% of the width of the screen within the text/img container div */
+}
+
+.image-container-2 img {
+    max-width: 100%; /* image not going over container edges but also filling the width completely */
+    margin-left: 0; 
+}
+
+.text-2 {
+    flex: 1; /* allows text div to grow */
+    margin-left: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
+}
+
+/* grid for tech stack bullet point list */
+/* .wrapper {
+    display: grid; 
+    grid-template-columns: 40% 40%
+} */
+
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 768px) {
-    .container {
+    .container .container-2 { /* apply this to both container in the same way */ 
         flex-direction: column; /* makes the items stack vertically on smaller screens */
         align-items: center;
     }
@@ -132,13 +198,22 @@ to {color: #E0004E;}
         margin-left: 0; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
     }
 
+    .text-2 {
+        margin-right: 0; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
+    }
+
     .image-container {
         max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
         margin-top: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
     }
 
-    .image-container img {
-        max-width: 100%
+    .image-container-2 {
+        max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
+        margin-bottom: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
+    }
+
+    .image-container img .image-container-2 img {
+        max-width: 100% /* have the image fill the space except for the margins to the right and left */
     }
 
     .cr-icon {
@@ -148,4 +223,12 @@ to {color: #E0004E;}
     .aligned-text {
         font-size: 4vw;
     }
+
+    /* .wrapper {
+        width: ;
+        height: ;
+        display: grid; 
+        grid-template-columns: 30% 30%
+    } need to include the space between columns */
 }
+

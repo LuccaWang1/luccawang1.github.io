@@ -1,0 +1,150 @@
+/* CSS for dev site */
+
+/* colors: 
+dark teal: #006171; (main color)
+light blue: #a5eee0; (background/contrast)
+cherry red: #E0004E (headers)
+lip stick blush: #E7769D; (accent, same lighter value for contrast with teal)
+light pink: #E8C2CF (accent, lighter than above accent blush color)
+Lily white: #F0F0F0 (color consistency palette "white" accents)
+ */
+
+/* navbar */
+a { 
+    color: #006171;
+}
+
+a:hover {
+    color: #E8C2CF;
+}
+
+a:active {
+    color: #E7769D;
+    transition: 3ms;
+}
+
+ul {
+    list-style-type: none; /* no style set for list bullets, so they won't show up at all */
+    margin: 0; /* see padding below in li a styles */
+    padding: 0; /* see padding below in li a styles */
+    overflow: hidden; 
+    background-color: #006171; /* background color of the navbar */
+    position: fixed; /* keeps the navbar at the top even when the user is scrolling down or further down on the page */
+    bottom: 0; /* so that the navbar sits at the very very top of the start of the webpage in the browser */
+    width: 100%; /* covers the entire width of the browser */
+}
+
+li {
+    float: left; /* organize to the left & so the "tabs" lay horizontally */
+}
+
+li a {
+    display: block; /* behaves like block */
+    color:#DAFAFF; /* color of text */
+    text-align: center; /* puts the text inside each list item spacing */
+    padding: 12px 16px; /* space around the text links */
+    text-decoration: none; /* takes off the underline */
+}
+
+/* body */
+body { /* applies to anything in the body */
+    font-family: 'Arial', sans-serif;
+    background-color: #DAFAFF;
+    color: #006171;
+    font-size: 19px;
+    margin: 20px; /* slight space on both sides of the browser */
+    padding-bottom: 100px;
+}
+
+/* headers */
+h1 { /* Google Font API for headers 1 in cherry red */
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: #E0004E;
+}
+
+h2 { /* Google Font API for headers 2 in dark teal */
+    font-family: 'Lora', serif;
+    text-align: left;
+    color: #006171;
+}
+
+/* all images */
+img {
+    display: block; /* so it'll behave like a block */
+    margin-left: auto; /* centering images */
+    margin-right: auto; /* ^centering images */
+    border-radius: 10px; /* rounded corners of images */
+    max-width: 100%;
+    height: auto;
+}
+
+/* css animation on change-me 1 & 2 classes for header 1 and subheader 2 bc i love css ✨ */
+.change-me-1 {
+    animation-name: change-me-1-animation;
+    animation-duration: 20s;
+}
+
+@keyframes change-me-1-animation {
+from {color: #E0004E;}
+to {color: #006171;}
+}
+
+.change-me-2 {
+    animation-name: change-me-2-animation;
+    animation-duration: 20s;
+}
+
+@keyframes change-me-2-animation {
+from {color: #006171;}
+to {color: #E0004E;}
+}
+
+/* About section: text and portrait */
+.container {
+    display: flex;
+    align-items: flex-start; /* align items at the top */
+    flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
+}
+
+.text {
+    flex: 1; /* allows text div to grow */
+    margin-right: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
+}
+
+.image-container {
+    max-width: 40%; /* the portrait image won't ever be bigger than 40% of the width of the screen within the text/img container div */
+}
+
+.image-container img {
+    max-width: 100%; /* image not going over container edges but also filling the width completely */
+}
+
+/* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* makes the items stack vertically on smaller screens */
+        align-items: center;
+    }
+
+    .text {
+        margin-left: 0; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
+    }
+
+    .image-container {
+        max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
+        margin-top: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
+    }
+
+    .image-container img {
+        max-width: 100%
+    }
+
+    .cr-icon {
+        width: 5%; /* adjust font size for smaller screens */
+    }
+
+    .aligned-text {
+        font-size: 4vw;
+    }
+}

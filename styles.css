@@ -52,7 +52,7 @@ body { /* applies to anything in the body */
     background-color: #DAFAFF;
     color: #006171;
     font-size: 19px;
-    margin: 20px; /* slight space on both sides of the browser */
+    margin: 30px; /* slight space on both sides of the browser */
     padding-bottom: 100px;
 }
 
@@ -118,6 +118,7 @@ to {color: #E0004E;}
 
 .image-container img {
     max-width: 100%; /* image not going over container edges but also filling the width completely */
+    margin-right: 0; 
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */

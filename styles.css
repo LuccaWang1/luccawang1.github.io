@@ -46,6 +46,15 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
     text-decoration: none; /* takes off the underline */
 }
 
+.copyright {
+    color:#E8C2CF !important;
+    float: right !important; 
+}
+
+.copyright:hover {
+    color:#E7769D !important;
+}
+
 /* body */
 body { /* applies to anything in the body */
     font-family: 'Arial', sans-serif;

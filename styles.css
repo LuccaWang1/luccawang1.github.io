@@ -10,17 +10,8 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
  */
 
 /* navbar */
-.navbar a { 
-    color: #006171;
-}
-
-.navbar a:hover {
-    color: #E8C2CF;
-}
-
-.navbar a:active {
-    color: #E7769D;
-    transition: 3ms;
+.narbar {
+    z-index: 100; /* make the navbar over everything else, because it's in a fixed position as the user srolls down the page */
 }
 
 .navbar ul {
@@ -46,13 +37,21 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
     text-decoration: none; /* takes off the underline */
 }
 
+.navbar a:hover {
+    color: #E8C2CF; /* UX hover user receptive */
+}
+
+.navbar a:active {
+    color: #E7769D; /* UX user receptive when user clicks link */
+    transition: 3ms;
+}
+
 .copyright {
-    color:#E8C2CF !important;
-    float: right !important; 
+    color:#E8C2CF !important; /* special styling for copyright 💁‍♀️ as is text color */
 }
 
 .copyright:hover {
-    color:#E7769D !important;
+    color:#E7769D !important; /* special hover styling for copyright 💁‍♀️ */
 }
 
 /* body */
@@ -86,6 +85,7 @@ img {
     border-radius: 10px; /* rounded corners of images */
     max-width: 100%;
     height: auto;
+    z-index: auto; /* weight of 0 default to go behind the navbar when user is scrolling */
 }
 
 /* for tech stack, but can be applied to another list as needed (any non-navbar lists) */
@@ -148,6 +148,19 @@ from {color: #006171;}
 to {color: #E0004E;}
 }
 
+/* animation of underline color change from rose pink to yellow highlight on key text I want to emphasize */
+.change-me-5-animation-underline {
+    animation-name: change-me-5-animation;
+    animation-duration: 20s;
+    text-decoration: none; /* remove default underline */
+    border-bottom: 1px solid #E7769D;
+}
+
+@keyframes change-me-5-animation {
+from {border-bottom-color: #E7769D;}
+to {border-bottom-color: yellow;}
+}
+
 /* About section: text and portrait */
 .container {
     display: flex;
@@ -157,7 +170,7 @@ to {color: #E0004E;}
 
 .text {
     flex: 1; /* allows text div to grow */
-    margin-right: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
+    margin-left: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
 }
 
 .image-container {
@@ -166,7 +179,6 @@ to {color: #E0004E;}
 
 .image-container img {
     max-width: 100%; /* image not going over container edges but also filling the width completely */
-    margin-right: 0; 
 }
 
 /* Tech stack section: diagram and text */
@@ -174,27 +186,26 @@ to {color: #E0004E;}
     display: flex;
     align-items: flex-start; /* align items at the top */
     flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .image-container-2 {
-    max-width: 40%; /* the portrait image won't ever be bigger than 40% of the width of the screen within the text/img container div */
+    max-width: 50%; /* the portrait image won't ever be bigger than 40% of the width of the screen within the text/img container div */
 }
 
 .image-container-2 img {
     max-width: 100%; /* image not going over container edges but also filling the width completely */
-    margin-left: 0; 
+    margin-left: 0px; 
 }
 
+/* Still a part of the above Tech stack section: diagram and text section, but the grid tech stack part with images and technology skills displayed in a grid */
 .text-2 {
     flex: 1; /* allows text div to grow */
-    margin-left: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
-}
-
-/* grid for tech stack bullet point list */
-/* .wrapper {
+    margin-right: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
     display: grid; 
-    grid-template-columns: 40% 40%
-} */
+    gap: 10px 10px; /* shorthand property for row & column gaps */
+}
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 768px) {
@@ -204,7 +215,7 @@ to {color: #E0004E;}
     }
 
     .text {
-        margin-left: 0; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
+        margin-left: 0px; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
     }
 
     .text-2 {
@@ -212,7 +223,7 @@ to {color: #E0004E;}
     }
 
     .image-container {
-        max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
+        max-width: 80%; /* portrait images cover entire width on smaller screens when stacked */
         margin-top: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
     }
 
@@ -232,12 +243,5 @@ to {color: #E0004E;}
     .aligned-text {
         font-size: 4vw;
     }
-
-    /* .wrapper {
-        width: ;
-        height: ;
-        display: grid; 
-        grid-template-columns: 30% 30%
-    } need to include the space between columns */
 }
 

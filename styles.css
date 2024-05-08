@@ -70,7 +70,7 @@ html, body {
 }
 
 .body-spacing { /* applies to anything in the body */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif !important;
     background-color: #DAFAFF;
     color: #006171;
     font-size: 25px;

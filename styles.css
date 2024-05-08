@@ -10,8 +10,15 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
  */
 
 /* navbar */
-.narbar {
-    z-index: 100; /* make the navbar over everything else, because it's in a fixed position as the user srolls down the page */
+.navbar {
+    width: 100%; /* covers the entire width of the browser */
+    bottom: 0; /* zero space between navbar and bottom of viewport */
+    position: fixed; /* fixed position stays when scrolling */
+    z-index: 1000; /* highest heirarchy nearest the viewer, always in viewport fully */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    background: #006171 !important;
 }
 
 .navbar ul {
@@ -19,9 +26,6 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
     margin: 0; /* see padding below in li a styles */
     padding: 0; /* see padding below in li a styles */
     overflow: hidden; 
-    background-color: #006171; /* background color of the navbar */
-    position: fixed; /* keeps the navbar at the top even when the user is scrolling down or further down on the page */
-    bottom: 0; /* so that the navbar sits at the very very top of the start of the webpage in the browser */
     width: 100%; /* covers the entire width of the browser */
 }
 
@@ -54,14 +58,30 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
     color:#E7769D !important; /* special hover styling for copyright 💁‍♀️ */
 }
 
+.copyright:active {
+    color:#E0004E !important; /* special hover styling for copyright 💁‍♀️ */
+}
+
 /* body */
-body { /* applies to anything in the body */
+html, body {
+    background-color: #DAFAFF;
+    margin: 0;
+    padding: 0;
+}
+
+.body-spacing { /* applies to anything in the body */
     font-family: 'Arial', sans-serif;
     background-color: #DAFAFF;
     color: #006171;
-    font-size: 19px;
-    margin: 30px; /* slight space on both sides of the browser */
-    padding-bottom: 100px;
+    font-size: 25px;
+    padding-bottom: 150px; /* no overlap with the navbar */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.body-spacing h1, .body-spacing h2 {
+    margin: 5px 5px; 
+    padding: 5px 5px;
 }
 
 /* headers */
@@ -69,12 +89,15 @@ h1 { /* Google Font API for headers 1 in cherry red */
     font-family: 'Lora', serif;
     text-align: center;
     color: #E0004E;
+    font-size: 50px;
 }
 
 h2 { /* Google Font API for headers 2 in dark teal */
     font-family: 'Lora', serif;
     text-align: left;
     color: #006171;
+    font-size: 40px;
+    margin-left: 0 !important;
 }
 
 /* all images */
@@ -85,7 +108,7 @@ img {
     border-radius: 10px; /* rounded corners of images */
     max-width: 100%;
     height: auto;
-    z-index: auto; /* weight of 0 default to go behind the navbar when user is scrolling */
+    z-index: 0; /* weight of 0 default to go behind the navbar when user is scrolling */
 }
 
 /* for tech stack, but can be applied to another list as needed (any non-navbar lists) */
@@ -107,7 +130,7 @@ img {
     color: #E7769D;
 }
 
-/* css animation on change-me 1 & 2 classes for header 1 and subheader 2 bc i love css ✨ */
+/* css animation on change-me 1 & 2 classes for header 1 and subheader 2, rotating top to bottom on the page, bc ✨ */
 .change-me-1 {
     animation-name: change-me-1-animation;
     animation-duration: 20s;
@@ -124,26 +147,6 @@ to {color: #006171;}
 }
 
 @keyframes change-me-2-animation {
-from {color: #006171;}
-to {color: #E0004E;}
-}
-
-.change-me-3 {
-    animation-name: change-me-3-animation;
-    animation-duration: 20s;
-}
-
-@keyframes change-me-3-animation {
-from {color: #E0004E;}
-to {color: #006171;}
-}
-
-.change-me-4 {
-    animation-name: change-me-4-animation;
-    animation-duration: 20s;
-}
-
-@keyframes change-me-4-animation {
 from {color: #006171;}
 to {color: #E0004E;}
 }
@@ -168,6 +171,12 @@ to {border-bottom-color: yellow;}
     flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
 }
 
+.container-2 ul { /* used for fun facts section */
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none !important; /* no style set for list bullets, so they won't show up at all */
+}
+
 .text {
     flex: 1; /* allows text div to grow */
     margin-left: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
@@ -182,7 +191,7 @@ to {border-bottom-color: yellow;}
 }
 
 /* Tech stack section: diagram and text */
-.container-2 {
+.container-3 {
     display: flex;
     align-items: flex-start; /* align items at the top */
     flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
@@ -190,21 +199,18 @@ to {border-bottom-color: yellow;}
     padding-top: 0;
 }
 
-.image-container-2 {
+.text-3 {
+    flex: 1; /* allows text div to grow */
+    margin-right: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
+}
+
+.image-container-3 {
     max-width: 50%; /* the portrait image won't ever be bigger than 40% of the width of the screen within the text/img container div */
 }
 
-.image-container-2 img {
+.image-container-3 img {
     max-width: 100%; /* image not going over container edges but also filling the width completely */
     margin-left: 0px; 
-}
-
-/* Still a part of the above Tech stack section: diagram and text section, but the grid tech stack part with images and technology skills displayed in a grid */
-.text-2 {
-    flex: 1; /* allows text div to grow */
-    margin-right: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
-    display: grid; 
-    gap: 10px 10px; /* shorthand property for row & column gaps */
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
@@ -212,6 +218,7 @@ to {border-bottom-color: yellow;}
     .container .container-2 { /* apply this to both container in the same way */ 
         flex-direction: column; /* makes the items stack vertically on smaller screens */
         align-items: center;
+        text-align: center;
     }
 
     .text {
@@ -223,21 +230,18 @@ to {border-bottom-color: yellow;}
     }
 
     .image-container {
-        max-width: 80%; /* portrait images cover entire width on smaller screens when stacked */
-        margin-top: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
+        max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
     }
 
-    .image-container-2 {
+    .image-container-3 {
         max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
         margin-bottom: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
     }
 
-    .image-container img .image-container-2 img {
-        max-width: 100% /* have the image fill the space except for the margins to the right and left */
-    }
-
-    .cr-icon {
-        width: 5%; /* adjust font size for smaller screens */
+    .image-container img .image-container- img {
+        display:block;
+        margin: 0 auto;
+        max-width: 100%; /* have the image fill the space except for the margins to the right and left */
     }
 
     .aligned-text {
@@ -245,3 +249,6 @@ to {border-bottom-color: yellow;}
     }
 }
 
+.other-elements {
+    z-index: 500;
+}

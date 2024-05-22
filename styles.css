@@ -69,19 +69,15 @@ html, body {
     padding: 0;
 }
 
-.body-spacing { /* applies to anything in the body */
+/* applies to anything in the body main */
+.body-spacing {
     font-family: 'Arial', sans-serif !important;
     background-color: #DAFAFF;
     color: #006171;
     font-size: 25px;
     padding-bottom: 150px; /* no overlap with the navbar */
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.body-spacing h1, .body-spacing h2 {
-    margin: 5px 5px; 
-    padding: 5px 5px;
+    margin: 0 25px; /* top & bottom 0, left and right 25px */
+    z-index: 500;
 }
 
 /* headers */
@@ -247,8 +243,4 @@ to {border-bottom-color: yellow;}
     .aligned-text {
         font-size: 4vw;
     }
-}
-
-.other-elements {
-    z-index: 500;
 }

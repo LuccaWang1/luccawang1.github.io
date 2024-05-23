@@ -92,20 +92,32 @@ h1, h2 {
 }
 
 h1 {
-    animation-name: change-me-1-animation;
+    animation-name: change-me-animation-1;
     animation-duration: 20s;
+    animation-iteration-count: infinite; /* repeat the animation */
+    animation-timing-function: linear; /* smooth transition */
     font-size: 35px;
-}
-
-@keyframes change-me-1-animation {
-    from {color: #006171;}
-    to {color: #E0004E;}
 }
 
 h2 {
     text-align: left;
     font-size: 30px;
     color: #E0004E;
+}
+
+/* living, breathing - in about section of this website at the very bottom of the page */
+.text-changing {
+    animation-name: change-me-animation-1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; /* repeat the animation */
+    animation-timing-function: linear; /* smooth transition */
+}
+
+/* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
+@keyframes change-me-animation-1 {
+    0% {color: #006171;} /* initial color */
+    50% {color: #E0004E;} /* transition to new color */
+    100% {color: #006171} /* transition back to initial color */
 }
 
 /* all images */
@@ -119,7 +131,7 @@ img {
     z-index: 0; /* weight of 0 default to go behind the navbar when user is scrolling */
 }
 
-/* header top welcome cat image */
+/* header top welcome cat image make sure it covers the entire top */
 .welcome {
     border-radius: 0px;
 }
@@ -153,16 +165,18 @@ img {
 }
 
 /* animation of underline color change from rose pink to yellow highlight on key text I want to emphasize */
-.change-me-5-animation-underline {
-    animation-name: change-me-5-animation;
+.change-me-animation-2-underline {
+    animation-name: change-me-animation-2;
     animation-duration: 20s;
+    animation-iteration-count: infinite; /* repeat the animation */
+    animation-timing-function: linear; /* smooth transition */
     text-decoration: none; /* remove default underline */
     border-bottom: 1px solid #E7769D;
 }
 
-@keyframes change-me-5-animation {
-from {border-bottom-color: #E7769D;}
-to {border-bottom-color: yellow;}
+@keyframes change-me-animation-2 {
+    from {border-bottom-color: #E7769D;}
+    to {border-bottom-color: yellow;}
 }
 
 /* About section: text and portrait */

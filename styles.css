@@ -13,25 +13,51 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
     font-family: "Sriracha", cursive;
     font-weight: 400;
     font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#welcome h1 {
+    margin: 0px 0px !important;
+}
+
+#welcome div h2 {
+    margin: 10px 0px;
+}
+
+#welcome #location {
+    text-align: center;
+}
+
+/* all text same margins nav and body */
+.container-sides-30px {
+    padding: 0 30px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
 }
 
 /* navbar */
 .navbar {
-    width: 100%; /* covers the entire width of the browser */
-    bottom: 0; /* zero space between navbar and bottom of viewport */
-    position: fixed; /* fixed position stays when scrolling */
+    width: 100% !important; /* covers the entire width of the browser */
+    position: sticky !important; /* sticks to top when scrolling down */
+    position: -webkit-sticky !important; /* for Safari */
+    top: 0;
     z-index: 1000; /* highest heirarchy nearest the viewer, always in viewport fully */
     margin: 0;
     font-size: 20px;
     background: #006171 !important;
+    padding: 10px 0;
 }
 
 .navbar ul {
     list-style-type: none; /* no style set for list bullets, so they won't show up at all */
+    display: flex;
+    justify-content: space-around;
     margin: 0; /* see padding below in li a styles */
     padding: 0; /* see padding below in li a styles */
-    overflow: hidden; 
-    width: 100%; /* covers the entire width of the browser */
+    overflow: hidden;
+    position: sticky !important; /* sticks to top when scrolling down */
+    position: -webkit-sticky !important; /* for Safari */
+    top: 0;
 }
 
 .navbar li {
@@ -42,8 +68,8 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
     display: block; /* behaves like block */
     color:#DAFAFF; /* color of text */
     text-align: center; /* puts the text inside each list item spacing */
-    padding: 5px 10px; /* space around the text links */
     text-decoration: none; /* takes off the underline */
+    padding: 5px 10px; /* common padding for all links */
 }
 
 .navbar a:hover {
@@ -67,23 +93,61 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
     color:#E8C2CF !important; /* special hover styling for copyright 💁‍♀️ */
 }
 
+.navbar-bottom {
+    width: 100%; /* covers the entire width of the browser */
+    bottom: 0; /* zero space between navbar and bottom of viewport */
+    position: static; /* fixed position stays when scrolling */
+    z-index: 500; /* highest heirarchy nearest the viewer, always in viewport fully */
+    margin: 0;
+    font-size: 20px;
+    background: #006171 !important;
+}
+
+.navbar-bottom ul {
+    list-style-type: none; /* no style set for list bullets, so they won't show up at all */
+    margin: 0; /* see padding below in li a styles */
+    padding: 0; /* see padding below in li a styles */
+    overflow: hidden; 
+    width: 100%; /* covers the entire width of the browser */
+}
+
+.navbar-bottom li {
+    float: left; /* organize to the left & so the "tabs" lay horizontally */
+}
+
+.navbar-bottom li a {
+    display: block; /* behaves like block */
+    color:#DAFAFF; /* color of text */
+    text-align: center; /* puts the text inside each list item spacing */
+    text-decoration: none; /* takes off the underline */
+    padding: 5px 10px; /* common padding for all links */
+}
+
+.navbar-bottom a:hover {
+    color: #E8C2CF; /* UX hover user receptive */
+}
+
+.navbar-bottom a:active {
+    color: #E7769D; /* UX user receptive when user clicks link */
+    transition: 3ms;
+}
+
 /* body */
 html, body {
     background-color: #DAFAFF;
     margin: 0;
-    padding: 0;
+    color: #006171;
+    font-size: 25px;
+}
+
+section {
+    margin: 10px 0;
 }
 
 /* applies to anything in the body main */
-.body-spacing {
-    font-family: 'Arial', sans-serif !important;
-    background-color: #DAFAFF;
-    color: #006171;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 150px; /* no overlap with the navbar */
-    margin: 0 25px; /* top & bottom 0, left and right 25px */
+.body {
     z-index: 500;
+    line-height: 1.6;
 }
 
 /* headers */
@@ -92,6 +156,12 @@ h1, h2 {
 }
 
 h1 {
+    font-size: 60px !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+h2 {
     animation-name: change-me-animation-1;
     animation-duration: 20s;
     animation-iteration-count: infinite; /* repeat the animation */
@@ -99,25 +169,29 @@ h1 {
     font-size: 35px;
 }
 
-h2 {
-    text-align: left;
-    font-size: 30px;
-    color: #E0004E;
-}
-
-/* living, breathing - in about section of this website at the very bottom of the page */
-.text-changing {
-    animation-name: change-me-animation-1;
-    animation-duration: 20s;
-    animation-iteration-count: infinite; /* repeat the animation */
-    animation-timing-function: linear; /* smooth transition */
-}
-
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
 @keyframes change-me-animation-1 {
     0% {color: #006171;} /* initial color */
     50% {color: #E0004E;} /* transition to new color */
     100% {color: #006171} /* transition back to initial color */
+}
+
+h3 {
+    text-align: left;
+    font-size: 30px;
+    color: #E0004E;
+}
+
+#facts ul li {
+    margin-bottom: 20px;
+}
+
+#footer .centered-icons {
+    margin-bottom: 45px !important;
+}
+
+#footer p {
+    margin-bottom: 45px;
 }
 
 /* all images */
@@ -131,14 +205,27 @@ img {
     z-index: 0; /* weight of 0 default to go behind the navbar when user is scrolling */
 }
 
-/* header top welcome cat image make sure it covers the entire top */
-.welcome {
-    border-radius: 0px;
+/* icons centered at top of website */
+.centered-icons {
+    text-align: center;
+    align-items: flex-end !important;
+    margin-top: 45px;
+}
+
+.centered-icons a {
+    padding: 5px 20px; /* common padding for all links */
+}
+
+.centered-icons a img {
+    margin-left: 0; 
+    max-height: 50px !important; 
+    display:inline-block; 
+    padding-bottom: 0;
 }
 
 /* project images - so they are the same size */
 .projects {
-    width: 75vw;
+    width: 60vw;
     height: auto;
     object-fit: cover;
 }
@@ -181,9 +268,23 @@ img {
 
 /* About section: text and portrait */
 .container {
-    display: flex;
-    align-items: flex-start; /* align items at the top */
-    flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.float-image {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 25%;
+    height: auto; /* keeping aspect ratio */
+    shape-outside: margin-box;
+    shape-margin: 20px;
+}
+
+.container p {
+    text-align: justify;
+    flex: 1;
 }
 
 .container-2 ul { /* used for fun facts section */
@@ -192,26 +293,11 @@ img {
     list-style-type: none !important; /* no style set for list bullets, so they won't show up at all */
 }
 
-.text {
-    flex: 1; /* allows text div to grow */
-    margin-left: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
-}
-
-.image-container {
-    max-width: 40%; /* the portrait image won't ever be bigger than 40% of the width of the screen within the text/img container div */
-}
-
-.image-container img {
-    max-width: 100%; /* image not going over container edges but also filling the width completely */
-}
-
 /* Tech stack section: diagram and text */
 .container-3 {
     display: flex;
     align-items: flex-start; /* align items at the top */
     flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
-    margin-top: 0;
-    padding-top: 0;
 }
 
 .text-3 {
@@ -229,53 +315,40 @@ img {
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
-@media screen and (max-width: 2000px) {
-    .welcome {
-        content: url('/assets/img/welcome-2000-404px.png')
-    }
-}
-
-@media screen and (max-width: 1201px) {
-    .welcome {
-        content: url('/assets/img/welcome-1201-403px.png')
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .welcome {
-        content: url('/assets/img/welcome-786-403px.png')
+    #projects h1, h2 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    body {
+        font-size: 19px !important;
+    }
+
+    h1 {
+        font-size: 40px !important;
     }
     
+    h2 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
     .container .container-2 { /* apply this to both container in the same way */ 
         flex-direction: column; /* makes the items stack vertically on smaller screens */
         align-items: center;
         text-align: center;
     }
 
-    .text {
-        margin-left: 0px; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
-    }
-
     .text-2 {
         margin-right: 0; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
-    }
-
-    .image-container {
-        max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
     }
 
     .image-container-3 {
         max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
         margin-bottom: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
-    }
-
-    .image-container img .image-container- img {
-        display:block;
-        margin: 0 auto;
-        max-width: 100%; /* have the image fill the space except for the margins to the right and left */
-    }
-
-    .aligned-text {
-        font-size: 4vw;
     }
 }

@@ -37,27 +37,22 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
 
 /* navbar */
 .navbar {
-    width: 100% !important; /* covers the entire width of the browser */
-    position: sticky !important; /* sticks to top when scrolling down */
-    position: -webkit-sticky !important; /* for Safari */
+    width: 100%; /* covers the entire width of the browser */
     top: 0;
     z-index: 1000; /* highest heirarchy nearest the viewer, always in viewport fully */
-    margin: 0;
+    margin: 30px 0 30px 0;
     font-size: 20px;
     background: #006171 !important;
     padding: 10px 0;
+    position: sticky; /* sticks to top when scrolling down */
 }
 
 .navbar ul {
     list-style-type: none; /* no style set for list bullets, so they won't show up at all */
     display: flex;
-    justify-content: space-around;
-    margin: 0; /* see padding below in li a styles */
-    padding: 0; /* see padding below in li a styles */
+    justify-content: center;
     overflow: hidden;
-    position: sticky !important; /* sticks to top when scrolling down */
-    position: -webkit-sticky !important; /* for Safari */
-    top: 0;
+    flex-wrap: wrap;
 }
 
 .navbar li {
@@ -65,11 +60,9 @@ Lily white: #F0F0F0 (color consistency palette "white" accents)
 }
 
 .navbar li a {
-    display: block; /* behaves like block */
     color:#DAFAFF; /* color of text */
-    text-align: center; /* puts the text inside each list item spacing */
     text-decoration: none; /* takes off the underline */
-    padding: 5px 10px; /* common padding for all links */
+    padding: 5px 20px; /* common padding for all links */
 }
 
 .navbar a:hover {
@@ -166,7 +159,8 @@ h2 {
     animation-duration: 20s;
     animation-iteration-count: infinite; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
-    font-size: 35px;
+    font-size: 40px;
+    margin: 30px 0 10px 0;
 }
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
@@ -192,6 +186,23 @@ h3 {
 
 #footer p {
     margin-bottom: 45px;
+}
+
+.projects-container {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.projects-container a {
+    margin-left: 10px;
+}
+
+.projects-inline-icon {
+    height: 30px;
+    width: auto;
+    vertical-align: bottom;
+    margin-bottom: 5px;
 }
 
 /* all images */

@@ -194,17 +194,6 @@ h3 {
     margin: 0;
 }
 
-.projects-container a {
-    margin-left: 10px;
-}
-
-.projects-inline-icon {
-    height: 30px;
-    width: auto;
-    vertical-align: bottom;
-    margin-bottom: 5px;
-}
-
 /* all images */
 img {
     display: block; /* so it'll behave like a block */
@@ -214,6 +203,18 @@ img {
     max-width: 100%;
     height: auto;
     z-index: 0; /* weight of 0 default to go behind the navbar when user is scrolling */
+}
+
+.projects-container a {
+    margin-left: 10px;
+}
+
+.projects-inline-icon {
+    height: 30px !important;
+    width: auto !important;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+    display: inline;
 }
 
 /* icons centered at top of website */

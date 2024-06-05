@@ -1,12 +1,11 @@
 /* CSS for dev site */
 
 /* colors: 
-dark teal: #006171; (main color)
-light blue: #a5eee0; (background/contrast)
-cherry red: #E0004E (headers)
-lip stick blush: #E7769D; (accent, same lighter value for contrast with teal)
-light pink: #E8C2CF (accent, lighter than above accent blush color)
-Lily white: #F0F0F0 (color consistency palette "white" accents)
+dark teal: #006171; (dark blue/green, main color)
+light blue: #a5eee0; (light blue/green, light contrast)
+cherry red: #E0004E (dark red, headers, similar value to dark teal)
+lip stick blush: #E7769D; (medium red)
+light pink: #E8C2CF (light red)
  */
 
 * {

@@ -8,13 +8,90 @@ lip stick blush: #E7769D; (medium red)
 light pink: #E8C2CF (light red)
  */
 
+/* all font as Roboto */
+:root {
+    --roboto: "Roboto", sans-serif;
+}
+
+/* styling applies to ALL elements */
 * {
-    font-family: "Sriracha", cursive;
-    font-weight: 400;
-    font-style: normal;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--roboto);
+}
+
+/* Font styles for Roboto */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+    
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+    
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+    
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+    
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+    
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+    
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+    
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+    
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+    
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+    
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
 #welcome h1 {
@@ -30,8 +107,38 @@ light pink: #E8C2CF (light red)
 }
 
 /* all text same margins nav and body */
-.container-sides-30px {
-    padding: 0 30px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
+.container-sides-60px {
+    padding: 0 60px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
+}
+
+/* lists in the skills section (section element with id "skills") */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-text-pair { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+}
+
+.icon-img-inline img {
+    display: block;
+    max-width: 100%;
+    height: 40px;
+}
+
+.icon-text { 
+    margin-top: 8px;
 }
 
 /* navbar */
@@ -194,11 +301,11 @@ h3 {
 }
 
 /* all images */
-img {
+img, picture {
     display: block; /* so it'll behave like a block */
     margin-left: auto; /* centering images */
     margin-right: auto; /* ^centering images */
-    border-radius: 10px; /* rounded corners of images */
+    border-radius: 10px ; /* rounded corners of images */
     max-width: 100%;
     height: auto;
     z-index: 0; /* weight of 0 default to go behind the navbar when user is scrolling */
@@ -302,6 +409,11 @@ img {
     padding: 0px;
     margin: 0px;
     list-style-type: none !important; /* no style set for list bullets, so they won't show up at all */
+}
+
+/* Fun Facts section - emoji shadow to let it differential from background color */
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Tech stack section: diagram and text */

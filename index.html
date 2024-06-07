@@ -31,7 +31,7 @@
         <!-- Google Font APIs -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
         <!-- My CSS stylesheets-->
         <link rel="stylesheet" href="/styles.css">
@@ -40,7 +40,7 @@
     <body>
         <div class="body">
             <section id="welcome">
-                <div class="container-sides-30px">
+                <div class="container-sides-60px">
                     <div class="centered-icons">
                         <!-- social media icons - thank you, icons8.com - that's where I chose and then customized these icons -->
                         <a href="https://www.linkedin.com/in/luccawang/" target="_blank"><img src="/assets/img/sm-icons/icons8-linkedin-50.png" alt="LinkedIn" title="LinkedIn"></a>
@@ -66,9 +66,9 @@
                 </div>
             </section>
 
-            <!-- sticky nav ya'll -->
+            <!-- sticky nav ya'll - needed to be outside of margin containerization to cover width 100% -->
             <nav class="navbar">
-                <div class="container-sides-30px">
+                <div class="container-sides-60px">
                     <ul>
                         <!-- these are anchor links that hop the user the the part of the page they clicked on -->
                         <li><a href="#about" class="one-left" alt="About" title="About">About</a></li>
@@ -82,79 +82,224 @@
             </nav>
 
             <section id="about">
-                <div class="container-sides-30px">
+                <div class="container-sides-60px">
+                    <h2 class="change-me-2">About</h2>
                     <div class="container">
                         <img src="assets/img/portrait.png" alt="Portrait image © Lucca Wang 2024" class="float-image">
                         
                         <p>After graduating with 3 undergraduate degrees in journalism and mass communication and visual art in 5 years, I started a career in the nonprofit sector. As a trusted authority of information, <span class="change-me-animation-2-underline">I used my expertise to help people in communities locally, regionally, and nationally</span>.</br>
                         </br>
-                        While my former career was rewarding, I found myself increasingly diving into <span class="change-me-animation-2-underline">technology</span>, especially surrounding <span class="change-me-animation-2-underline">websites</span>, <span class="change-me-animation-2-underline">databases</span>, and <span class="change-me-animation-2-underline">emails</span> - I used these to communicate with audiences and store and retrieve data. I transitioned into software engineering, because <span class="change-me-animation-2-underline">I enjoy software development and want to use my problem solving-skills to build meaningful products</span>.</p>
+                        While my former career was rewarding, I found myself increasingly diving into <span class="change-me-animation-2-underline">technology</span>, especially surrounding <span class="change-me-animation-2-underline">websites</span>, <span class="change-me-animation-2-underline">databases</span>, and <span class="change-me-animation-2-underline">emails</span> - I used these to communicate with audiences and store and retrieve data. I transitioned into software engineering, because <span class="change-me-animation-2-underline">I enjoy software development and want to use my strategic and creative problem solving-skills to build meaningful products</span>.</p>
                     </div>
                 </div>
             </section>    
 
             <section id="facts">
-                <div class="container-sides-30px">
+                <div class="container-sides-60px">
                     <h2 class="change-me-1">Fun Facts</h2>
 
                     <div class="container-2">
                         <ul>
-                            <li><span style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);">💡</span> My <span class="change-me-animation-2-underline">namesake</span> is Lucca, Italy, and "Lucca" means "bringer of light."</li> 
-                            <li><span style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);">🏃🏻‍♀️</span> I <span class="change-me-animation-2-underline">finished a marathon</span> in December 2019.</li>
-                            <li><span style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);">🇨🇳</span> <span class="change-me-animation-2-underline">Best travel memory</span>: Taking the slide down from the <span class="change-me-animation-2-underline">Great Wall of China</span>.</li>
-                            <li><span style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);">🌚</span> Current <span class="change-me-animation-2-underline">VSCode</span> Theme: <span class="change-me-animation-2-underline">Dark High Contrast</span>.</li>
-                            <li><span style="display: inline-block; filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.8));"><img src="/assets/img/fun-facts/icons8-myspace-69.png" style="margin-left: 0; max-height: 26px; display:inline-block;" alt="icons8 myspace 3D social media icon"></span> Adorable things I found while building this website: <a href="https://icons8.com/icon/set/social-media/3d-plastilina" target="_blank" class="inline-link">3D Plastilina social media icons </a></span></li>
+                            <li><span class="text-shadow">💡</span> My <span class="change-me-animation-2-underline">namesake</span> is Lucca, Italy, and "Lucca" means "bringer of light."</li> 
+
+                            <li><span class="text-shadow">🏃🏻‍♀️</span> I <span class="change-me-animation-2-underline">finished a marathon</span> in December 2019.</li>
+
+                            <li><span>🇨🇳</span> <span class="change-me-animation-2-underline">Best travel memory</span>: Taking the slide down from the <span class="change-me-animation-2-underline">Great Wall of China</span>.</li>
+
+                            <li><span>🌚</span> Current <span class="change-me-animation-2-underline">VSCode</span> Theme: <span class="change-me-animation-2-underline">Dark High Contrast</span>.</li>
+
+                            <li><span class="icon-img-inline"><img src="/assets/img/fun-facts/icons8-myspace-69.png" style="margin-left: 0; max-height: 26px; display:inline-block;" alt="icons8 myspace 3D social media icon"></span> Adorable things I found while building this website: <a href="https://icons8.com/icon/set/social-media/3d-plastilina" target="_blank" class="inline-link">3D Plastilina social media icons </a></span></li>
                         </ul>
                     </div>      
                 </div>
             </section>
 
             <section id="skills">
-                <h2 class="change-me-2">Tech stack:</h2>
+                <h2 class="change-me-2">Skills / Technologies</h2>
+
+                <div class="container-sides-60px">
+                    <h3>Languages:</h3>
+                    <ul>
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/icons8-python-48.png" alt="icons8 myspace 3D social media icon">
+                            </span> 
+
+                            <span class="icon-text">
+                                Python
+                            </span>
+                        </li>
+
+                        <br>
+
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/icons8-javascript-48.png" alt="icons8 myspace 3D social media icon">
+                            </span> 
+                            
+                            <span class="icon-text">
+                                JavaScript
+                            </span> 
+                        </li>
+
+                        <br>
+
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/icons8-sql-80.png" alt="icons8 myspace 3D social media icon">
+                            </span> 
+                            
+                            <span class="icon-text">
+                                SQL
+                            </span>  
+                        </li>
+
+                        <br>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/HTML5_logo_and_wordmark.svg.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                HTML
+                            </span> 
+                        </li>
+
+                        <br>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/flaticon-css-3.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                CSS
+                            </span>  
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container-sides-60px">
+                    <h3>Frameworks & Libraries:</h3>
+                    <ul>
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/128px-react-icon.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                React
+                            </span>  
+                        </li>
+
+                        <br>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/flask-logo-icon.webp" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                Flask
+                            </span>   
+                        </li>
+
+                        <br>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/sqlalchemy.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                SQLAlchemy
+                            </span>  
+                        </li>
+                    </ul>
+
+                </div>
                 
-                <div class="container-sides-30px">
-                    <div class="container-3">
-                        <div class="text-3">
-                            <ul class="container-sides-30px">
-                                <li><span class="change-me-animation-2-underline">Python</span></li>
-                                <li><span class="change-me-animation-2-underline">JavaScript</span></li>
-                                <li><span class="change-me-animation-2-underline">PostgreSQL</span></li>
-                                <li>Working with <span class="change-me-animation-2-underline">APIs</span></li>
-                                <li>AWS</li>
-                                <li>CSS</li>
-                                <li>Flask</li>
-                                <li><span class="change-me-animation-2-underline">Git</span></li>
-                                <li>HTML</li>
-                                <li>React</li>
-                                <li>SQL</li>
-                                <li>SQLAlchemy</li>
-                                <li>Testing</li>
-                                <li>Trello</li>
-                                <li>VSCode</li>
-                            </ul>
-
-                            <br>
-                        </div>
-
-                        <div class="image-container-3">
-                            <img src="assets/img/tech-stack.png" alt="Diagram image © Lucca Wang 2024">
-
-                            <br>
+                <div class="container-sides-60px" id="tools">
+                    <h3>Industry Tools & Databases:</h3>
+                    <ul>
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/git-logo-black.png" alt="icons8 myspace 3D social media icon">
+                            </span>
                             
-                            <p>1 year of previous professional experience coding with HTML, using AWS S3 and an SQL database.</p>
-
-                            <br>
+                            <span class="icon-text">
+                                Git
+                            </span>  
+                        </li>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/vscode.png" alt="icons8 myspace 3D social media icon">
+                            </span>
                             
-                            <p>Background in website content management and using databases.</p>
-                        </div>
-                    </div>
+                            <span class="icon-text">
+                                VSCode
+                            </span> 
+                        </li>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/postgresql_plain_wordmark_logo_icon_146390.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                PostgreSQL
+                            </span>  
+                        </li>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/icons8-api-100.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                Working with APIs
+                            </span>  
+                        </li>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/icons8-testing-100.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                Testing
+                            </span>  
+                        </li>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/icons8-trello-128.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                Trello
+                            </span>  
+                        </li>
+                        
+                        <li class="icon-text-pair">
+                            <span class="icon-img-inline">
+                                <img src="/assets/img/swe-icons/icons8-aws-144.png" alt="icons8 myspace 3D social media icon">
+                            </span>
+                            
+                            <span class="icon-text">
+                                AWS
+                            </span>  
+                        </li>
+                    </ul>
                 </div>
             </section>
 
             <section id="projects">
                 <h2>Projects:</h2>
                 
-                <div class="container-sides-30px">
+                <div class="container-sides-60px">
                     <section id="project-section">
                         <h3 class="change-me-2 projects-container">PetPlanner<a href="https://github.com/LuccaWang1/PetPlanner" target="_blank"><img src="/assets/img/sm-icons/icons8-github-96.png" alt="GitHub" title="GitHub" class="projects-inline-icon"></a></h3>
 
@@ -162,53 +307,47 @@
 
                         <br>
 
-                        <a href="https://github.com/LuccaWang1/luccawang1.github.io" target="_blank"><img src="/assets/img/projects/petplanner.png" class="projects" alt="PetPlanner © Lucca Wang 2024"></a>
+                        <a href="https://github.com/LuccaWang1/luccawang1.github.io" target="_blank"><img src="/assets/img/projects/petplanner.png" class="projects" id="petplanner" alt="PetPlanner © Lucca Wang 2024"></a>
 
                         <br>
 
-                        <p>A web app allowing pet owners to centralize their pets' information (biographical data, vets, events).</span> I'm proud of the relational database and <a href="https://github.com/LuccaWang1/PetPlanner?tab=readme-ov-file#data-model" class="inline-link">model</a> I created as well as overcoming time and date formatting challenges.</p>
+                        <p>A web app allowing pet owners to centralize their pets' information, including biographical data, vets, and events.</span></p>
                     </section> 
 
                     <br>
 
                     <section id="project-section">
-                        <h3 class="change-me-2 projects-container">This Website<a href="https://github.com/LuccaWang1/luccawang1.github.io" target="_blank"><img src="/assets/img/sm-icons/icons8-github-96.png" alt="GitHub" title="GitHub" class="projects-inline-icon"></a></h3>
+                        <h3 class="change-me-2 projects-container">Let's Eat!<a href="https://github.com/LuccaWang1/Tell-Me-Where-To-Eat" target="_blank"><img src="/assets/img/sm-icons/icons8-github-96.png" alt="GitHub" title="GitHub" class="projects-inline-icon"></a></h3>
 
-                        <p>(domain name config., GitHub (hosting and deployment), HTML with Open Graph and CSS (including animations, keyframe rules, and media queries), Google Fonts API, Canva, icons8.com)
-                        </p>
-
-                        <br>
-
-                        <a href="https://github.com/LuccaWang1/luccawang1.github.io" target="_blank"><img src="/assets/img/projects/thiswebsite.png" class="projects" alt="The website © Lucca Wang 2024"></a>
+                        <p>(Python, Canva, CSS, Flask, Google Font API, HTML, JavaScript)</p>
 
                         <br>
 
-                        <p id="author">Dear Visitor,</p>
-
-                        <br>
-
-                        <p>Hand building this website has been a fun opportunity to give insight on me and my software engineering and development work. I hope it also shines light on my transferable skills of communication, creativity, being detailed-oriented, and being responsible, willing to put in the work and effort.</p> 
-                            
-                        <br>
-                        
-                        <p>I enjoyed <span class="change-me-animation-2-underline">problem-solving</span> to utilize <a href="#welcome" class="inline-link">space</a> in my own original way and improving the site to be more clickable.</p>
-
-                        <br>
-
-                        <p>Feel free to connect with me!</p>
+                        <div>
+                            <a href="https://github.com/LuccaWang1/Tell-Me-Where-To-Eat" target="_blank">
+                                <picture>
+                                    <source srcset="/assets/img/projects/letseat-480x300.gif" media="(max-width: 480px)">
+                                    <source srcset="/assets/img/projects/letseat-768x300.gif" media="(max-width: 481px) and (max-width:768)">
+                                    <source srcset="/assets/img/projects/letseat-1023x300.gif" media="(max-width: 769px) and (max-width:1023)">
+                                    <source srcset="/assets/img/projects/letseat-1200x300.gif" media="(min-width: 1024px)">
+                                    <img src="/assets/img/projects/letseat-768x300.gif" class="projects" id="letseat" alt="Let's Eat © Lucca Wang 2024">
+                                </picture>
+                            </a>
+                        </div>
 
                         <br>
                         
-                        <p><span class="change-me-animation-2-underline">Thank you</span> for visiting,<br> 
-                        Lucca</p>
+                        <p>A web app easing dinner decision making with a click of a button.</p>
                     </section>
                 </div>
             </section>
         </div>
 
+        <br>
+
         <footer>
             <section id="footer">
-                <div class="container-sides-30px">
+                <div class="container-sides-60px">
                     <div class="centered-icons">
                         <!-- social media icons - thank you, icons8.com - that's where I chose and then customized these icons -->
                         <a href="https://www.linkedin.com/in/luccawang/" target="_blank"><img src="/assets/img/sm-icons/icons8-linkedin-50.png" alt="LinkedIn" title="LinkedIn"></a>

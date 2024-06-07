@@ -331,6 +331,7 @@ img, picture {
 
 .centered-icons a {
     padding: 5px 20px; /* common padding for all links */
+    text-decoration: none;
 }
 
 .centered-icons a img {

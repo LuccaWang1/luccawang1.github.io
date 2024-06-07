@@ -118,17 +118,16 @@ light pink: #E8C2CF (light red)
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .icon-text-pair { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
     text-align: center;
-    flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+    flex: 0 1 auto;
 }
 
 .icon-img-inline img {
@@ -386,7 +385,6 @@ img, picture {
 
 /* About section: text and portrait */
 .container {
-    padding-top: 20px;
     width: 100%;
     margin: 0 auto;
 }
@@ -405,10 +403,11 @@ img, picture {
     flex: 1;
 }
 
-.container-2 ul { /* used for fun facts section */
+/* used for fun facts section */
+#facts ul { 
     padding: 0px;
     margin: 0px;
-    list-style-type: none !important; /* no style set for list bullets, so they won't show up at all */
+    list-style-type: none; /* no style set for list bullets, so they won't show up at all */
 }
 
 /* Fun Facts section - emoji shadow to let it differential from background color */

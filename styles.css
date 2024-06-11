@@ -1,11 +1,14 @@
 /* CSS for dev site */
 
 /* colors: 
+Green/Blue: 
 dark teal: #006171; (dark blue/green, main color)
 light blue: #a5eee0; (light blue/green, light contrast)
+
+Red: 
 cherry red: #E0004E (dark red, headers, similar value to dark teal)
-lip stick blush: #E7769D; (medium red)
-light pink: #E8C2CF (light red)
+lip stick blush: #E7769D; (medium red, hardly used)
+light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links)
  */
 
 /* all font as Roboto */
@@ -371,17 +374,18 @@ img {
 
 /* animation of underline color change from rose pink to yellow highlight on key text I want to emphasize */
 .change-me-animation-2-underline {
-    animation-name: change-me-animation-2;
-    animation-duration: 20s;
+    animation-name: change-me-animation-2; /* see cooresponding keyframe for animation around line 385 */
+    animation-duration: 20s; /* time it takes for the full animation cycle */
     animation-iteration-count: infinite; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
     text-decoration: none; /* remove default underline */
-    border-bottom: 1px solid #E7769D;
+    border-bottom: 1px solid #DAFAFF; /* setting a default */
 }
 
 @keyframes change-me-animation-2 {
-    from {border-bottom-color: #E7769D;}
-    to {border-bottom-color: yellow;}
+    0% {border-bottom-color: #DAFAFF;} /* initial color */
+    50% {border-bottom-color: #006171;} /* transition to new color */
+    100% {border-bottom-color: #DAFAFF} /* transition back to initial color */
 }
 
 /* About section: text and portrait */

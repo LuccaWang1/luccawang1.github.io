@@ -442,4 +442,14 @@ img {
         max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
         margin-bottom: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
     }
+
+    /* sticky nav */
+    .smaller-screens .container-sides-60px {
+        padding: 0; /* no added padding for smaller screens */
+    }
+
+    /* icon links at the very top and the very bottom of the page */
+    .icon-links-smer-screens .container-sides-60px {
+        padding: 0; /* no added padding for smaller screens */
+    }
 }

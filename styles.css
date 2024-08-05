@@ -352,7 +352,16 @@ img {
 /* About section: text and portrait */
 .container {
     width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.container p {
     line-height: 1.6;
+    margin: 0; /* remove any default margin */
+    letter-spacing: normal; /* ensure normal letter spacing */
+    word-spacing: normal; /* ensure normal word spacing */
+    white-space: normal; /* normal white space handling */
 }
 
 .float-image {
@@ -362,11 +371,6 @@ img {
     height: auto; /* keeping aspect ratio */
     shape-outside: margin-box;
     shape-margin: 20px;
-}
-
-.container p {
-    text-align: justify;
-    flex: 1;
 }
 
 /* used for fun facts section */
@@ -426,9 +430,8 @@ img {
     }
 
     .container .container-2 { /* apply this to both container in the same way */ 
-        flex-direction: column; /* makes the items stack vertically on smaller screens */
-        align-items: center;
-        text-align: center;
+        max-width: 600px;
+        margin: auto;
     }
 
     .text-2 {

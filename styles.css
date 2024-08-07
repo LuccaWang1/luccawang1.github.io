@@ -58,6 +58,7 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
     font-weight: 700;
     font-style: normal;
 }
+/* roboto-bold used on anything on the site that needs to be bold. that styling is in the CSS as opposed to being inline, bc this works, and some of it wasn't changing when i put it inline */
     
 .roboto-black {
     font-family: "Roboto", sans-serif;
@@ -322,6 +323,13 @@ img {
     object-fit: cover;
 }
 
+/* for project titles - h3 */
+#projects h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* for tech stack, but can be applied to another list as needed (any non-navbar lists) */
 .tech-stack-list {
     list-style-type: disc; /* no style set for list bullets, so they won't show up at all */
@@ -432,20 +440,20 @@ img {
         padding: 5px 10px; /* common padding for all links */
         text-decoration: none;
     }
-    
-    #projects h1, h2 {
-        margin-bottom: 15px;
-        padding-bottom: 0;
-    }
-
     #facts h1, h2 {
-        margin-bottom: 1px;
-        padding-bottom: 0;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 
     #skills h1, h2 {
-        margin-bottom: 1px;
-        padding-bottom: 0;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #projects h1, h2 {
+        margin-bottom: 15px;
+        margin-top: 0px;
+        padding: 0;
     }
 
     body {

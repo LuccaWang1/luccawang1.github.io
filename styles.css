@@ -434,7 +434,17 @@ img {
     }
     
     #projects h1, h2 {
-        margin-bottom: 0;
+        margin-bottom: 15px;
+        padding-bottom: 0;
+    }
+
+    #facts h1, h2 {
+        margin-bottom: 1px;
+        padding-bottom: 0;
+    }
+
+    #skills h1, h2 {
+        margin-bottom: 1px;
         padding-bottom: 0;
     }
 

@@ -119,7 +119,7 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
 
 /* all text same margins nav and body */
 .container-sides-60px {
-    padding: 0 60px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
+    padding: 0 120px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
 }
 
 /* lists in the skills section (section element with id "skills") */
@@ -273,7 +273,7 @@ h3 {
     margin: 0;
 }
 
-/* all images */
+/* all images - except for the portrait image in the About section - see around line 377 ".float-image" (class) */
 img {
     display: block; /* so it'll behave like a block */
     margin-left: auto; /* centering images */
@@ -374,11 +374,14 @@ img {
     white-space: normal; /* normal white space handling */
 }
 
+/* portrait imag in About section - didn't want this to take up too much room, but left it this visible (this size) to humanize me and the work */
 .float-image {
-    display: block;
-    margin: 10px auto 20px auto; /* centering the img horizontally */
-    width: 50%; /* img size */
+    float: left; /* float img left */
+    margin: 0 20px 5px 0 !important; /* centering the img horizontally */
+    width: 40%; /* img size */
     height: auto; /* keeping aspect ratio */
+    shape-outside: margin-box;
+    shape-margin: 20px;
 }
 
 /* used for fun facts section */
@@ -416,6 +419,15 @@ img {
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
+    /* portrait imag in About section - didn't want this to take up too much room, but left it this visible (this size) to humanize me and the work */
+    .float-image {
+        float: none; /* override float */
+        display: block; /* ensure treatment like a block element */
+        margin: 10px auto !important; /* centers img horizontally */
+        width: 70%; /* adjust the img size */
+        height: auto !important; /* maintain aspect ratio */
+    }
+
     .centered-icons a {
         padding: 5px 10px; /* common padding for all links */
         text-decoration: none;

@@ -188,7 +188,7 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
 }
 
 .navbar li a {
-    color:#DAFAFF; /* color of text */
+    color: white; /* color of text */
     text-decoration: none; /* takes off the underline */
     padding: 5px 20px; /* common padding for all links */
 }

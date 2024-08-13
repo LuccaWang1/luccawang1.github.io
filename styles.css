@@ -256,6 +256,10 @@ h3 {
     color: #006171;
 }
 
+#location {
+    margin-top: 10px;
+}
+
 #facts ul li {
     margin-bottom: 20px;
 }
@@ -427,10 +431,6 @@ img {
 .image-container-3 img {
     max-width: 100%; /* image not going over container edges but also filling the width completely */
     margin-left: 0px; 
-}
-
-@media screen and (max-width: 1024px) {
-    
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */

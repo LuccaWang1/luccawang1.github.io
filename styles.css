@@ -399,6 +399,10 @@ img {
     list-style-type: none; /* no style set for list bullets, so they won't show up at all */
 }
 
+#skills h3 {
+    margin-bottom: 5px;
+}
+
 /* Fun Facts section - emoji shadow to let it differential from background color */
 .text-shadow {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);

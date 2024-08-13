@@ -204,7 +204,7 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
 
 /* body */
 html, body {
-    background-color: #DAFAFF;
+    background-color: white;
     margin: 0;
     color: #006171;
     font-size: 25px;

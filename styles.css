@@ -59,7 +59,7 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
     font-style: normal;
 }
 /* roboto-bold used on anything on the site that needs to be bold. that styling is in the CSS as opposed to being inline, bc this works, and some of it wasn't changing when i put it inline */
-    
+
 .roboto-black {
     font-family: "Roboto", sans-serif;
     font-weight: 900;

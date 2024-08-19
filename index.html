@@ -77,8 +77,9 @@
 
                     <h3 alt="Mature creative thinker, problem solver, and communicator with previous professional work experience." title="Mature creative thinker, problem solver, and communicator with previous professional work experience." class="roboto-regular">Mature creative thinker, problem solver, and communicator with previous professional work experience.</h3> 
 
-                    <div id="location" id="about-anchor">
-                        <img src="/assets/img/location/icons8-map-point-40.png" style="margin-left: 0; max-height: 20px; display:inline-block;" alt="Las Cruces, NM" title="Las Cruces, NM">Las Cruces, NM
+                    <div id="location">
+                        <!-- Add the About section link from the navbar here in this section, because it can't go in the next section "above" it's section, since the sticky nav position changes depending on where the viewer is on the page. So the fixed placement of the end of the Welcome section is where this anchor "id" has to be placed - the id attribute for the anchor is an attribute assigned under the img tag of the Welcome location. So when someone clicks the About word on the navbar, they will be directed to this point of the code as the top of their viewport, with the About section in the middle top of their viewport :) -->
+                        <img src="/assets/img/location/icons8-map-point-40.png" style="margin-left: 0; max-height: 20px; display:inline-block;" alt="Las Cruces, NM" title="Las Cruces, NM" id="about-anchor">Las Cruces, NM
                     </div>
                 </div>
             </section>
@@ -101,7 +102,7 @@
                         </li>
 
                         <li>
-                            <a href="assets/pdf/Lucca_Wang_Resume.pdf" target="_blank" alt="Resume" title="Resume" id="about-anchor">Resume</a>
+                            <a href="assets/pdf/Lucca_Wang_Resume.pdf" target="_blank" alt="Resume" title="Resume">Resume</a>
                         </li> 
                         <!-- _blank is a new tab in the saw browsing context aka window as opposed to _self, which is also the default w/out a specified target opening in the same tab -->
                     </ul>

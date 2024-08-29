@@ -386,6 +386,18 @@ img {
     white-space: normal; /* normal white space handling */
 }
 
+a {
+    color:#E7769D
+}
+
+a:hover {
+    color: #E0004E;
+}
+
+a:active {
+    color: #E7769D;
+}
+
 /* portrait imag in About section - didn't want this to take up too much room, but left it this visible (this size) to humanize me and the work */
 .float-image {
     float: left; /* float img left */

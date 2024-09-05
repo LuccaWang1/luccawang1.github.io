@@ -261,7 +261,11 @@ h3 {
 }
 
 #facts ul li {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+#body-built ol li {
+    margin-bottom: 25px; /* this is the ordered list on the built page about how i created the website (starts in built.html on line 111). this margin-bottom 25px spacing is consistent with the spacing elsewhere on the site, including the homepage's About paragraphs (index.html line 135) and Facts bullet points. (index.html line 155) */
 }
 
 #footer .centered-icons {
@@ -396,6 +400,10 @@ a:hover {
 
 a:active {
     color: #E7769D;
+}
+
+#about p {
+    margin-bottom: 25px;
 }
 
 /* portrait imag in About section - didn't want this to take up too much room, but left it this visible (this size) to humanize me and the work */

@@ -52,13 +52,13 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
     font-weight: 500;
     font-style: normal;
 }
-    
+   
+/* roboto-bold used on anything on the site that needs to be bold. that styling is in the CSS as opposed to being inline, bc this works, and some of it wasn't changing when i put it inline */
 .roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-/* roboto-bold used on anything on the site that needs to be bold. that styling is in the CSS as opposed to being inline, bc this works, and some of it wasn't changing when i put it inline */
 
 .roboto-black {
     font-family: "Roboto", sans-serif;
@@ -260,12 +260,11 @@ h3 {
     margin-top: 10px;
 }
 
-#facts ul li {
+/* this is the ordered list on the built page about how i created the website (starts in built.html on line 111). this margin-bottom 25px spacing is consistent with the spacing elsewhere on the site, including the homepage's About paragraphs (index.html line 135) and Facts bullet points. (index.html line 155). The third combinator is from built.html line 124 for the space between the only paragraphs on the page about the stack and technologies. */
+#facts ul li,
+#body-built ol li,
+#body-built ol li p {
     margin-bottom: 25px;
-}
-
-#body-built ol li {
-    margin-bottom: 25px; /* this is the ordered list on the built page about how i created the website (starts in built.html on line 111). this margin-bottom 25px spacing is consistent with the spacing elsewhere on the site, including the homepage's About paragraphs (index.html line 135) and Facts bullet points. (index.html line 155) */
 }
 
 #footer .centered-icons {

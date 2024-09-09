@@ -262,8 +262,9 @@ h3 {
 
 /* this is the ordered list on the built page about how i created the website (starts in built.html on line 111). this margin-bottom 25px spacing is consistent with the spacing elsewhere on the site, including the homepage's About paragraphs (index.html line 135) and Facts bullet points. (index.html line 155). The third combinator is from built.html line 124 for the space between the only paragraphs on the page about the stack and technologies. */
 #facts ul li,
-#body-built ol li,
-#body-built ol li p {
+#built ol li,
+#built ol li p,
+#built p {
     margin-bottom: 25px;
 }
 

@@ -77,36 +77,36 @@
                         Lucca Wang
                     </h1>
                 </div>
-
-                <!-- sticky nav -->
-                <nav class="navbar smaller-screens">
-                    <div class="container-sides-60px">
-                        <ul>
-                            <!-- these are anchor links that hop the user the the part of the page they clicked on -->
-                            <li>
-                                <a href="index.html" alt="Home" title="Home">Home</a>
-                            </li>
-
-                            <li>
-                                <a href="index.html#about-anchor" alt="About" title="About">About</a>
-                            </li>
-                            
-                            <li>
-                                <a href="index.html#skills-anchor" alt="Skills" title="Skills">Skills</a>
-                            </li>
-                            
-                            <li>
-                                <a href="index.html#projects-anchor" alt="Projects" title="Projects">Projects</a>
-                            </li>
-
-                            <li>
-                                <a href="assets/pdf/Lucca_Wang_Resume.pdf" target="_blank" alt="Resume" title="Resume">Resume</a>
-                            </li> 
-                            <!-- _blank is a new tab in the saw browsing context aka window as opposed to _self, which is also the default w/out a specified target opening in the same tab -->
-                        </ul>
-                    </div>
-                </nav>
             </section>
+
+            <!-- sticky nav (class "navbar" CSS line 162) needs to be outside of a section to have the sticky position upon scroll -->
+            <nav class="navbar smaller-screens">
+                <div class="container-sides-60px">
+                    <ul>
+                        <!-- these are anchor links that hop the user the the part of the page they clicked on -->
+                        <li>
+                            <a href="index.html" alt="Home" title="Home">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#about-anchor" alt="About" title="About">About</a>
+                        </li>
+                        
+                        <li>
+                            <a href="index.html#skills-anchor" alt="Skills" title="Skills">Skills</a>
+                        </li>
+                        
+                        <li>
+                            <a href="index.html#projects-anchor" alt="Projects" title="Projects">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="assets/pdf/Lucca_Wang_Resume.pdf" target="_blank" alt="Resume" title="Resume">Resume</a>
+                        </li> 
+                        <!-- _blank is a new tab in the saw browsing context aka window as opposed to _self, which is also the default w/out a specified target opening in the same tab -->
+                    </ul>
+                </div>
+            </nav>
 
             <section id="body-built" class="container-sides-60px">
                 <h2 alt="How I Hand Built This Website" class="roboto-regular">

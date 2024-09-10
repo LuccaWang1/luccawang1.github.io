@@ -1,14 +1,20 @@
 /* CSS for dev site */
 
-/* colors: 
-Green/Blue: 
-dark teal: #006171; (dark blue/green, main color)
-light blue: #a5eee0; (light blue/green, light contrast)
+/* 
+colors: 
+Used these tool to determine website design color palette: 
+1) WCAG info. on contrast minimum (documentation): https://www.w3.org/TR/WCAG/#contrast-minimum
+2)Contrast ratio tool by Lea Verou: https://www.siegemedia.com/contrast-ratio#%23a85d77-on-white
 
-Red: 
-cherry red: #E0004E (dark red, headers, similar value to dark teal)
-lip stick blush: #E7769D; (medium red, hardly used)
-light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links)
+---white: #FFFFFF (background, font color on nav, main/primary light color)
+--light pink: #ecc6d3 (secondary light color, used for nav hover, and links active)
+
+--blush: #E7769D (mid-value zone for color palette, nav links active, and 
+
+--dark blue-green: #006171; (main/primary dark color: background of nav, font color, links color)
+--cherry red: #E0004E (secondary dark color)
+
+
  */
 
 /* all font as Roboto */
@@ -26,6 +32,14 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
     font-family: var(--roboto);
     font-weight: var(--roboto-weight);
     font-style: var(--roboto-style)
+}
+
+/* body */
+html, body {
+    background-color: white;
+    margin: 0;
+    color: #006171;
+    font-size: 25px;
 }
 
 /* Font styles for Roboto */
@@ -194,20 +208,12 @@ light pink: #E8C2CF (lightest pink, used as hover color in navbar & inline links
 }
 
 .navbar a:hover {
-    color: #E8C2CF; /* UX hover user receptive */
+    color: #ecc6d3; /* UX hover user receptive */
 }
 
 .navbar a:active {
     color: #E7769D; /* UX user receptive when user clicks link */
     transition: 3ms;
-}
-
-/* body */
-html, body {
-    background-color: white;
-    margin: 0;
-    color: #006171;
-    font-size: 25px;
 }
 
 section {
@@ -344,21 +350,6 @@ img {
     width: 100%;
 }
 
-/* any body links not navbar */
-.inline-link {
-    color: #006171; /* setting font color to not be the default and stay on color palette */
-    text-decoration: underline;
-    text-decoration-thickness: 0.5px;
-}
-
-.inline-link:hover {
-    color: #E7769D;
-}
-
-.inline-link:active {
-    color: #E0004E;
-}
-
 /* animation of underline color change from rose pink to yellow highlight on key text I want to emphasize */
 .change-me-animation-2-underline {
     animation-name: change-me-animation-2; /* see cooresponding keyframe for animation around line 385 */
@@ -391,7 +382,7 @@ img {
 }
 
 a {
-    color:#E7769D
+    color:#006171;
 }
 
 a:hover {
@@ -455,19 +446,29 @@ a:active {
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
-    /* portrait imag in About section - didn't want this to take up too much room, but left it this visible (this size) to humanize me and the work */
-    .float-image {
-        float: none; /* override float */
-        display: block; /* ensure treatment like a block element */
-        margin: 10px auto !important; /* centers img horizontally */
-        width: 40%; /* adjust the img size */
-        height: auto !important; /* maintain aspect ratio */
-    }
-
     .centered-icons a {
         padding: 5px 10px; /* common padding for all links */
         text-decoration: none;
     }
+
+    h1 {
+        font-size: 65px !important;
+        margin-top: 5px !important;
+    }
+
+    h2 {
+        font-size: 35px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+
+    body,
+    nav a {
+        font-size: 20px !important;
+    }
+
     #facts h1, h2 {
         margin-bottom: 0px;
         padding-bottom: 0px;
@@ -482,29 +483,6 @@ a:active {
         margin-bottom: 15px;
         margin-top: 0px;
         padding: 0;
-    }
-
-    h1 {
-        font-size: 50px !important;
-        margin-top: 50px;
-        padding-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    h2 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 30px !important;
-    }
-
-    body {
-        font-size: 25px;
-    }
-
-    nav a {
-        font-size: 25px;
     }
 
     #location {
@@ -556,61 +534,59 @@ a:active {
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 690px) {          
     .centered-icons a {
         padding: 5px 8px; /* common padding for all links */
         text-decoration: none;
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 63px !important;
     }
 
-
     h2 {
-        font-size: 35px;
+        font-size: 33px !important;
     }
 
     h3 {
-        font-size: 25px !important;
+        font-size: 23px !important;
     }
 
-    body {
-        font-size: 20px;
-    }
-
+    body,
     nav a {
-        font-size: 20px;
+        font-size: 19px !important;
     }
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 500px) {
+    .float-image {
+        float: none; /* override float */
+        display: block; /* ensure treatment like a block element */
+        margin: 10px auto !important; /* centers img horizontally */
+        width: 75%; /* adjust the img size */
+        height: auto !important; /* maintain aspect ratio */
+    }
+    
     .centered-icons a {
         padding: 5px 2px; /* common padding for all links */
         text-decoration: none;
     }
 
     h1 {
-        font-size: 40px !important;
-        margin-top: 50px;
-        padding-top: 20px;
-        margin-bottom: 20px;
+        font-size: 61px !important;
     }
-    
+
     h2 {
-        font-size: 30px;
+        font-size: 31px !important;
     }
 
     h3 {
-        font-size: 20px !important;
+        font-size: 21px !important;
     }
 
-    body {
-        font-size: 18px;
-    }
-
+    body, 
     nav a {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 }

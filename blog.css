@@ -1,0 +1,18 @@
+/* Styling specific for the blog webpage */
+
+.date-sticky {
+    position: relative; 
+    background-color: #E0004E;
+    color: white;
+    padding: 5px 20px;
+    /* width: fit-content; */
+    width: 300px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* making it look like an object */
+}
+
+.blog-content {
+    padding-left: 50px;
+}

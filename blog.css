@@ -11,33 +11,34 @@ colors:
 --cherry red: #E0004E (secondary dark color)
  */
 
+.blog-post { 
+    background-color: #ecc6d3;
+    z-index: -2;
+    color: #006171;
+    padding-top: 25px;
+}
+
 .title-sticky {
     position: relative; 
     background-color: #E0004E;
     padding: 5px 20px;
-    width: 700px;
-    max-width: 700px;
+    width: 400px;
+    max-width: 400px;
     margin-bottom: 25px;
+    margin-top: 10px;
     display: inline-block;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5); /* left side */
-}
-
-.title-sticky::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 100%; /* Ensure it extends beyond the right edge of the element */
-    width: 50px; /* Width of the shadow */
-    height: 100%; /* Height of the shadow matches the element */
-    background: rgba(0, 0, 0, 0.1); /* Light shadow color */
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow effect on the left */
-    z-index: -1; /* Ensure the shadow stays behind the content */
-    margin-bottom: 25px;
+    left: -25px;
 }
 
 .blog-content {
     padding-left: 25px;
+    /* color: white; */
 }
+
+/* .blog-content a {
+    color: white;
+} */
 
 h3 {
     color: white; /* overrides the normal red+animation in styles.css */
@@ -50,4 +51,8 @@ p {
 #blog-section ul li {
     margin-bottom: 25px;
     margin-left: 20px;
+}
+
+a:active {
+    color: white;
 }

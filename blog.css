@@ -16,6 +16,7 @@ colors:
     z-index: -2;
     color: #006171;
     padding-top: 25px;
+    padding-right: 25px;
 }
 
 .title-sticky {
@@ -32,12 +33,7 @@ colors:
 
 .blog-content {
     padding-left: 25px;
-    /* color: white; */
 }
-
-/* .blog-content a {
-    color: white;
-} */
 
 h3 {
     color: white; /* overrides the normal red+animation in styles.css */

@@ -330,7 +330,7 @@ img {
 
 /* project images - so they are the same size */
 .projects {
-    width: 90vw;
+    width: 60vw;
     height: auto;
     object-fit: cover;
 }

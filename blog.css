@@ -11,10 +11,6 @@ colors:
 --cherry red: #E0004E (secondary dark color)
  */
 
-.container-sides-60px {
-    padding: 0 150px; /* wanted to condense the sticky note effect a little more to put more things of the same blog post together in the viewport */
-}
-
 .blog-post { 
     background-color: #ecc6d3;
     z-index: -2;
@@ -62,13 +58,13 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-    .container-sides-60px {
-        padding: 0 120px;
+    .title-sticky {
+        left: -30px;
     }
 }
 
-@media screen and (max-width: 750px) {
-    .container-sides-60px {
-        padding: 0 80px;
+@media screen and (max-width: 321px) {
+    .title-sticky {
+        left: -20px;
     }
 }

@@ -453,7 +453,7 @@ a:active {
         font-size: 20px !important;
     }
 
-    #footer .footer-sign-off {
+    #footer .footer-sign-off, #footer a {
         font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
@@ -582,7 +582,7 @@ a:active {
         font-size: 19px !important;
     }
 
-    #footer .footer-sign-off {
+    #footer .footer-sign-off, #footer a {
         font-size: 14px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 }
@@ -619,7 +619,7 @@ a:active {
         font-size: 18px !important;
     }
 
-    #footer .footer-sign-off {
+    #footer .footer-sign-off, #footer a {
         font-size: 13px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 }

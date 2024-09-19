@@ -132,7 +132,7 @@ html, body {
 
 /* all text same margins nav and body */
 .container-sides-60px {
-    padding: 0 120px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
+    padding: 0 120px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right - pertains to everything it's applied to except for the responsiveness on the H1 name header on mobile under 690px wide for at the bottom of the sheet for that styling */
 }
 
 /* lists in the skills section (section element with id "skills") */
@@ -542,8 +542,10 @@ a:active {
         text-decoration: none;
     }
 
-    h1 {
-        font-size: 55px !important;
+    h1, .name { /* might be overkill to double down on it, but adding the class to for sure make this styling is affecting the correct area - won't rename just to keep what it was "h1" in the list of styling for this media query (makes sense in the sequence of styling for headers 1-3 in the query) */
+        font-size: 53px !important;
+        white-space: nowrap;
+        padding: 0 10px;
     }
 
     h2 {

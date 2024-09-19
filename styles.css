@@ -40,8 +40,9 @@ html, body {
     font-size: 25px; /* So 25px is the default for text in the body of the webpages, but see .footer-sign-off directly below */
 }
 
-#footer .footer-sign-off {
-    font-size: 18px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+#footer .footer-sign-off, #footer a {
+    font-size: 16px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+    text-align: center;
 }
 
 /* Font styles for Roboto */
@@ -453,7 +454,7 @@ a:active {
     }
 
     #footer .footer-sign-off {
-        font-size: 17px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
     #facts h1, h2 {
@@ -582,7 +583,7 @@ a:active {
     }
 
     #footer .footer-sign-off {
-        font-size: 16px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 14px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 }
 
@@ -619,6 +620,6 @@ a:active {
     }
 
     #footer .footer-sign-off {
-        font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 13px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 }

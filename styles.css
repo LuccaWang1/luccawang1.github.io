@@ -277,12 +277,8 @@ h3 {
     margin-bottom: 25px;
 }
 
-#footer .centered-icons {
-    margin-bottom: 15px !important;
-}
-
-#footer p {
-    margin-bottom: 35px;
+#footer .centered-icons, #footer p {
+    margin-bottom: 20px !important;
 }
 
 .projects-container {
@@ -453,10 +449,6 @@ a:active {
         font-size: 20px !important;
     }
 
-    #footer .footer-sign-off, #footer a {
-        font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
-    }
-
     #facts h1, h2 {
         margin-bottom: 0px;
         padding-bottom: 0px;
@@ -510,14 +502,14 @@ a:active {
         margin-bottom: 10px;
     }
 
-    #footer .centered-icons {
-        margin-bottom: 5px !important;
-        padding-bottom: 0;
+    #footer .footer-sign-off, #footer a {
+        font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
-    #footer p {
-        margin-top: 0;
-        padding-top: 0;
+    #footer .centered-icons, #footer p {
+        margin-bottom: 19px !important;
+        margin-top: 0px;
+        padding: 0px;
     }
 }
 
@@ -577,13 +569,18 @@ a:active {
         font-size: 23px !important;
     }
 
-    body,
-    nav a {
+    body, nav a {
         font-size: 19px !important;
     }
 
     #footer .footer-sign-off, #footer a {
         font-size: 14px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+    }
+
+    #footer .centered-icons, #footer p {
+        margin-bottom: 18px !important;
+        margin-top: 0px;
+        padding: 0px;
     }
 }
 
@@ -614,12 +611,17 @@ a:active {
         font-size: 21px !important;
     }
 
-    body, 
-    nav a {
+    body, nav a {
         font-size: 18px !important;
     }
 
     #footer .footer-sign-off, #footer a {
-        font-size: 13px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 13px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+    }
+
+    #footer .centered-icons, #footer p {
+        margin-bottom: 17px !important;
+        margin-top: 0px !important;
+        padding: 0px !important;
     }
 }

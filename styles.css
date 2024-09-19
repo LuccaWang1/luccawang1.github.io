@@ -37,7 +37,11 @@ html, body {
     background-color: white;
     margin: 0;
     color: #006171;
-    font-size: 25px;
+    font-size: 25px; /* So 25px is the default for text in the body of the webpages, but see .footer-sign-off directly below */
+}
+
+#footer .footer-sign-off {
+    font-size: 18px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
 }
 
 /* Font styles for Roboto */
@@ -131,7 +135,7 @@ html, body {
 }
 
 /* all text same margins nav and body */
-.container-sides-60px {
+.container-sides-120px {
     padding: 0 120px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right - pertains to everything it's applied to except for the responsiveness on the H1 name header on mobile under 690px wide for at the bottom of the sheet for that styling */
 }
 
@@ -169,7 +173,7 @@ html, body {
     width: 100%; /* covers the entire width of the browser */
     top: 0;
     z-index: 1000; /* highest heirarchy nearest the viewer, always in viewport fully */
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
     font-size: 25px;
     padding: 10px 0;
     position: sticky; /* sticks to top when scrolling down */
@@ -316,6 +320,10 @@ img {
     margin-top: 45px;
 }
 
+#welcome .centered-icons {
+    margin-top: 30px; /* conserve more of the viewport at the very top of the website for all pages for more information on mobile (then this leave the same icons that are repeated in the footer with the same amount of space at the top to separate them from the webpage's body content */
+}
+
 .centered-icons a {
     padding: 5px 20px; /* common padding for all links */
     text-decoration: none;
@@ -340,12 +348,6 @@ img {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
-
-/* for tech stack, but can be applied to another list as needed (any non-navbar lists) */
-.tech-stack-list {
-    list-style-type: disc; /* no style set for list bullets, so they won't show up at all */
-    width: 100%;
 }
 
 /* animation of underline color change from rose pink to yellow highlight on key text I want to emphasize */
@@ -425,27 +427,6 @@ a:active {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Tech stack section: diagram and text */
-.container-3 {
-    display: flex;
-    align-items: flex-start; /* align items at the top */
-    flex-wrap: wrap; /* allows items to wrap - image will go below text if a certain smaller width */
-}
-
-.text-3 {
-    flex: 1; /* allows text div to grow */
-    margin-right: 20px; /* amount of space between text and image, same as side margins of body, consistency design choice */
-}
-
-.image-container-3 {
-    max-width: 50%; /* the portrait image won't ever be bigger than 40% of the width of the screen within the text/img container div */
-}
-
-.image-container-3 img {
-    max-width: 100%; /* image not going over container edges but also filling the width completely */
-    margin-left: 0px; 
-}
-
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
     .centered-icons a {
@@ -469,6 +450,10 @@ a:active {
     body,
     nav a {
         font-size: 20px !important;
+    }
+
+    #footer .footer-sign-off {
+        font-size: 17px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
     #facts h1, h2 {
@@ -506,17 +491,17 @@ a:active {
     }
 
     /* sticky nav */
-    .smaller-screens .container-sides-60px {
+    .smaller-screens .container-sides-120px {
         padding: 0; /* no added padding for smaller screens */
     }
 
     /* icon links at the very top and the very bottom of the page */
-    .icon-links-smer-screens .container-sides-60px {
+    .icon-links-smer-screens .container-sides-120px {
         padding: 0; /* no added padding for smaller screens */
     }
 
     /* all text same margins nav and body */
-    .container-sides-60px {
+    .container-sides-120px {
         padding: 0 40px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
     }
 
@@ -540,6 +525,10 @@ a:active {
     .centered-icons a {
         padding: 5px 8px; /* common padding for all links */
         text-decoration: none;
+    }
+
+    #welcome .centered-icons {
+        margin-top: 20px; /* conserve more of the viewport at the very top of the website for all pages for more information on mobile */
     }
 
     /* making sure the name h1 is centered and not wrapping on any mobile device to conserve vertical scrolling space and the first impression in the viewport */
@@ -591,6 +580,10 @@ a:active {
     nav a {
         font-size: 19px !important;
     }
+
+    #footer .footer-sign-off {
+        font-size: 16px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+    }
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
@@ -623,5 +616,9 @@ a:active {
     body, 
     nav a {
         font-size: 18px !important;
+    }
+
+    #footer .footer-sign-off {
+        font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 }

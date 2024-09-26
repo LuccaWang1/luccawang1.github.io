@@ -531,6 +531,11 @@ a:active {
         margin-bottom: 10px;
     }
 
+    /* Projects Learn More buttons */
+    .project-button {
+        padding: 8px 18px;
+    }
+
     #footer .footer-sign-off, #footer a {
         font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
@@ -592,10 +597,18 @@ a:active {
 
     h2 {
         font-size: 39px !important;
+        white-space: nowrap;
+        padding: 0px 5px;
+        text-align: center !important;
     }
 
     h3 {
         font-size: 29px !important;
+    }
+
+    /* all text same margins nav and body */
+    .container-sides-120px {
+        padding: 0 30px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
     }
 
     #location {
@@ -608,6 +621,11 @@ a:active {
 
     body, nav a {
         font-size: 21px !important;
+    }
+
+    /* Projects Learn More buttons */
+    .project-button {
+        padding: 6px 16px;
     }
 
     #footer .footer-sign-off, #footer a {
@@ -642,14 +660,27 @@ a:active {
 
     h2 {
         font-size: 36px !important;
+        white-space: nowrap;
+        padding: 0px 5px;
+        text-align: center !important;
     }
 
     h3 {
         font-size: 26px !important;
     }
 
+    /* all text same margins nav and body */
+    .container-sides-120px {
+        padding: 0 20px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
+    }
+
     body, nav a {
         font-size: 19px !important;
+    }
+
+    /* Projects Learn More buttons */
+    .project-button {
+        padding: 5px 15px;
     }
 
     #footer .footer-sign-off, #footer a {
@@ -679,16 +710,24 @@ a:active {
     }
 
     h1, .name {
-        font-size: 48px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
+        font-size: 47px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
         text-align: center;
     }
 
     h2 {
-        font-size: 33px !important;
+        font-size: 32px !important;
+        white-space: nowrap;
+        padding: 0px 5px;
+        text-align: center !important;
     }
 
     h3 {
-        font-size: 23px !important;
+        font-size: 22px !important;
+    }
+
+    /* all text same margins nav and body */
+    .container-sides-120px {
+        padding: 0 10px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
     }
 
     #location {
@@ -701,6 +740,16 @@ a:active {
 
     body, nav a {
         font-size: 17px !important;
+    }
+
+    /* customized h2 for the skills / technologies header, so it fits on one line on a screen of this size (smallest mobile screen for responsiveness) */
+    #skills h2 {
+        font-size: 31px !important;
+    }
+
+    /* Projects Learn More buttons */
+    .project-button {
+        padding: 4px 14px;
     }
 
     #footer .footer-sign-off, #footer a {

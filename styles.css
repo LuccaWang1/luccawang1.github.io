@@ -124,7 +124,7 @@ html, body {
 }
 
 #welcome div h2 {
-    margin: 10px 0px;
+    margin: 0px 0px 10px 0px; /* top right bottom left */
 }
 
 #welcome #location {
@@ -235,7 +235,7 @@ h1, h2, #welcome h3 {
 }
 
 h1 {
-    font-size: 70px !important;
+    font-size: 80px !important;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -245,7 +245,7 @@ h2 {
     animation-duration: 20s;
     animation-iteration-count: infinite; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
-    font-size: 40px;
+    font-size: 45px;
     margin: 30px 0 10px 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -261,7 +261,7 @@ h2 {
 
 h3 {
     text-align: left;
-    font-size: 30px;
+    font-size: 35px;
     color: #006171;
 }
 
@@ -378,6 +378,7 @@ img {
     white-space: normal; /* normal white space handling */
 }
 
+/* links */
 a {
     color:#006171;
 }
@@ -388,6 +389,34 @@ a:hover {
 
 a:active {
     color: #E7769D;
+}
+
+/* buttons that are a tags in the Projects section - did this to create a button, didn't use "button" tag */
+.project-button-container {
+    display: flex; /* turns container into flexbox */
+    justify-content: center; /* centers the "button" a tag link horizontally in the container(see .project-button style for the element i'm typing about right now directly below */
+    align-items: center; /* centering the button vertically */
+}
+
+/* class on the Projects a tags (2) */
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #006171;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-button:hover {
+    background-color: #E0004E;
+    color: white;
+}
+
+.project-button:active {
+    background-color: #E7769D;
+    color: white;
 }
 
 #about p {
@@ -432,21 +461,21 @@ a:active {
     }
 
     h1 {
-        font-size: 65px !important;
+        font-size: 75px !important;
         margin-top: 5px !important;
     }
 
     h2 {
-        font-size: 35px !important;
+        font-size: 42px !important;
     }
 
     h3 {
-        font-size: 25px !important;
+        font-size: 32px !important;
     }
 
     body,
     nav a {
-        font-size: 20px !important;
+        font-size: 23px !important;
     }
 
     #facts h1, h2 {
@@ -529,7 +558,7 @@ a:active {
     /* although there is specific styling for the blog, there shouldn't be a conflict with this styling for it with this document, since H1 is not mentioning in the 690 media query in the blog.css file, which has priority over this styles.css stylesheet */
 
     h1, .name { /* might be overkill to double down on it, but adding the class to for sure make this styling is affecting the correct area - won't rename just to keep what it was "h1" in the list of styling for this media query (makes sense in the sequence of styling for headers 1-3 in the query) */
-        font-size: 53px !important;
+        font-size: 70px !important;
         white-space: nowrap;
         padding: 0px 5px;
         text-align: center !important;
@@ -562,15 +591,15 @@ a:active {
     }
 
     h2 {
-        font-size: 33px !important;
+        font-size: 39px !important;
     }
 
     h3 {
-        font-size: 23px !important;
+        font-size: 29px !important;
     }
 
     body, nav a {
-        font-size: 19px !important;
+        font-size: 21px !important;
     }
 
     #footer .footer-sign-off, #footer a {
@@ -600,19 +629,19 @@ a:active {
     }
 
     h1 {
-        font-size: 48px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
+        font-size: 65px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
     }
 
     h2 {
-        font-size: 29px !important;
+        font-size: 36px !important;
     }
 
     h3 {
-        font-size: 21px !important;
+        font-size: 26px !important;
     }
 
     body, nav a {
-        font-size: 18px !important;
+        font-size: 19px !important;
     }
 
     #footer .footer-sign-off, #footer a {

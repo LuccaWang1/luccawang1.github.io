@@ -1,0 +1,22 @@
+/* Styling specific for the built webpage */
+
+/* 
+colors:
+---white: #FFFFFF (background, font color on nav, main/primary light color)
+--light pink: #ecc6d3 (secondary light color, used for nav hover, and links active)
+
+--blush: #E7769D (mid-value zone for color palette, nav links active, and 
+
+--dark blue-green: #006171; (main/primary dark color: background of nav, font color, links color)
+--cherry red: #E0004E (secondary dark color)
+ */
+
+h2 {
+    white-space: normal; /* get the text to wrap */
+    overflow: visible;
+    display: block;
+    width: auto;
+    max-width: 100%; /* stay in the container */
+    word-break: break-word;
+    hyphens: auto;
+}

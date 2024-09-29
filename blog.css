@@ -12,40 +12,18 @@ colors:
  */
 
 .blog-post { 
-    background-color: #ecc6d3;
     z-index: -2;
     color: #006171;
-    padding-top: 10px;
-    margin-bottom: 70px;
-    border-radius: 5px ; /* rounded corners of sticky note blog post */
-    border: 2px solid #e7769d;
+    background-color: hsla(340, 45%, 85%, 0.3); /* hue, saturation, lightness, alpha https://www.w3schools.com/cssref/pr_background-color.php */
+    margin-bottom: 50px;
+    padding: 10px; /* creates space inside el, corresponds to property directly below */
+    box-shadow: 0 0 0 10px hsla(340, 45%, 85%, 0.3); /* simulating border w/ same color & transparency */
+    border-radius: 5px;
 }
 
-.title-sticky {
-    position: relative; 
-    background-color: #E0004E;
-    padding: 5px 20px;
-    max-width: 400px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    display: inline-block;
-    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5); /* left side */
-    left: -50px;
-    border-radius: 5px; /* rounded corners of sticky note blog post title */
-}
-
-.blog-content {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-}
-
-h3 {
-    color: white; /* overrides the normal red+animation in styles.css - almost mimicks a thin sticky note at the top for the blog post's title */
-}
-
-p {
-    margin-bottom: 10px;
+p, img {
+    margin-bottom: 25px;
+    margin-top: 0px;
 }
 
 #blog-section ul li {
@@ -55,6 +33,11 @@ p {
 
 .blog-post a:active {
     color: white;
+}
+
+.anchor-links-to-blog-posts {
+    margin: 0px 0px 25px 0px;
+    text-align: center !important;
 }
 
 @media screen and (max-width: 900px) {

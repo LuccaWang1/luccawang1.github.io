@@ -124,21 +124,56 @@
                     Blog
                 </h2>
 
-                <p style="text-align: center">
+                <div class="anchor-links-to-blog-posts">
                     Jump: <a href="#cooking-blogs">Cooking Blogs in the Wild</a> | 
                     
                     <a href="#genai-in-enterprise">Gen AI in Enterprise</a>
-                </p>
+                </div>
 
-                <div class="blog-post" id="cooking-blogs">
-                    <div class="title-sticky">
+                <!-- 9/27 Styling Difference Between Email Dev. & Software Engineering -->
+                <div class="blog-post" id="inline-v-css">
+                    <div>
                         <h3 class="roboto-regular">
-                            9/16/2024 🍲<br>
-                            Cooking Blogs in the Wild
+                            9/27/2024 Insight: Types of Styling, and Why Engineers Primarily Use CSS
                         </h3>
-                    </div>
 
-                    <div class="blog-content">
+                        <h4>
+                            Speaking on my transition from email dev. to SWE 
+                        </h4>
+
+                        <p>
+                            Before my transition to Software Engineering last year, I was an email developer, using Hypertext Markup Language (<span class="roboto-bold">HTML</span>) to write, draft, edit, and code nonprofit, and political fundraising emails for clients across the nation. (Being an email developer was part of my job, which was centered on communications and digital media.) Technologies: I used Notepad++, HTML, AWS S3, an SQL database and email client ActionKit, and also #MailChimp, and before that, ConstantContact. The <span class="roboto-bold">inline styling</span> is not the templates used for the emails - but rather the inline styling was used for the body of the emails.
+                        </p>
+
+                        <p>
+                            What does this mean? Well, I coded the emails mostly with inline styling, as opposed to what I use now as an engineer: I now mostly use <span class="roboto-bold">CSS</span> (95% of the time). 
+                        </p> 
+                            
+                        <p>
+                            Why is that? It's because the emails were one-off (even if we might send 4 emails for one client in 1 day). By doing inline styling, you're able to customize each email according to the design and style, which reflects the content and needs/purpose of sending the (individual) email. 
+                        </p>
+
+                        <p>
+                            Why is this different from API, application, websites, etc.? (AKA: Why do I use CSS 95% of the time - as opposed to inline HTML styling - in my projects now as a software engineer?) It's different, because when you have a <span class="roboto-bold">whole project</span>, you want it to be <span class="roboto-bold">consistent</span> - in design style, writing style, coding style, and more. So, when you have a stylesheet that indicates how everything on your website should look, you have a centralized place of the styles, and it tells all the same elements on the website to do that same thing. (For instance, I have a certain size and color + CSS animation for my h2 headers on my portfolio website. Because of CSS' centralized stylesheet, all the h2 headers on my portfolio website are the same font size, the same color, and have the same animation on them. This way, the viewer/user of the website knows when they see it that that's a subheader, like the one they saw that looked like it before. This consistency increases readability and usability.)
+                        </p>
+
+                        <p>
+                            Learn more about me and my experience and skills on my website that I hand built at <a href="https://luccawang.dev">https://luccawang.dev</a>. 
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 9/16 Ads on Cooking Blogs in the Wild -->
+                <div class="blog-post" id="cooking-blogs">
+                    <div>
+                        <h3 class="roboto-regular">
+                            9/16/2024 Insight: 🍲 Cooking Blogs in the Wild
+                        </h3>
+
+                        <h4>
+                            How ads are weighing down your small business
+                        </h4>
+
                         <p>
                              My cooking hobby and developer skills collided in the wild the other Friday night when I was searching Google for a chicken cacciatore recipe... The chosen recipe's website was <span class="roboto-bold">so slowed by ads and bugs</span>, it was <span class="roboto-bold">unable to load.</span>
                         </p>
@@ -157,36 +192,35 @@
 
                 <!-- 9/12/24 Generative AI in Enterprise -->
                 <div class="blog-post" id="genai-in-enterprise">
-                    <div class="title-sticky">
-                        <h3 class="roboto-regular">
-                            9/12/2024 <br>
-                            Generative AI in Enterprise
-                        </h3>
-                    </div>
+                    <h3 class="roboto-regular">
+                        9/12/2024 Learning: Generative AI in Enterprise
+                    </h3>
 
-                    <div class="blog-content">
-                        <p>
-                            I'm digging into <span class="roboto-bold">Generative AI</span> by listening to O'Reilly's "Generative AI in the Real World" <a target="_blank" href="https://learning.oreilly.com/videos/generative-ai-in/0642572068790/">podcast</a> by Ben Lorica - today, with Tim Persons of Pricewaterhouse&shy;Coopers (PwC).
-                        </p>
+                    <h4>
+                        The Future PwC's Tim Persons Sees w/ GenAI
+                    </h4>
 
-                        <ul>Some of the <span class="roboto-bold">takeaways</span>: 
-                            <li>
-                                Budgets are increasing for Generative AI.
-                            </li>
+                    <p>
+                        I'm digging into <span class="roboto-bold">Generative AI</span> by listening to O'Reilly's "Generative AI in the Real World" <a target="_blank" href="https://learning.oreilly.com/videos/generative-ai-in/0642572068790/">podcast</a> by Ben Lorica - today, with Tim Persons of Pricewaterhouse&shy;Coopers (PwC).
+                    </p>
 
-                            <li>
-                                Teams should aim for a high failure rates to push themselves quickly enough.
-                            </li>
+                    <ul>Some of the <span class="roboto-bold">takeaways</span>: 
+                        <li>
+                            Budgets are increasing for Generative AI.
+                        </li>
 
-                            <li>
-                                Because of technology advance&shy;ment, we can infor&shy;mation share and really learn a lot, which levels the playing field for positions that might have been formerly reserved for PhDs from top schools specializ&shy;ing in certain subjects.
-                            </li>
-                        </ul>
+                        <li>
+                            Teams should aim for a high failure rates to push themselves quickly enough.
+                        </li>
 
-                        <p>
-                            <span class="roboto-bold">Listen</span> for yourself on <a target="_blank" href="https://learning.oreilly.com/videos/generative-ai-in/0642572068790/">O'Reilly's Learning Platform</a>.
-                        </p>
-                    </div>
+                        <li>
+                            Because of technology advance&shy;ment, we can infor&shy;mation share and really learn a lot, which levels the playing field for positions that might have been formerly reserved for PhDs from top schools specializ&shy;ing in certain subjects.
+                        </li>
+                    </ul>
+
+                    <p>
+                        <span class="roboto-bold">Listen</span> for yourself on <a target="_blank" href="https://learning.oreilly.com/videos/generative-ai-in/0642572068790/">O'Reilly's Learning Platform</a>.
+                    </p>
                 </div>
             </section>
         </div>

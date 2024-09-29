@@ -219,9 +219,9 @@ html, body {
     transition: 3ms;
 }
 
-section {
+/* section {
     margin: 10px 0;
-}
+} */
 
 /* applies to anything in the body main */
 .body {
@@ -232,6 +232,10 @@ section {
 /* headers */
 h1, h2, #welcome h3 {
     text-align: center;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 25px !important;
 }
 
 h1 {
@@ -246,7 +250,7 @@ h2 {
     animation-iteration-count: infinite; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
     font-size: 45px;
-    margin: 30px 0 10px 0;
+    margin: 0px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -263,6 +267,23 @@ h3 {
     text-align: left;
     font-size: 35px;
     color: #006171;
+}
+
+h4 {
+    animation-name: change-me-animation-1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; /* repeat the animation */
+    animation-timing-function: linear; /* smooth transition */
+    text-align: left;
+    font-size: 30px;
+    color: #006171;
+}
+
+/* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
+@keyframes change-me-animation-1 {
+    0% {color: #006171;} /* initial color */
+    50% {color: #E0004E;} /* transition to new color */
+    100% {color: #006171} /* transition back to initial color */
 }
 
 #location {

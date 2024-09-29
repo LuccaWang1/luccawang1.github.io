@@ -739,10 +739,21 @@ a:active {
         font-size: 13px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
-    #footer .centered-icons, #footer p {
+    #footer p {
         margin-bottom: 17px !important;
+    }
+
+    #footer .centered-icons, #footer p {
         margin-top: 0px !important;
         padding: 0px !important;
+    }
+
+    #index #footer .centered-icons {
+        margin-top: 50px;
+    }
+
+    #built #footer .centered-icons {
+        margin-top: 35px; /* equally around 60px same as blog & index */
     }
 }
 

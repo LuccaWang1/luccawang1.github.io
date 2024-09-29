@@ -95,7 +95,7 @@
                         Putting the anchor here fulfills how I want it to function: How I want it to function is that when a user clicks on "About" in the navbar, they will see the "About" header/h2 in the center top of their screen/viewport. 
                         
                         2) Although in the code, the navbar is the section above About (instead of this Welcome section here), the navbar cannot fulfill how I want it to function detailed in 1 above, since the navbar is sticky. This means that if the user is at a point further down on the page, then when the About hyperlink is clicked, the behavior will be to keep the viewport where it is, since the anchor is just going basically, to itself. So the anchor needs to be in the section above the navbar -- the anchor needs to be in a fixed section, not one that could be at any point of the webpage at any given time and reference itself and thus not move to the actual section. (The anchor is purposefully above where it would actually start for that viewport positioning, but this is a note for inside the code about WHY it's in the Welcome section, above the navbar section, above the About section. :) ) -->
-                        <img src="/assets/img/location/icons8-map-point-40.png" style="margin-left: 0; max-height: 20px; display:inline-block;" alt="Las Cruces, NM" title="Las Cruces, NM" id="about-anchor">Las Cruces, NM
+                        <img src="/assets/img/location/icons8-map-point-40.png" style="margin-left: 0; max-height: 20px; display:inline-block;" alt="Las Cruces, NM" title="Las Cruces, NM" id="about-anchor"> Las Cruces, NM
                     </div>
                 </div>
             </section>
@@ -185,7 +185,7 @@
             <section id="skills">
                 <h2>Skills / Technologies</h2>
 
-                <div class="container-sides-120px">
+                <div class="container-sides-120px skills-list-div-margin-bottom">
                     <h3 class="roboto-bold">Languages:</h3>
                     
                     <!-- the next few lists (<ul> tags) are pairings with the img on top and the text name of the technology below, then in the css i'm using flexbox and gap to add spacing between pairings in the list -->
@@ -352,7 +352,7 @@
                 
                 <div class="container-sides-120px">
                     <!-- pet planner web app -->
-                    <h3 class="projects-container">
+                    <h3 class="projects-container pet-planner">
                         PetPlanner
                         
                         <a href="https://github.com/LuccaWang1/PetPlanner?tab=readme-ov-file#readme" target="_blank">
@@ -389,13 +389,13 @@
                         </a>
                     </h3>
 
-                    <p>
+                    <p class="lets-eat-p-directly-above-img">
                         Full stack: Python, Flask, JavaScipt, CSS, HTML, Google Fonts API
                     </p>
 
                     <div>
                         <a href="https://github.com/LuccaWang1/Tell-Me-Where-To-Eat?tab=readme-ov-file#readme" target="_blank">
-                            <img src="/assets/img/projects/LetsEat-webapp.gif" class="projects" id="letseat" alt="Let's Eat © Lucca Wang 2024" title="README on GitHub">
+                            <img src="/assets/img/projects/LetsEat-webapp.gif" class="projects lets-eat-img" id="letseat" alt="Let's Eat © Lucca Wang 2024" title="README on GitHub">
                         </a>
                     </div>
                     

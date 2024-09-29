@@ -123,16 +123,16 @@ html, body {
     margin: 0px 0px !important;
 }
 
-#welcome div h2 {
-    margin: 0px 0px 10px 0px; /* top right bottom left */
-}
-
 #welcome #location {
     text-align: center;
 }
 
 #welcome h3 {
     margin: 0px;
+}
+
+#welcome img {
+    margin-bottom: 0px !important;
 }
 
 /* all text same margins nav and body */
@@ -148,7 +148,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 25px;
 }
 
 .icon-text-pair { 
@@ -286,10 +286,6 @@ h4 {
     100% {color: #006171} /* transition back to initial color */
 }
 
-#location {
-    margin-top: 10px;
-}
-
 /* this is the ordered list on the built page about how i created the website (starts in built.html on line 111). this margin-bottom 25px spacing is consistent with the spacing elsewhere on the site, including the homepage's About paragraphs (index.html line 135) and Facts bullet points. (index.html line 155). The third combinator is from built.html line 124 for the space between the only paragraphs on the page about the stack and technologies. */
 #facts ul li,
 #built ol li,
@@ -319,16 +315,30 @@ img {
     z-index: 0; /* weight of 0 default to go behind the navbar when user is scrolling */
 }
 
+.projects-container {
+    display: flex !important;
+    align-items: baseline !important; 
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.projects-container h3 {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 10px;
+    line-height: 1.2 !important;
+}
+
 .projects-container a {
-    margin-left: 10px;
+    display: inline-flex !important; /* a tags inline w/ icon imgs */
+    align-items: baseline !important;
 }
 
 .projects-inline-icon {
     height: 30px !important;
     width: auto !important;
-    vertical-align: bottom;
-    margin-bottom: 5px;
-    display: inline;
+    vertical-align: baseline !important;
+    margin-right: 5px; /* space between icon and text */
 }
 
 /* icons centered at top of website */
@@ -412,6 +422,27 @@ a:active {
     color: #E7769D;
 }
 
+#projects h2 {
+    margin: 25px auto 0px auto !important; /* top right bottom left */
+}
+
+#projects h3, p, img, .skills-list-div-margin-bottom {
+    margin-bottom: 25px;
+}
+
+/* except for this in the projects section because it already looks like it's a lot of space */
+#projects .lets-eat-img, .lets-eat-p-directly-above-img {
+    margin-bottom: 0px !important;
+}
+
+#projects .pet-planner h3 {
+    margin-bottom: 0px !important;
+}
+
+#projects h3 {
+    margin-bottom: 0px !important;
+}
+
 /* buttons that are a tags in the Projects section - did this to create a button, didn't use "button" tag */
 .project-button-container {
     display: flex; /* turns container into flexbox */
@@ -465,6 +496,10 @@ a:active {
     list-style-type: none; /* no style set for list bullets, so they won't show up at all */
 }
 
+#skills h2 {
+    margin-bottom: 10px !important;
+}
+
 #skills h3 {
     margin-bottom: 5px;
 }
@@ -509,11 +544,11 @@ a:active {
         padding-bottom: 0px;
     }
 
-    #projects h1, h2 {
+    /* #projects h2, h3 {
         margin-bottom: 15px;
         margin-top: 0px;
         padding: 0;
-    }
+    } */
 
     #location {
         margin: 22px 0px 34px 0px; /* top right bottom left */
@@ -546,10 +581,6 @@ a:active {
     /* all text same margins nav and body */
     .container-sides-120px {
         padding: 0 40px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
-    }
-
-    #skills h3 {
-        margin-bottom: 10px;
     }
 
     /* Projects Learn More buttons */

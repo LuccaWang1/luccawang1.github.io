@@ -748,12 +748,12 @@ a:active {
         padding: 0px !important;
     }
 
-    #index #footer .centered-icons {
-        margin-top: 50px !important;
-    }
-
     #built #footer .centered-icons {
         margin-top: 35px; /* equally around 60px same as blog & index */
+    }
+
+    #index .body {
+        margin-bottom: 50px !important;
     }
 }
 

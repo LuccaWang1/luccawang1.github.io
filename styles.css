@@ -535,8 +535,9 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
         text-decoration: none;
     }
 
-    .navbar {
-        padding: 10px 0px !important;
+    .navbar .container-sides-120px {
+        padding: 10px 0 !important;
+        margin: 20px auto !important;
     }
 
     h1 {
@@ -674,11 +675,12 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
     }
 
     #location {
-        margin: 15px 0px 15px 0px; /* top right bottom left */
+        margin: 15px 0px 5px 0px; /* top right bottom left */
     }
 
-    .navbar {
-        margin: 15px 0;
+    .navbar .container-sides-120px {
+        padding: 10px 0 !important;
+        margin: 15px auto !important;
     }
 
     body, nav a {
@@ -739,7 +741,7 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
     }
 
     h4 {
-        font-size: 29px;
+        font-size: 29px !important;
     }
 
     /* all text same margins nav and body */
@@ -821,7 +823,7 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
     }
 
     h4 {
-        font-size: 27px;
+        font-size: 27px !important;
         white-space: normal;
         word-wrap: break-word; /* breaks at word break if necessary */
     }
@@ -835,17 +837,27 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
         margin: 10px 0px 10px 0px; /* top right bottom left */
     }
 
-    .navbar {
-        margin: 10px 0;
+    .navbar .container-sides-120px {
+        padding: 10px 0 !important;
+        margin: 10px auto !important;
     }
 
     body, nav a {
         font-size: 19px !important;
     }
 
+    #blog nav a {
+        font-size: 18px !important;
+    }
+
     body {
         white-space: normal;
         word-wrap: break-word; /* breaks at word break if necessary */
+    }
+
+    /* lists in the skills section (section element with id "skills") */
+    #skills ul {
+        gap: 20px;
     }
 
     /* Projects Learn More buttons */

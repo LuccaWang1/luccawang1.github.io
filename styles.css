@@ -37,12 +37,8 @@ html, body {
     background-color: white;
     margin: 0;
     color: #006171;
-    font-size: 25px; /* So 25px is the default for text in the body of the webpages, but see .footer-sign-off directly below */
-}
-
-#footer .footer-sign-off, #footer a {
-    font-size: 16px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
-    text-align: center;
+    font-size: 25px; /* So 25px is the default for text in the body of the webpages, but see .footer-sign-off below */
+    
 }
 
 /* Font styles for Roboto */
@@ -133,7 +129,7 @@ html, body {
 
 /* all text same margins nav and body */
 .container-sides-120px {
-    padding: 0 120px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right - pertains to everything it's applied to except for the responsiveness on the H1 name header on mobile under 690px wide for at the bottom of the sheet for that styling */
+    padding: 0 120px; /* first value: 0px top & bottom, 120px padding on the left and right */
 }
 
 /* lists in the skills section (section element with id "skills") */
@@ -238,6 +234,8 @@ h1 {
 
 h2, h3, h4 {
     margin-bottom: 25px !important;
+    white-space: normal; /* default */
+    word-wrap: break-word; /* long words break when necessary */
 }
 
 h2 {
@@ -288,6 +286,18 @@ h4 {
 #built ol li p,
 #built p {
     margin-bottom: 25px;
+}
+
+footer #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer .footer-sign-off, #footer a {
+    font-size: 19px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+    text-align: center;
 }
 
 #footer .centered-icons, #footer p {
@@ -505,6 +515,19 @@ a:active {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* for media screen / media queries: 
+                H1, h2, h3, h4, body/nav, footer
+Regular:        80, 55, 40, 35, 25, 19
+                -8, -6, -2, -2, -2, -1 
+
+Media query 800: 72, 49, 38, 33, 23, 18
+                 -7, -5, -2, -2, -2, -1 
+Media query 690: 65, 44, 36, 31, 21, 17
+                 -6, -4, -2, -2, -1, -1 
+Media query 500: 59, 40, 34, 29, 20, 16
+                 -5, -3, -2, -2, -1, -1 
+Media query 375: 54, 37, 32, 27, 19, 15 */
+
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
     .centered-icons a {
@@ -517,16 +540,12 @@ a:active {
     }
 
     h1 {
-        font-size: 75px !important;
+        font-size: 72px !important;
         margin-top: 5px !important;
     }
 
-    .h1-container {
-        max-width: 100vw;
-    }
-
     h2 {
-        font-size: 52px !important;
+        font-size: 49px !important;
     }
 
     #facts h2 {
@@ -547,7 +566,7 @@ a:active {
         font-size: 33px !important;
     }
 
-    body, nav a {
+    body, nav a { /* body includes location that's in the body > welcome section of index.html only */
         font-size: 23px !important;
     }
 
@@ -577,7 +596,7 @@ a:active {
     }
 
     #footer .footer-sign-off, #footer a {
-        font-size: 15px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 18px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
     #footer .centered-icons, #footer p {
@@ -621,7 +640,7 @@ a:active {
     /* although there is specific styling for the blog, there shouldn't be a conflict with this styling for it with this document, since H1 is not mentioning in the 690 media query in the blog.css file, which has priority over this styles.css stylesheet */
 
     h1, .name { /* might be overkill to double down on it, but adding the class to for sure make this styling is affecting the correct area - won't rename just to keep what it was "h1" in the list of styling for this media query (makes sense in the sequence of styling for headers 1-3 in the query) */
-        font-size: 70px !important;
+        font-size: 65px !important;
         white-space: nowrap;
         padding: 0px 5px;
         text-align: center !important;
@@ -633,12 +652,10 @@ a:active {
         text-align: center;
         margin: 0;
         padding: 0;
-        max-width: 100vw; /* to force the h1 into just the container width on various screen sizes */
     }
 
     h2 {
-        font-size: 49px !important;
-        white-space: nowrap;
+        font-size: 44px !important;
         padding: 0px 5px;
         text-align: center !important;
     }
@@ -674,7 +691,7 @@ a:active {
     }
 
     #footer .footer-sign-off, #footer a {
-        font-size: 14px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 17px; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
     #footer .centered-icons, #footer p {
@@ -700,7 +717,7 @@ a:active {
     }
 
     h1, .name {
-        font-size: 65px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
+        font-size: 59px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
     }
 
     /* container for the h1 on templates */
@@ -709,12 +726,10 @@ a:active {
         text-align: center;
         margin: 0;
         padding: 0;
-        max-width: 100vw; /* to force the h1 into just the container width on various screen sizes */
     }
 
     h2 {
-        font-size: 46px !important;
-        white-space: nowrap;
+        font-size: 40px !important;
         padding: 0px 5px;
         text-align: center !important;
     }
@@ -733,7 +748,7 @@ a:active {
     }
 
     body, nav a {
-        font-size: 19px !important;
+        font-size: 20px !important;
     }
 
     /* Projects Learn More buttons */
@@ -742,7 +757,7 @@ a:active {
     }
 
     #footer .footer-sign-off, #footer a {
-        font-size: 13px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 16px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
     #footer p {
@@ -779,7 +794,7 @@ a:active {
     }
 
     h1, .name {
-        font-size: 60px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
+        font-size: 54px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
         text-align: center;
     }
 
@@ -789,22 +804,26 @@ a:active {
         text-align: center;
         margin: 0;
         padding: 0;
-        max-width: 100vw; /* to force the h1 into just the container width on various screen sizes */
     }
 
     h2 {
-        font-size: 43px !important;
-        white-space: nowrap;
+        font-size: 37px !important;
         padding: 0px 5px;
         text-align: center !important;
+        white-space: normal;
+        word-wrap: break-word; /* breaks at word break if necessary */
     }
 
     h3 {
         font-size: 32px !important;
+        white-space: normal;
+        word-wrap: break-word; /* breaks at word break if necessary */
     }
 
     h4 {
         font-size: 27px;
+        white-space: normal;
+        word-wrap: break-word; /* breaks at word break if necessary */
     }
 
     /* all text same margins nav and body */
@@ -821,12 +840,12 @@ a:active {
     }
 
     body, nav a {
-        font-size: 17px !important;
+        font-size: 19px !important;
     }
 
-    /* customized h2 for the skills / technologies header, so it fits on one line on a screen of this size (smallest mobile screen for responsiveness) */
-    #skills h2 {
-        font-size: 31px !important;
+    body {
+        white-space: normal;
+        word-wrap: break-word; /* breaks at word break if necessary */
     }
 
     /* Projects Learn More buttons */
@@ -834,8 +853,13 @@ a:active {
         padding: 4px 14px;
     }
 
+    #footer { 
+        white-space: normal;
+        word-wrap: break-word; /* breaks at word break if necessary */
+    }
+
     #footer .footer-sign-off, #footer a {
-        font-size: 12px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
+        font-size: 15px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
     #footer .centered-icons, #footer p {

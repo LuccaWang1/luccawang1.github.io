@@ -119,10 +119,6 @@ html, body {
     font-style: italic;
 }
 
-#welcome h1 {
-    margin: 0px 0px !important;
-}
-
 #welcome #location {
     text-align: center;
 }
@@ -231,17 +227,17 @@ html, body {
 
 /* headers */
 h1, h2, #welcome h3 {
-    text-align: center;
-}
-
-h1, h2, h3, h4 {
-    margin-bottom: 25px !important;
+    text-align: center !important;
 }
 
 h1 {
     font-size: 80px !important;
-    margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    margin: 12px auto 10px auto; /* top right bottom left */
+}
+
+h2, h3, h4 {
+    margin-bottom: 25px !important;
 }
 
 h2 {
@@ -516,13 +512,31 @@ a:active {
         text-decoration: none;
     }
 
+    .navbar {
+        padding: 10px 0px !important;
+    }
+
     h1 {
         font-size: 75px !important;
         margin-top: 5px !important;
     }
 
+    .h1-container {
+        max-width: 100vw;
+    }
+
     h2 {
         font-size: 52px !important;
+    }
+
+    #facts h2 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #skills h2 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 
     h3 {
@@ -533,46 +547,22 @@ a:active {
         font-size: 33px !important;
     }
 
-    body,
-    nav a {
+    body, nav a {
         font-size: 23px !important;
-    }
-
-    #facts h1, h2 {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-
-    #skills h1, h2 {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
     }
 
     #location {
         margin: 22px 0px 34px 0px; /* top right bottom left */
     }
 
-    .container .container-2 { /* apply this to both container in the same way */ 
+    .container { /* apply this to both container in the same way */ 
         max-width: 600px;
         margin: auto;
     }
 
-    .text-2 {
-        margin-right: 0; /* removes any extra margin that might have been added bc of pic (movement to being stack vertically, 20px now, but would have been 40px */
-    }
-
-    .image-container-3 {
-        max-width: 100%; /* portrait images cover entire width on smaller screens when stacked */
-        margin-bottom: 20px; /* same consistent size of space vertically between image and text when they are stacked on smaller screens */
-    }
-
     /* sticky nav */
-    .smaller-screens .container-sides-120px {
-        padding: 0; /* no added padding for smaller screens */
-    }
-
     /* icon links at the very top and the very bottom of the page */
-    .icon-links-smer-screens .container-sides-120px {
+    .smaller-screens, .icon-links-smer-screens {
         padding: 0; /* no added padding for smaller screens */
     }
 
@@ -608,17 +598,6 @@ a:active {
         margin-top: 20px; /* conserve more of the viewport at the very top of the website for all pages for more information on mobile */
     }
 
-    /* making sure the name h1 is centered and not wrapping on any mobile device to conserve vertical scrolling space and the first impression in the viewport */
-
-    /* although there is specific styling for the blog, there shouldn't be a conflict with this styling for it with this document, since H1 is not mentioning in the 690 media query in the blog.css file, which has priority over this styles.css stylesheet */
-
-    h1, .name { /* might be overkill to double down on it, but adding the class to for sure make this styling is affecting the correct area - won't rename just to keep what it was "h1" in the list of styling for this media query (makes sense in the sequence of styling for headers 1-3 in the query) */
-        font-size: 70px !important;
-        white-space: nowrap;
-        padding: 0px 5px;
-        text-align: center !important;
-    }
-
     /* hopefully the below lines of code ensure the containers can accomodate for the no wrapping of the h1 - containers specified below */
 
     /* for the built page */
@@ -637,12 +616,24 @@ a:active {
         padding: 0;
     }
 
-    /* for the home page */
-    #index .body #welcome .h1 {
+    /* making sure the name h1 is centered and not wrapping on any mobile device to conserve vertical scrolling space and the first impression in the viewport */
+
+    /* although there is specific styling for the blog, there shouldn't be a conflict with this styling for it with this document, since H1 is not mentioning in the 690 media query in the blog.css file, which has priority over this styles.css stylesheet */
+
+    h1, .name { /* might be overkill to double down on it, but adding the class to for sure make this styling is affecting the correct area - won't rename just to keep what it was "h1" in the list of styling for this media query (makes sense in the sequence of styling for headers 1-3 in the query) */
+        font-size: 70px !important;
+        white-space: nowrap;
+        padding: 0px 5px;
+        text-align: center !important;
+    }
+
+    /* container for the h1 on templates */
+    .h1-container {
         align-items: center;
         text-align: center;
         margin: 0;
         padding: 0;
+        max-width: 100vw; /* to force the h1 into just the container width on various screen sizes */
     }
 
     h2 {
@@ -710,6 +701,15 @@ a:active {
 
     h1, .name {
         font-size: 65px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
+    }
+
+    /* container for the h1 on templates */
+    .h1-container {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        max-width: 100vw; /* to force the h1 into just the container width on various screen sizes */
     }
 
     h2 {
@@ -781,6 +781,15 @@ a:active {
     h1, .name {
         font-size: 60px !important; /* i want my name at the top of the pages to be on the same line to conserve space at the top of the website in the viewport -- with this media screen on mobile */
         text-align: center;
+    }
+
+    /* container for the h1 on templates */
+    .h1-container {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        max-width: 100vw; /* to force the h1 into just the container width on various screen sizes */
     }
 
     h2 {

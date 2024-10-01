@@ -518,15 +518,15 @@ a:active {
 /* for media screen / media queries: 
                 H1, h2, h3, h4, body/nav, footer
 Regular:        80, 55, 40, 35, 25, 19
-                -8, -6, -2, -2, -2, -1 
+                -8, -6, -4, -3, -2, -1 
 
-Media query 800: 72, 49, 38, 33, 23, 18
-                 -7, -5, -2, -2, -2, -1 
-Media query 690: 65, 44, 36, 31, 21, 17
-                 -6, -4, -2, -2, -1, -1 
-Media query 500: 59, 40, 34, 29, 20, 16
+Media query 800: 72, 49, 36, 32, 23, 18
+                 -7, -5, -4, -3, -2, -1 
+Media query 690: 65, 44, 32, 29, 21, 17
+                 -6, -4, -3, -2, -1, -1 
+Media query 500: 59, 40, 29, 27, 20, 16
                  -5, -3, -2, -2, -1, -1 
-Media query 375: 54, 37, 32, 27, 19, 15 */
+Media query 375: 54, 37, 27, 25, 19, 15 */
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
@@ -560,11 +560,11 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
     }
 
     h3 {
-        font-size: 38px !important;
+        font-size: 36px !important;
     }
 
     h4 {
-        font-size: 33px !important;
+        font-size: 32px !important;
     }
 
     body, nav a { /* body includes location that's in the body > welcome section of index.html only */
@@ -662,11 +662,11 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
     }
 
     h3 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     h4 { 
-        font-size: 31px;
+        font-size: 29px;
     }
 
     /* all text same margins nav and body */
@@ -737,11 +737,11 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
     }
 
     h3 {
-        font-size: 34px !important;
+        font-size: 29px !important;
     }
 
     h4 {
-        font-size: 29px !important;
+        font-size: 27px !important;
     }
 
     /* all text same margins nav and body */
@@ -817,13 +817,13 @@ Media query 375: 54, 37, 32, 27, 19, 15 */
     }
 
     h3 {
-        font-size: 32px !important;
+        font-size: 27px !important;
         white-space: normal;
         word-wrap: break-word; /* breaks at word break if necessary */
     }
 
     h4 {
-        font-size: 27px !important;
+        font-size: 25px !important;
         white-space: normal;
         word-wrap: break-word; /* breaks at word break if necessary */
     }

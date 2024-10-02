@@ -136,7 +136,7 @@ html, body {
 #skills ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0px auto 25px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -158,7 +158,7 @@ html, body {
 }
 
 .icon-text { 
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 /* navbar */
@@ -428,17 +428,8 @@ a:active {
     color: #E7769D;
 }
 
-#projects h2 {
-    margin: 25px auto 0px auto !important; /* top right bottom left */
-}
-
 #projects h3, p, img, .skills-list-div-margin-bottom {
     margin-bottom: 25px;
-}
-
-/* except for this exception - the img icons of the skills logos (we want no bo */
-.skills-list-div-margin-bottom img {
-
 }
 
 /* except for this in the projects section because it already looks like it's a lot of space */
@@ -508,7 +499,7 @@ a:active {
 }
 
 #skills h2 {
-    margin-bottom: 5px !important; /* overrides the 25px in general styles "h2, h3, h4" around line 235 */
+    margin-bottom: 10px !important; /* overrides the 25px in general styles "h2, h3, h4" around line 235 */
 }
 
 #skills img {
@@ -544,6 +535,10 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
+    #index .body {
+        margin-bottom: 50px !important;
+    }
+    
     .centered-icons a {
         padding: 5px 10px; /* common padding for all links */
         text-decoration: none;
@@ -788,10 +783,6 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     #built #footer .centered-icons {
         margin-top: 35px; /* equally around 60px same as blog & index */
     }
-
-    #index .body {
-        margin-bottom: 50px !important;
-    }
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
@@ -799,9 +790,18 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     .float-image {
         float: none; /* override float */
         display: block; /* ensure treatment like a block element */
-        margin: 10px auto !important; /* centers img horizontally */
+        margin: 10px auto 25px auto !important; /* centers img horizontally, 10/1/24 added 25px to bottom to make it consistent w/ rest of margin-bottom's at 375px mobile screens */
         width: 75%; /* adjust the img size */
         height: auto !important; /* maintain aspect ratio */
+    }
+
+    #skills .container-sides-120px ul, h2, h3, h4 {
+        margin: 25px auto 25px auto !important; /* top right bottom left */
+    }
+
+    /* around line 141 in index.html, for the img portrait so that there is an equal amount of space under the photograph in the About section as the margin-bottom's on the rest of the page -- for mobile screens 375px */
+    .container a img {
+        margin-bottom: 25px !important;
     }
     
     .centered-icons a {

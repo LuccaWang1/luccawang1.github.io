@@ -520,6 +520,10 @@ a:active {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+audio {
+    width: 100%;
+}
+
 /* for media screen / media queries: 
                 H1, h2, h3, h4, body/nav, footer
 Regular:        80, 55, 40, 35, 25, 19

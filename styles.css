@@ -446,14 +446,14 @@ a:active {
 }
 
 /* buttons that are a tags in the Projects section - did this to create a button, didn't use "button" tag */
-.project-button-container {
+.green-button-container {
     display: flex; /* turns container into flexbox */
-    justify-content: center; /* centers the "button" a tag link horizontally in the container(see .project-button style for the element i'm typing about right now directly below */
+    justify-content: center; /* centers the "button" a tag link horizontally in the container(see .green-button style for the element i'm typing about right now directly below */
     align-items: center; /* centering the button vertically */
 }
 
 /* class on the Projects a tags (2) */
-.project-button {
+.green-button {
     display: inline-block;
     padding: 10px 20px;
     color: white;
@@ -463,12 +463,12 @@ a:active {
     border-radius: 5px;
 }
 
-.project-button:hover {
+.green-button:hover {
     background-color: #E0004E;
     color: white;
 }
 
-.project-button:active {
+.green-button:active {
     background-color: #E7769D;
     color: white;
 }
@@ -605,7 +605,7 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     }
 
     /* Projects Learn More buttons */
-    .project-button {
+    .green-button {
         padding: 8px 18px;
     }
 
@@ -701,7 +701,7 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     }
 
     /* Projects Learn More buttons */
-    .project-button {
+    .green-button {
         padding: 6px 16px;
     }
 
@@ -767,7 +767,7 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     }
 
     /* Projects Learn More buttons */
-    .project-button {
+    .green-button {
         padding: 5px 15px;
     }
 
@@ -879,7 +879,7 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     }
 
     /* Projects Learn More buttons */
-    .project-button {
+    .green-button {
         padding: 4px 14px;
     }
 

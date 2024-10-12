@@ -16,7 +16,7 @@ colors:
     color: #006171;
     background-color: hsla(340, 45%, 85%, 0.3); /* hue, saturation, lightness, alpha https://www.w3schools.com/cssref/pr_background-color.php */
     margin-bottom: 50px;
-    padding: 10px; /* creates space inside el, corresponds to property directly below */
+    padding: 10px 25px 25px 25px; /* creates space inside el, corresponds to property directly below */
     box-shadow: 0 0 0 10px hsla(340, 45%, 85%, 0.3); /* simulating border w/ same color & transparency */
     border-radius: 5px;
 }
@@ -38,16 +38,4 @@ p, img {
 .anchor-links-to-blog-posts {
     margin: 0px 0px 25px 0px;
     text-align: center !important;
-}
-
-@media screen and (max-width: 900px) {
-    .title-sticky {
-        left: -30px;
-    }
-}
-
-@media screen and (max-width: 321px) {
-    .title-sticky {
-        left: -20px;
-    }
 }

@@ -7,12 +7,13 @@ Used these tool to determine website design color palette:
 2)Contrast ratio tool by Lea Verou: https://www.siegemedia.com/contrast-ratio#%23a85d77-on-white
 
 ---white: #FFFFFF (background, font color on nav, main/primary light color)
---light pink: #ecc6d3 (secondary light color, used for nav hover, and links active)
+--light-pink: #ecc6d3 (secondary light color, used for nav hover, and links active)
+--light-blue: #DAFAFF
 
 --blush: #E7769D (mid-value zone for color palette, nav links active, and 
 
---dark blue-green: #006171; (main/primary dark color: background of nav, font color, links color)
---cherry red: #E0004E (secondary dark color)
+--blue-teal: #006171; (main/primary dark color: background of nav, font color, links color)
+--cherry-red: #E0004E (secondary dark color)
  */
 
 /* all font as Roboto */
@@ -20,6 +21,12 @@ Used these tool to determine website design color palette:
     --roboto: "Roboto", sans-serif;
     --font-weight: 400;
     --font-style: normal;
+    --white: #FFFFFF;
+    --light-pink: #ecc6d3;
+    --light-blue: #DAFAFF;
+    --blush: #E7769D;
+    --cherry-red: #E0004E;
+    --blue-teal: #006171;
 }
 
 /* styling applies to ALL elements */
@@ -34,9 +41,9 @@ Used these tool to determine website design color palette:
 
 /* body */
 html, body {
-    background-color: white;
+    background-color: var(--white);
     margin: 0;
-    color: #006171;
+    color: var(--blue-teal);
     font-size: 25px; /* So 25px is the default for text in the body of the webpages, but see .footer-sign-off below */
     
 }
@@ -174,14 +181,14 @@ html, body {
     animation-duration: 2s;
     animation-iteration-count: 2; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
-    background-color: #006171;
+    background-color: var(--blue-teal);
 }
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
 @keyframes change-me-animation-3 {
-    0% {background-color: #006171;} /* initial color */
-    50% {background-color: #E0004E;} /* transition to new color */
-    100% {background-color: #006171} /* transition back to initial color */
+    0% {background-color: var(--blue-teal);} /* initial color */
+    50% {background-color: var(--cherry-red);} /* transition to new color */
+    100% {background-color: var(--blue-teal)} /* transition back to initial color */
 }
 
 .navbar ul {
@@ -197,17 +204,17 @@ html, body {
 }
 
 .navbar li a {
-    color: white; /* color of text */
+    color: var(--white); /* color of text */
     text-decoration: none; /* takes off the underline */
     padding: 5px 20px; /* common padding for all links */
 }
 
 .navbar a:hover {
-    color: #ecc6d3; /* UX hover user receptive */
+    color: var(--light-pink); /* UX hover user receptive */
 }
 
 .navbar a:active {
-    color: #E7769D; /* UX user receptive when user clicks link */
+    color: var(--blush); /* UX user receptive when user clicks link */
     transition: 3ms;
 }
 
@@ -252,15 +259,15 @@ h2 {
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
 @keyframes change-me-animation-1 {
-    0% {color: #006171;} /* initial color */
-    50% {color: #E0004E;} /* transition to new color */
-    100% {color: #006171} /* transition back to initial color */
+    0% {color: var(--blue-teal);} /* initial color */
+    50% {color: var(--cherry-red);} /* transition to new color */
+    100% {color: var(--blue-teal)} /* transition back to initial color */
 }
 
 h3 {
     text-align: left;
     font-size: 40px;
-    color: #006171;
+    color: var(--blue-teal);
 }
 
 h4 {
@@ -270,14 +277,14 @@ h4 {
     animation-timing-function: linear; /* smooth transition */
     text-align: left;
     font-size: 35px;
-    color: #006171;
+    color: var(--blue-teal);
 }
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
 @keyframes change-me-animation-1 {
-    0% {color: #006171;} /* initial color */
-    50% {color: #E0004E;} /* transition to new color */
-    100% {color: #006171} /* transition back to initial color */
+    0% {color: var(--blue-teal);} /* initial color */
+    50% {color: var(--cherry-red);} /* transition to new color */
+    100% {color: var(--blue-teal)} /* transition back to initial color */
 }
 
 /* this is the ordered list on the built page about how i created the website (starts in built.html on line 111). this margin-bottom 25px spacing is consistent with the spacing elsewhere on the site, including the homepage's About paragraphs (index.html line 135) and Facts bullet points. (index.html line 155). The third combinator is from built.html line 124 for the space between the only paragraphs on the page about the stack and technologies. */
@@ -391,13 +398,13 @@ img {
     animation-iteration-count: infinite; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
     text-decoration: none; /* remove default underline */
-    border-bottom: 1px solid #DAFAFF; /* setting a default */
+    border-bottom: 1px solid var(--light-blue); /* setting a default */
 }
 
 @keyframes change-me-animation-2 {
-    0% {border-bottom-color: #DAFAFF;} /* initial color */
-    50% {border-bottom-color: #006171;} /* transition to new color */
-    100% {border-bottom-color: #DAFAFF} /* transition back to initial color */
+    0% {border-bottom-color: var(--light-blue);} /* initial color */
+    50% {border-bottom-color: var(--blue-teal);} /* transition to new color */
+    100% {border-bottom-color: var(--light-blue)} /* transition back to initial color */
 }
 
 /* About section: text and portrait */
@@ -417,15 +424,15 @@ img {
 
 /* links */
 a {
-    color:#006171;
+    color:var(--blue-teal);
 }
 
 a:hover {
-    color: #E0004E;
+    color: var(--cherry-red);
 }
 
 a:active {
-    color: #E7769D;
+    color: var(--blush);
 }
 
 #projects h3, p, img, .skills-list-div-margin-bottom {
@@ -456,21 +463,21 @@ a:active {
 .green-button {
     display: inline-block;
     padding: 10px 20px;
-    color: white;
-    background-color: #006171;
+    color: var(--white);
+    background-color: var(--blue-teal);
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .green-button:hover {
-    background-color: #E0004E;
-    color: white;
+    background-color: var(--cherry-red);
+    color: var(--white);
 }
 
 .green-button:active {
-    background-color: #E7769D;
-    color: white;
+    background-color: var(--blush);
+    color: var(--white);
 }
 
 #about p {

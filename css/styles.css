@@ -379,7 +379,7 @@ img {
 
 /* project images - so they are the same size */
 .projects {
-    width: 60vw;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -439,7 +439,7 @@ a:active {
     margin-bottom: 25px;
 }
 
-/* except for this in the projects section because it already looks like it's a lot of space */
+/* most everything has a margin-bottom of 25px in the app --- now except for this in the projects section because it already looks like it's a lot of space */
 #projects .lets-eat-img, .lets-eat-p-directly-above-img {
     margin-bottom: 0px !important;
 }

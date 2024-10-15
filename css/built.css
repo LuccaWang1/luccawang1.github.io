@@ -67,9 +67,7 @@ h2 {
 
 /* DIV FOR OL OF INDEX ITEMS */
 .built-index-columns {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /* allow full width to fill the container */
+    display: block;
 }
 
 .built-index-columns ol {
@@ -84,6 +82,12 @@ h2 {
 .built-index-columns li {
     margin-bottom: 10px;
     text-align: left;
+    break-inside: avoid; /* no breaking items across columns */
+    white-space: normal;
+}
+
+.built-index-columns li a {
+    white-space: wrap; /* prevents line breaks in list items */
 }
 
 /* for media screen / media queries: 

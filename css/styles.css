@@ -899,15 +899,12 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
         word-wrap: break-word; /* breaks at word break if necessary */
     }
 
-    #footer .footer-sign-off {
+    /* all container elements in the footer */
+    #footer .footer-sign-off, #footer .centered-icons {
         font-size: 15px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
-    #footer .centered-icons {
-        margin-bottom: 15px !important;
-    }
-
     #footer img, #footer a {
-        margin: 0px auto !important;
+        margin: 0px auto !important; /* making sure that if there is space veritcally between items, that that space is only between the container elements (around line 902 above) */
     }
 }

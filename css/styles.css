@@ -370,13 +370,6 @@ img {
     text-decoration: none;
 }
 
-.centered-icons a img {
-    margin-left: 0; 
-    max-height: 30px !important; 
-    display:inline-block; 
-    padding-bottom: 0;
-}
-
 /* project images - so they are the same size */
 .projects {
     width: 100%;
@@ -437,6 +430,14 @@ a:active {
 
 #projects h3, p, img, .skills-list-div-margin-bottom {
     margin-bottom: 25px;
+}
+
+/* except the centered-icons on the top and box - no margin bottom */
+.centered-icons a img {
+    max-height: 30px !important; 
+    display:inline-block; 
+    padding-bottom: 0;
+    margin: 0px !important;
 }
 
 /* most everything has a margin-bottom of 25px in the app --- now except for this in the projects section because it already looks like it's a lot of space */

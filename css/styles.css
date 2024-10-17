@@ -300,6 +300,7 @@ footer #footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px; /* regardless of page, it'll have this space between it/the footer and the body contents */
 }
 
 #footer .footer-sign-off, #footer a {
@@ -358,7 +359,6 @@ img {
 .centered-icons {
     text-align: center;
     align-items: flex-end !important;
-    margin-top: 45px;
 }
 
 #welcome .centered-icons {
@@ -789,10 +789,6 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     #footer .centered-icons, #footer p {
         margin-top: 0px !important;
         padding: 0px !important;
-    }
-
-    #built #footer .centered-icons {
-        margin-top: 35px; /* equally around 60px same as blog & index */
     }
 }
 

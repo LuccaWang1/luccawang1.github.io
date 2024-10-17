@@ -635,7 +635,7 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     }
 
     #welcome .centered-icons {
-        margin-top: 20px; /* conserve more of the viewport at the very top of the website for all pages for more information on mobile */
+        margin-top: 10px; /* conserve more of the viewport at the very top of the website for all pages for more information on mobile */
     }
 
     /* hopefully the below lines of code ensure the containers can accomodate for the no wrapping of the h1 - containers specified below */
@@ -806,6 +806,10 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
         height: auto !important; /* maintain aspect ratio */
     }
 
+    h1 {
+        margin: 0px !important;
+    }
+
     #skills .container-sides-120px ul, h2, h3, h4 {
         margin: 25px auto 25px auto !important; /* top right bottom left */
     }
@@ -895,13 +899,15 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
         word-wrap: break-word; /* breaks at word break if necessary */
     }
 
-    #footer .footer-sign-off, #footer a {
+    #footer .footer-sign-off {
         font-size: 15px !important; /* default non-headers are usually 25px - except for the sign off in the footer at the very bottom of the webpage */
     }
 
-    #footer .centered-icons, #footer p {
-        margin-bottom: 17px !important;
-        margin-top: 0px !important;
-        padding: 0px !important;
+    #footer .centered-icons {
+        margin-bottom: 15px !important;
+    }
+
+    #footer img, #footer a {
+        margin: 0px auto !important;
     }
 }

@@ -859,12 +859,16 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     }
 
     /* all text same margins nav and body */
-    .navbar ul, .container-sides-120px {
+    .container-sides-120px {
         padding: 0 10px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
     }
 
-    body, .navbar {
+    body, #index .navbar, #built .navbar {
         font-size: 19px !important;
+    }
+
+    #blog .navbar {
+        font-size: 18px !important;
     }
 
     .navbar .container-sides-120px {
@@ -873,11 +877,7 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
     }
 
     .navbar li a {
-        padding: 5px 15px;
-    }
-
-    #blog nav a {
-        font-size: 18px !important;
+        padding: 5px 10px;
     }
 
     body {

@@ -122,6 +122,10 @@ html, body {
     font-style: italic;
 }
 
+.h1-container h1 a {
+    text-decoration: none;
+}
+
 #welcome #location {
     text-align: center;
 }

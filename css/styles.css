@@ -293,6 +293,11 @@ h4 {
     100% {color: var(--blue-teal)} /* transition back to initial color */
 }
 
+blockquote {
+    font-size: 30px;
+    text-align: center;
+}
+
 /* this is the ordered list on the built page about how i created the website (starts in built.html on line 111). this margin-bottom 25px spacing is consistent with the spacing elsewhere on the site, including the homepage's About paragraphs (index.html line 135) and Facts bullet points. (index.html line 155). The third combinator is from built.html line 124 for the space between the only paragraphs on the page about the stack and technologies. */
 #facts ul li,
 #built ol li,
@@ -521,14 +526,6 @@ a:active {
     padding-bottom: 0px;
 }
 
-/* .skills-on-one-line {
-    background-color: hsla(hue, saturation, lightness, alpha);
-    t
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 95%;
-} */
-
 /* Fun Facts section - emoji shadow to let it differential from background color */
 .text-shadow {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -539,17 +536,17 @@ audio {
 }
 
 /* for media screen / media queries: 
-                H1, h2, h3, h4, body/nav, footer
-Regular:        80, 55, 40, 35, 25, 19
-                -8, -7, -4, -3, -2, -1 
+                H1, h2, h3, h4, blockquote, body/nav, footer
+Regular:        80, 55, 40, 35, 30, 25, 19
+                -8, -7, -4, -3, -3, -2, -1 
 
-Media query 800: 72, 48, 36, 32, 23, 18
-                 -7, -6, -4, -3, -2, -1 
-Media query 690: 65, 42, 32, 29, 21, 17
-                 -6, -5, -3, -2, -1, -1 
-Media query 500: 59, 38, 29, 27, 20, 16
-                 -5, -4, -2, -2, -1, -1 
-Media query 375: 54, 34, 27, 25, 19, 15 */
+Media query 800: 72, 48, 36, 32, 27, 23, 18
+                 -7, -6, -4, -3, -2, -2, -1 
+Media query 690: 65, 42, 32, 29, 25, 21, 17
+                 -6, -5, -3, -2, -2, -1, -1 
+Media query 500: 59, 38, 29, 27, 23, 20, 16
+                 -5, -4, -2, -2, -1, -1, -1 
+Media query 375: 54, 34, 27, 25, 22, 19, 15 */
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
@@ -592,6 +589,10 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
 
     h4 {
         font-size: 32px !important;
+    }
+
+    blockquote {
+        font-size: 27px;
     }
 
     body, nav a { /* body includes location that's in the body > welcome section of index.html only */
@@ -696,6 +697,10 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
         font-size: 29px;
     }
 
+    blockquote {
+        font-size: 25px;
+    }
+
     /* all text same margins nav and body */
     .container-sides-120px {
         padding: 0 30px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
@@ -769,6 +774,10 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
 
     h4 {
         font-size: 27px !important;
+    }
+
+    blockquote {
+        font-size: 23px;
     }
 
     /* all text same margins nav and body */
@@ -858,6 +867,10 @@ Media query 375: 54, 34, 27, 25, 19, 15 */
         font-size: 25px !important;
         white-space: normal;
         word-wrap: break-word; /* breaks at word break if necessary */
+    }
+
+    blockquote {
+        font-size: 22px;
     }
 
     #location {

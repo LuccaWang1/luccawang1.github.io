@@ -34,9 +34,17 @@ colors:
     border-radius: 5px;
 }
 
-p, img {
+p, img, figure {
     margin-bottom: 25px;
     margin-top: 0px;
+}
+
+figcaption, blockquote {
+    text-align: center;
+}
+
+blockquote {
+    
 }
 
 #blog-section ul li {

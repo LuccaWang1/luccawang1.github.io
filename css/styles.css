@@ -186,6 +186,12 @@ html, body {
     animation-iteration-count: 2; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
     background-color: var(--blue-teal);
+    transition: background-color 0.3s ease;
+}
+
+/* transparent state */
+.navbar.scrolled {
+    background-color: rgba(0, 97, 113, 0.75); /* 75% transparency of --blue-teal */
 }
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
@@ -221,10 +227,6 @@ html, body {
     color: var(--blush); /* UX user receptive when user clicks link */
     transition: 3ms;
 }
-
-/* section {
-    margin: 10px 0;
-} */
 
 /* applies to anything in the body main */
 .body {

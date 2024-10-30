@@ -813,7 +813,7 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
     .float-image {
         float: none; /* override float */
         display: block; /* ensure treatment like a block element */
-        margin: 10px auto 25px auto !important; /* centers img horizontally, 10/1/24 added 25px to bottom to make it consistent w/ rest of margin-bottom's at 375px mobile screens */
+        margin: 0px auto 15px auto !important; /* centers img horizontally, 10/1/24 added 25px to bottom to make it consistent w/ rest of margin-bottom's at 375px mobile screens */
         width: 75%; /* adjust the img size */
         height: auto !important; /* maintain aspect ratio */
     }
@@ -822,13 +822,17 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
         margin: 0px !important;
     }
 
-    #skills .container-sides-120px ul, h2, h3, h4 {
+    #skills .container-sides-120px ul {
         margin: 25px auto 25px auto !important; /* top right bottom left */
+    }
+
+    h2, h3, h4 {
+        margin: 0px auto 10px auto !important;
     }
 
     /* around line 141 in index.html, for the img portrait so that there is an equal amount of space under the photograph in the About section as the margin-bottom's on the rest of the page -- for mobile screens 375px */
     .container a img {
-        margin-bottom: 25px !important;
+        margin-bottom: 10px !important;
     }
     
     .centered-icons a {
@@ -851,10 +855,10 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
 
     h2 {
         font-size: 34px !important;
-        padding: 0px 5px;
         text-align: center !important;
         white-space: normal;
         word-wrap: break-word; /* breaks at word break if necessary */
+        padding: 0px;
     }
 
     h3 {
@@ -874,12 +878,12 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
     }
 
     #location {
-        margin: 10px 0px 10px 0px; /* top right bottom left */
+        margin: 0px auto !important; /* top right bottom left */
     }
 
     /* all text same margins nav and body */
-    .container-sides-120px {
-        padding: 0 10px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
+    .navbar .container-sides-120px {
+        margin: 0px !important;
     }
 
     body, #index .navbar, #built .navbar {
@@ -888,11 +892,6 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
 
     #blog .navbar {
         font-size: 18px !important;
-    }
-
-    .navbar .container-sides-120px {
-        padding: 10px !important;
-        margin: 10px 0px !important;
     }
 
     .navbar li a {

@@ -878,7 +878,7 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
     }
 
     #location {
-        margin: 0px auto !important; /* top right bottom left */
+        margin: 5px auto 0px auto !important; /* top right bottom left */
     }
 
     /* all text same margins nav and body */

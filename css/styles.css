@@ -177,21 +177,21 @@ html, body {
     width: 100%; /* covers the entire width of the browser */
     top: 0;
     z-index: 1000; /* highest heirarchy nearest the viewer, always in viewport fully */
-    margin: 30px 0;
+    margin: 15px 0px 30px 0px;
     font-size: 25px;
-    padding: 10px 0;
     position: sticky; /* sticks to top when scrolling down */
     animation-name: change-me-animation-3;
     animation-duration: 2s;
     animation-iteration-count: 2; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
     background-color: var(--blue-teal);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 /* transparent state */
 .navbar.scrolled {
     background-color: rgba(0, 97, 113, 0.75); /* 75% transparency of --blue-teal */
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
@@ -528,7 +528,7 @@ a:active {
 
 /* Fun Facts section - emoji shadow to let it differential from background color */
 .text-shadow {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 audio {

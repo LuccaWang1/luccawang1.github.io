@@ -2,9 +2,9 @@
 
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
-    const navbarHeight = navbar.offsetHeight;
+    const viewportHeight = window.innerHeight;
 
-    if (window.scrollY > navbarHeight) {
+    if (window.scrollY > viewportHeight) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');

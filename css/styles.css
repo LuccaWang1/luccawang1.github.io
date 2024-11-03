@@ -535,6 +535,24 @@ audio {
     width: 100%;
 }
 
+ul {
+    list-style-type: disc;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+ul ul ul {
+    list-style-type: square;
+    margin-left: 10px;
+    padding: 10px;
+}
+
 /* for media screen / media queries: 
                 H1, h2, h3, h4, blockquote, body/nav, footer
 Regular:        80, 55, 40, 35, 30, 25, 19

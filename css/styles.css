@@ -502,12 +502,12 @@ a:active {
 }
 
 .red-button:hover {
-    background-color: var(--blush);
+    background-color: var(--blue-teal);
     color: var(--white);
 }
 
 .red-button:active {
-    background-color: var(--light-pink);
+    background-color: var(--blush);
     color: var(--white);
 }
 

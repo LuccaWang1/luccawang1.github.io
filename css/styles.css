@@ -282,13 +282,6 @@ h2 {
     font-style: normal;
 }
 
-/* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
-@keyframes change-me-animation-1 {
-    0% {color: var(--blue-teal);} /* initial color */
-    50% {color: var(--cherry-red);} /* transition to new color */
-    100% {color: var(--blue-teal)} /* transition back to initial color */
-}
-
 h3 {
     text-align: left;
     font-size: 40px;

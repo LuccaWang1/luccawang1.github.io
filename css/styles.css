@@ -305,6 +305,12 @@ h4 {
     100% {color: var(--blue-teal)} /* transition back to initial color */
 }
 
+h5 {
+    text-align: left;
+    font-size: 33px;
+    color: var(--blue-teal);
+}
+
 blockquote {
     font-size: 30px;
     text-align: center;
@@ -548,17 +554,17 @@ audio {
 }
 
 /* for media screen / media queries: 
-                H1, h2, h3, h4, blockquote, body/nav, footer
-Regular:        80, 55, 40, 35, 30, 25, 19
-                -8, -7, -4, -3, -3, -2, -1 
+                H1, h2, h3, h4, h5, blockquote, body/nav, footer
+Regular:        80, 55, 40, 35, 33, 30, 25, 19
+                -8, -7, -4, -3, -3, -3, -2, -1 
 
-Media query 800: 72, 48, 36, 32, 27, 23, 18
-                 -7, -6, -4, -3, -2, -2, -1 
-Media query 690: 65, 42, 32, 29, 25, 21, 17
-                 -6, -5, -3, -2, -2, -1, -1 
-Media query 500: 59, 38, 29, 27, 23, 20, 16
-                 -5, -4, -2, -2, -1, -1, -1 
-Media query 375: 54, 34, 27, 25, 22, 19, 15 */
+Media query 800: 72, 48, 36, 32, 30, 27, 23, 18
+                 -7, -6, -4, -3, -3, -2, -2, -1 
+Media query 690: 65, 42, 32, 29, 27, 25, 21, 17
+                 -6, -5, -3, -2, -2, -2, -1, -1 
+Media query 500: 59, 38, 29, 27, 25, 23, 20, 16
+                 -5, -4, -2, -2, -2, -1, -1, -1 
+Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
 @media screen and (max-width: 800px) {
@@ -601,6 +607,10 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
 
     h4 {
         font-size: 32px !important;
+    }
+
+    h5 {
+        font-size: 30px !important;
     }
 
     blockquote {
@@ -709,6 +719,10 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
         font-size: 29px;
     }
 
+    h5 {
+        font-size: 27px !important;
+    }
+
     blockquote {
         font-size: 25px;
     }
@@ -786,6 +800,10 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
 
     h4 {
         font-size: 27px !important;
+    }
+
+    h5 {
+        font-size: 25px !important;
     }
 
     blockquote {
@@ -883,6 +901,10 @@ Media query 375: 54, 34, 27, 25, 22, 19, 15 */
         font-size: 25px !important;
         white-space: normal;
         word-wrap: break-word; /* breaks at word break if necessary */
+    }
+
+    h5 {
+        font-size: 23px !important;
     }
 
     blockquote {

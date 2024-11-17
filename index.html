@@ -42,7 +42,54 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
+    <!-- <div class="sidebar">
+        <h1>Lucca <br>Wang</h1>
+
+        <a href="index.html" alt="Home" title="Home">
+            <h5 class="roboto-bold">
+                Home
+            </h5>
+        </a>
+
+        <a href="index.html#about-anchor" alt="About" title="About">
+            <h5 class="roboto-bold">
+                About
+            </h5>
+        </a>
+        
+        <a href="index.html#skills-anchor" alt="Skills" title="Skills">
+            <h5 class="roboto-bold">
+                Skills
+            </h5>
+        </a>
+        
+        <a href="index.html#projects-anchor" alt="Projects" title="Projects">
+            <h5 class="roboto-bold">
+                Projects
+            </h5>
+        </a>
+
+        <a href="assets/pdf/Lucca_Wang_Resume.pdf" target="_blank" alt="Resume" title="Resume">
+            <h5 class="roboto-bold">
+                Resume
+            </h5>
+        </a>
+
+        <a href="https://luccawang.dev/blog.html" target="_blank" alt="Resume" title="Resume">
+            <h5 class="roboto-bold">
+                Blog
+            </h5>
+        </a>
+
+        <a href="https://luccawang.dev/built.html" target="_blank" alt="Resume" title="Resume">
+            <h5 class="roboto-bold">
+                This &shy;Site
+            </h5>
+        </a>
+    </div> -->
+
     <body id="index">
+        <!-- Page container to hold both the sidebar and the main content -->
         <div class="body">
             <section id="welcome">
                 <div class="container-sides-120px">
@@ -91,7 +138,7 @@
 
                     <div id="location">
                         <!-- The anchor for the hyperlink to the About section is in the img tag below. It is the "id" attribute within the img tag. "id="about-anchor"" | It is in the About section, for a few different reasons: 1) This is the next (fixed) section above the About section. 
-                         
+                        
                         Putting the anchor here fulfills how I want it to function: How I want it to function is that when a user clicks on "About" in the navbar, they will see the "About" header/h2 in the center top of their screen/viewport. 
                         
                         2) Although in the code, the navbar is the section above About (instead of this Welcome section here), the navbar cannot fulfill how I want it to function detailed in 1 above, since the navbar is sticky. This means that if the user is at a point further down on the page, then when the About hyperlink is clicked, the behavior will be to keep the viewport where it is, since the anchor is just going basically, to itself. So the anchor needs to be in the section above the navbar -- the anchor needs to be in a fixed section, not one that could be at any point of the webpage at any given time and reference itself and thus not move to the actual section. (The anchor is purposefully above where it would actually start for that viewport positioning, but this is a note for inside the code about WHY it's in the Welcome section, above the navbar section, above the About section. :) ) -->
@@ -140,7 +187,7 @@
                         About
                     </h2>
 
-                    <div class="container">
+                    <div class="about-container">
                         <a href="https://www.linkedin.com/in/luccawang/" target="_blank">
                             <img src="assets/img/author/author-portrait.png" title="Lucca Wang on LinkedIn" alt="Lucca Wang on LinkedIn" class="float-image">
                         </a>
@@ -150,7 +197,7 @@
                         </h3>
 
                         <p>
-                             I currently develop <a href="#projects-anchor">apps</a> with <span class="roboto-bold">Python (including OOP), Django, Flask, Jinja2, JavaScript, React, HTML, CSS, MySQL, Postgres, SQLAlchemy (ORM), APIs, and AWS</span>.
+                            I currently develop <a href="#projects-anchor">apps</a> with <span class="roboto-bold">Python (including OOP), Django, Flask, Jinja2, JavaScript, React, HTML, CSS, MySQL, Postgres, SQLAlchemy (ORM), APIs, and AWS</span>.
                         </p>
                         
                         <p>
@@ -496,6 +543,13 @@
             </section>
         </footer>
 
+        <div class="top-arrow-container">
+            <a href="#index">
+                <img src="assets/img/sm-icons/icons8-double-up-100.png" alt="Up to Top" id="top-img-icon">
+            </a>
+        </div>
+
+        <script src="assets/js/top-arrow-icon.js"></script>
         <script src="assets/js/nav-scroll.js"></script>
     </body>
 </html>

@@ -43,9 +43,10 @@ Used these tool to determine website design color palette:
 html, body {
     background-color: var(--white);
     margin: 0;
+    padding: 0;
     color: var(--blue-teal);
     font-size: 25px; /* So 25px is the default for text in the body of the webpages, but see .footer-sign-off below */
-    
+    height: 100%;
 }
 
 /* Font styles for Roboto */
@@ -204,7 +205,6 @@ html, body {
 ul {
     list-style-type: disc;
     margin-left: 0px;
-    padding: 10px;
 }
 
 ul ul {
@@ -248,9 +248,18 @@ ul ul ul {
 }
 
 /* applies to anything in the body main */
+/* the next several are for the sidebar */
+/* Container for the whole page layout */
+/* .container {
+    display: flex;
+    min-height: 100vh;
+} */
+
 .body {
     z-index: 500;
     line-height: 1.6;
+    /* margin-left: 250px; */
+    /* flex-grow: 1; */
 }
 
 /* headers */
@@ -310,6 +319,10 @@ h5 {
     font-size: 33px;
     color: var(--blue-teal);
 }
+
+/* .sidebar h5 {
+    color: var(--white);
+} */
 
 blockquote {
     font-size: 30px;
@@ -430,7 +443,7 @@ img {
 }
 
 /* About section: text and portrait */
-.container {
+.about-container {
     width: 100%;
     text-align: left;
     word-wrap: break-word;
@@ -518,7 +531,7 @@ a:active {
 .float-image {
     float: left; /* float img left */
     margin: 0 20px 5px 0 !important; /* centering the img horizontally */
-    width: 30%; /* img size */
+    width: 40%; /* img size */
     height: auto; /* keeping aspect ratio */
     shape-outside: margin-box;
     shape-margin: 20px;
@@ -552,6 +565,76 @@ a:active {
 audio {
     width: 100%;
 }
+
+.top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top-arrow-container {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    width: auto;
+    height: auto;
+}
+
+#top-img-icon {
+    display: none; /* start hidden by default - per how the JS upon scroll is set up (see top-arrow-icon.js) */
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* smooth fade-in/out */
+    position: relative; /* position w/in top-arrow-container */
+    z-index: 2000;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2)); /* x-offset y-offset blur-radius color */
+    margin: 0;
+    padding: 0;
+}
+
+/* these next two are to smooth the visibility toggle, to make a smooth fade effect, using opacity and transition */
+#top-img-icon.visible {
+    display: block;
+    opacity: 1; /* make visible */
+}
+
+#top-img-icon.hidden {
+    opacity: 0; /* fade out */
+}
+
+/* .sidebar {
+    width: 250px;
+    color: var(--white)'
+    background-color: var(--blue-teal);
+    padding: 25px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+} */
+
+/* Style for sidebar links */
+/* .sidebar a {
+    display: block;
+    color: var(--white);
+    background-color: var(--blue-teal);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: var(--cherry-red);
+    border-radius: 5px;
+} */
 
 /* for media screen / media queries: 
                 H1, h2, h3, h4, h5, blockquote, body/nav, footer
@@ -625,7 +708,7 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         margin: 22px 0px 34px 0px; /* top right bottom left */
     }
 
-    .container { /* apply this to both container in the same way */ 
+    .about-container { /* apply this to both container in the same way */ 
         max-width: 600px;
         margin: auto;
     }
@@ -654,6 +737,15 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         margin-bottom: 19px !important;
         margin-top: 0px;
         padding: 0px;
+    }
+
+    .top-arrow-container {
+        bottom: 50px;
+        right: 30px;
+    }
+    
+    #top-img-icon {
+        width: 45%;
     }
 }
 
@@ -759,6 +851,19 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         margin-top: 0px;
         padding: 0px;
     }
+
+    .top {
+        margin-bottom: 30px;
+    }
+
+    .top-arrow-container {
+        bottom: 40px;
+        right: 15px;
+    }
+    
+    #top-img-icon {
+        width: 40%;
+    }
 }
 
 /* breakpoint for larger smartphones */
@@ -767,7 +872,7 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         float: none; /* override float */
         display: block; /* ensure treatment like a block element */
         margin: 10px auto !important; /* centers img horizontally */
-        width: 75%; /* adjust the img size */
+        width: 80%; /* adjust the img size */
         height: auto !important; /* maintain aspect ratio */
     }
     
@@ -836,6 +941,19 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         margin-top: 0px !important;
         padding: 0px !important;
     }
+
+    .top {
+        margin-bottom: 25px;
+    }
+
+    .top-arrow-container {
+        bottom: 45px;
+        right: 0;
+    }
+    
+    #top-img-icon {
+        width: 35%;
+    }
 }
 
 /* breakpoint for smaller screens - max width based on biggest mobile phone size width - see directly below */
@@ -844,7 +962,7 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         float: none; /* override float */
         display: block; /* ensure treatment like a block element */
         margin: 0px auto 15px auto !important; /* centers img horizontally, 10/1/24 added 25px to bottom to make it consistent w/ rest of margin-bottom's at 375px mobile screens */
-        width: 75%; /* adjust the img size */
+        width: 70%; /* adjust the img size */
         height: auto !important; /* maintain aspect ratio */
     }
 

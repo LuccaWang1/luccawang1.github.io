@@ -52,6 +52,11 @@ blockquote {
     margin-left: 20px;
 }
 
+#blog-section ol li {
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
 .blog-post a:active {
     color: var(--white);
 }

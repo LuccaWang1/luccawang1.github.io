@@ -52,7 +52,7 @@ h2 {
     width: 100%;
     background-color: hsla(340, 45%, 85%, 0.3); /* hue, saturation, lightness, alpha https://www.w3schools.com/cssref/pr_background-color.php */
     margin-bottom: 25px;
-    padding: 10px 0;
+    padding: 25px 0;
 }
 
 /* DIV FOR ENTIRE INDEX BOX */

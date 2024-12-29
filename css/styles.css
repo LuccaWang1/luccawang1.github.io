@@ -468,7 +468,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--blush);
+    color: var(--blush) !important;
 }
 
 #projects h3, p, img, .skills-list-div-margin-bottom {

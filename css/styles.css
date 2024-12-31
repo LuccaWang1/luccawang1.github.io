@@ -520,8 +520,8 @@ a:active {
 }
 
 .red-button:active {
-    background-color: var(--blush);
-    color: var(--white);
+    background-color: var(--blush) !important;
+    color: var(--white) !important;
 }
 
 #about p {

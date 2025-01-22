@@ -785,7 +785,7 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
 
     /* making sure the name h1 is centered and not wrapping on any mobile device to conserve vertical scrolling space and the first impression in the viewport */
 
-    /* although there is specific styling for the blog, there shouldn't be a conflict with this styling for it with this document, since H1 is not mentioning in the 690 media query in the blog.css file, which has priority over this styles.css stylesheet */
+    /* although there is specific styling for the blog, there shouldn't be a conflict with this styling for it with this document, since H1 is not mentioning in the 690 media query in the blog.css file, which has priority over the content above this media query section in this same styles.css stylesheet */
 
     h1, .name { /* might be overkill to double down on it, but adding the class to for sure make this styling is affecting the correct area - won't rename just to keep what it was "h1" in the list of styling for this media query (makes sense in the sequence of styling for headers 1-3 in the query) */
         font-size: 65px !important;

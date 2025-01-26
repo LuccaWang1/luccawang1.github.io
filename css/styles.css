@@ -613,6 +613,11 @@ audio {
     margin-bottom: 25px;
 }
 
+.cursive-animated a {
+    animation: change-me-animation-1 3s ease-in-out infinite;
+    text-decoration: none !important;
+}
+
 /* .sidebar {
     width: 250px;
     color: var(--white)'

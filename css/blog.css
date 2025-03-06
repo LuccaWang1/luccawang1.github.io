@@ -66,6 +66,85 @@ figcaption, blockquote {
     text-align: center !important;
 }
 
+#generic-photo-1 {
+    border-top: 25px solid var(--white) !important;
+    border-bottom: 23px solid var(--white) !important;
+}
+
+.blog-post-recent-exp-tech-stack {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.blog-post-recent-exp-tech-stack ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-post-recent-exp-tech-stack li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    flex-basis: 14.28%; /* 7 skills in the list, so allow each item to take up roughtly 1/7th of the container */
+    max-width: 14.28%;
+    margin: 0;
+}
+
+.blog-post-recent-exp-tech-stack .icon-img-inline img {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-post-recent-exp-tech-stack {
+        margin: 35px 0;
+    }
+    
+    .blog-post-recent-exp-tech-stack ul {
+        /* justify-content: space-between;  */
+        /* adjust space between items */
+        gap: 7px;
+    }
+
+    .blog-post-recent-exp-tech-stack li {
+        flex-shrink: 2; /* allow list items to shrink more on smaller screens */
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+
+    .blog-post-recent-exp-tech-stack .icon-img-inline img {
+        max-width: 40px; /* shrink images on smaller screens */
+    }
+
+    .blog-post-recent-exp-tech-stack .icon-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .blog-post-recent-exp-tech-stack {
+        margin: 25px 0;
+    }
+
+    .blog-post-recent-exp-tech-stack img {
+        margin-bottom: 0px !important;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .blog-post {
         margin: 0px 10px 50px 10px;
@@ -74,5 +153,32 @@ figcaption, blockquote {
 
     h3 {
         margin-top: 0px !important;
+    }
+
+    .blog-post-recent-exp-tech-stack {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 375px;
+    }
+
+    .blog-post-recent-exp-tech-stack ul {
+        /* justify-content: space-between;  */
+        /* adjust space between items */
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .blog-post-recent-exp-tech-stack li {
+        flex-shrink: 3; /* allow list items to shrink more on smaller screens */
+        flex-basis: 25%;
+        max-width: 25%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog-post-recent-exp-tech-stack img {
+        max-width: 30px; /* shrink images on smaller screens */
     }
 }

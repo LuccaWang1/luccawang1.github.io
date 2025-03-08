@@ -128,6 +128,6 @@ Media query:800
 
 @media (max-width: 375px) {
     .built-index-columns ol li a {
-        font-size: 17px !important;
+        font-size: 15px !important;
     }
 }

@@ -130,4 +130,9 @@ Media query:800
     .built-index-columns ol li a {
         font-size: 15px !important;
     }
+
+    #normal-word-break {
+        word-break: normal;
+        white-space: normal;
+    }
 }

@@ -83,6 +83,10 @@ h2 {
     order: initial;
 }
 
+#hidden-index-list-item {
+    color: hsla(340, 45%, 85%, 0.3);
+}
+
 /* ORDERING FOR LIST ITEMS */
 /* specific ordering for each item */
 .built-index-columns li:nth-child(1) { order: 1; }
@@ -120,7 +124,6 @@ Media query:800
     .built-index-columns li:nth-child(7) { order: 4; }
     .built-index-columns li:nth-child(8) { order: 6; }
     .built-index-columns li:nth-child(9) { order: 8; }
-
 }
 
 @media (max-width: 375px) {

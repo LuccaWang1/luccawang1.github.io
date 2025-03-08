@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Lucca Wang is a Full-stack Software Engineer with experience in Python, Django, JavaScript, React, SQL, Docker, AWS, and MUI. She has strong problem-solving skills, a focus on clean documentation, and a drive to keep learning. She is a former communications professional and HTML email developer. Visit her website at https://luccawang.dev/.">
         <meta property="article:published_time" content="2024-06-13T18:00:00Z" />
-        <meta property="aricle:modified_time" content="2025-03-07T00:00:00Z" />
+        <meta property="aricle:modified_time" content="2025-03-07T18:10:00Z" />
 
         <!-- Open Graph internet protocol for the LinkedIn & Fb social card - so info. comes up with the url link -->
         <meta property="og:title" content="Lucca Wang | Software Engineer" />
@@ -162,6 +162,24 @@
                                         Technologies
                                     </a>
                                 </li>
+                                
+                                <li>
+                                    <a href="#built-responsiveness">
+                                        Responsiveness
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#built-accessibility">
+                                        Accessibility
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#built-navigation">
+                                        Navigation
+                                    </a>
+                                </li>
 
                                 <li>
                                     <a href="#built-planning">
@@ -170,26 +188,8 @@
                                 </li>
                                     
                                 <li>
-                                    <a href="#built-domain">
-                                        Domain
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#built-assets">
-                                        Assets
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#built-templates">
-                                        Webpages
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#built-styling">
-                                        Styling
+                                    <a href="#built-file-structure">
+                                        File Structure
                                     </a>
                                 </li>
         
@@ -208,7 +208,7 @@
 
                                 <li>
                                     <a href="#swe-author-note" id="built-technologies">
-                                        Engineer's Author Note
+                                        Engineer's Note
                                     </a>
                                 </li>
                             </ol>
@@ -221,7 +221,7 @@
                 <ol style="margin-left: 26px;">
                     <li>
                         <p>
-                            <span class="roboto-bold">Technologies:</span> For launch speed, simplicity, and cost effectiveness, I decided to use <span class="roboto-bold">GitHub Pages</span> to host and deploy this website. GitHub Pages supports <span class="roboto-bold">HTML</span>, <span class="roboto-bold">JavaScript</span>, and <span class="roboto-bold">CSS</span>, so I used <span class="roboto-bold">VSCode</span> as my text editor to develop this site with those technologies as my development environment.
+                            <span class="roboto-bold">Technologies:</span> For launch speed, simplicity, and cost effectiveness, I decided to use <span class="roboto-bold">GitHub Pages</span> to host and deploy this website. GitHub Pages supports <span class="roboto-bold">HTML</span>, <span class="roboto-bold">JavaScript</span>, and <span class="roboto-bold">CSS</span>, so I used <span class="roboto-bold">VSCode</span> as my text editor to develop this site with those <a href="https://luccawang.dev/index.html#skills-anchor">technologies</a> as my development environment.
                         </p>
 
                         <img src="/assets/img/built/250306-built-welcome-jennifer-bonauer.jpg" title="Welcome, We're Open and Awesome" alt="Welcome, We're Open and Awesome">
@@ -230,62 +230,64 @@
                             I enjoy using <span class="roboto-bold">Git</span> for version control with commits written in the format of short, descriptive, and starting with a past tense verb: <span class="roboto-regular-italic">"Updated CSS to ensure contrast on active button click."</span>
                         </p>
 
-                        <p id="built-planning">
-                            I integrated <span class="roboto-bold">Google Fonts API</span> to enhance the type. I implemented <span class="roboto-bold">Meta's Open Graph</span> protocol to ensure the portfolio displays rich previews that are engaging and polished when the website is shared on social media platforms.
+                        <p>
+                            I integrated <span class="roboto-bold">Google Fonts API</span> to enhance the type. I implemented <span class="roboto-bold" id="built-responsiveness">Meta's Open Graph</span> protocol to ensure the portfolio displays rich previews that are engaging and polished when the website is shared on social media platforms.
+                        </p>
+                    </li>
+
+                    <li>
+                        <span class="roboto-bold" id="responsiveness">Responsiveness:</span> I ensured the website is consistent and accessible across both computer monitors and mobile screens by implementing <span class="roboto-bold">responsive design</span>. This way, this website can be easily viewed on desktop and is mobile-friendly. I utilized <span class="roboto-bold">CSS variables</span> (custom properties) for the colors in the stylesheet (instead of hex color codes) for <span class="roboto-bold">reusability</span> and <span class="roboto-bold">theming</span>. The variables are great for <span class="roboto-bold">maintenance</span> and <span class="roboto-bold" id="built-accessibility">readability</span>.
+                    </li>
+
+                    <img src="/assets/img/built/250307-built-responsive-design-luis-villasmil.jpg" title="Responsive design, mobile-friendly" alt="Responsive design, mobile-friendly">
+
+                    <li>
+                        <span class="roboto-bold">Accessibility:</span> I adhered to the <span class="roboto-bold"><a href="https://luccawang.dev/blog.html#blog-post-my-recent-professional-experience" id="built-navigation">WCAG</a></span> (Web Content Accessibility Guidelines) and the <span class="roboto-bold">Americans with Disabilities Act (ADA)</span> Guidelines.
+                    </li>
+
+                    <li>
+                        <span class="roboto-bold">Navigation Features:</span> The navigation bar mimics conditional rendering, enhancing the <span class="roboto-bold">user experience (UX)</span> as users move between pages. This method allows for seamless navigation within the static structure, adhering to GitHub Pages' requirements and conserving space on the always-visible navigation bar. This ensures direct access to all site content while prioritizing <span class="roboto-bold">user interface (UI)</span> design. (Currently, I designed the navigation bar to display in a single line on larger screens, and to wrap into two lines on mobile devices. I've been considering the implications of non-conditional rendering.) I also added a fixed up arrow in the bottom right of the website, so the user can <span class="roboto-bold" id="built-planning">"fast scroll"</span> up to the top of whatever webpage they're browsing.
+                    </li>
+                    
+                    <li>
+                        <p>
+                            <span class="roboto-bold">Planning:</span> I engaged in strategic planning and thorough <span class="roboto-bold">research</span>, asking myself, "What information do I need to include on this portfolio website?" Maintaining a modern web design while presenting key details in a way that reflects who I am is important to <a href="https://luccawang.dev/index.html#about-anchor">me</a>.
+                        </p>
+                        
+                        <p>
+                            I selected a domain provider and registered a domain name, then configured it by updating the CNAME file.
+                        </p>
+
+                        <p>
+                            I built out <a href="index.html">index</a> (the homepage) with HTML. Then, I added more webpages, like this one. I prioritize a coding style to support <span class="roboto-bold">readability</span> and <span class="roboto-bold" id="accessibility">maintainability</span>. I use alt and title attributes, along with section tags, to enchance <span class="roboto-bold">accessibility</span>.
+                        </p>
+                    </li>
+
+                    <img src="/assets/img/built/250307-built-domain-lucas-george-wendt.jpg" title="Color coded colored pencils" alt="Color coded colored pencils" id="built-file-structure">
+
+                    <li>
+                        <p>
+                            <span class="roboto-bold">Asset Organization and Management:</span> I began by gathering and organizing the various assets required for the website, <span class="roboto-bold">ensuring they were well-structured and optimized for web use</span>. 
+                        </p>
+
+                        <p>
+                            I set a <span class="roboto-bold" >color palette for theming in the CSS</span>. I matched the theming colors of the site's branding exactly with the colors of the icons. This approach allowed me to create cohesive, high-quality icons that fit seamlessly with the overall design and aesthetic of the site.
+                        </p>
+
+                        <p>
+                            I used <span class="roboto-bold"><a href="https://luccawang.dev/index.html#projects-anchor">GIF</a></span> images for animations, as they are widely supported and provide an easy way to implement motion graphics without needing complex video files. For <a href="https://luccawang.dev/index.html#petplanner"><span class="roboto-bold">audio</span></a>, I leveraged the HTML5 update that allows for direct embedding of audio files in the site. This update significally simplifies the process of adding sound without relying on third-party plugins.
+                        </p>
+                        
+                        <p>
+                            <span class="roboto-bold">Naming Conventions and Directory Structure:</span> To ensure the website would be <span class="roboto-bold">easy to maintain in the future</span>, I paid special attention to <span class="roboto-bold">naming conventions</span> for all assets. I followed a consistent pattern to ensure that every file is easily <span class="roboto-bold">identifiable and logically organized</span>. The <span class="roboto-bold">directory structure</span> was also carefully planned, with <span class="roboto-bold" id="built-learning">all assets organized into folders by type</span> (audio, images, etc.), making navigation intuitive and minimizing the risk of broken links or misplaced files as the project evolves.
                         </p>
                     </li>
                     
                     <li>
-                        <span class="roboto-bold">Planning:</span> I engaged in strategic planning and thorough <span class="roboto-bold" id="built-domain">research</span>, asking myself, "What information do I need to include on this portfolio website?" Maintaining a modern web design while presenting key details in a way that reflects who I am is important to me.
+                        <span class="roboto-bold">Learning:</span> I implemented a new-to-me technology, Meta's<span class="roboto-bold"> Open Graph</span>. I also learned more about <span class="roboto-bold">GitHub Actions</span> and utilized <span class="roboto-bold">GitHub Pages</span>. I enjoyed diving into <span class="roboto-bold">advanced <a href="https://luccawang.dev/index.html#skills-anchor">CSS</a></span>. Overall, I also deepened my understanding of the website's construction by flexing my technical writing and communication skills in employing <span class="roboto-bold" id="built-gratitude">documentation</span> of it's creation.
                     </li>
 
-                    <li>
-                        <span class="roboto-bold" id="built-assets">Domain:</span> I selected a domain provider and registered a domain name, then configured it by updating the CNAME file.
-                    </li>
-
-                    <li>
-                        <p>
-                            <span class="roboto-bold">Asset Organization and Management:</span> I began by gathering and organizing the various assets required for the website, <span class="roboto-bold">ensuring they were well-structured and optimized for web use</span>.
-                        </p> 
-                        
-                        <p>
-                            <span class="roboto-bold">File Types and Formats:</span> The majority of the assets I worked with were images, with a focus on <span class="roboto-bold">PNG</span> files. PNG is ideal for web use due to its lossless compression, maintaining high quality while keeping file sizes relatively small. I used the online tool <span class="roboto-bold">Icons8</span> to customized the site's icons, including the favicon, the social media icons, and the contact icons - learn more in <a href="#built-styling">Styling</a>.
-                        </p>
-
-                        <p>
-                            Additionally, I used <span class="roboto-bold"><a href="https://luccawang.dev/index.html#projects-anchor">GIF</a></span> images for animations, as they are widely supported and provide an easy way to implement motion graphics without needing complex video files. For <a href="https://luccawang.dev/index.html#petplanner"><span class="roboto-bold">audio</span></a>, I leveraged the HTML5 update (since 2014), which allows for direct embedding of audio files in the site. This update significally simplifies the process of adding sound without relying on third-party plugins.
-                        </p>
-                        
-                        <p>
-                            <span class="roboto-bold">Naming Conventions and Directory Structure:</span> To ensure the website would be <span class="roboto-bold">easy to maintain in the future</span>, I paid special attention to <span class="roboto-bold">naming conventions</span> for all assets. I followed a consistent pattern to ensure that every file is easily <span class="roboto-bold">identifiable and logically organized</span>. The <span class="roboto-bold">directory structure</span> was also carefully planned, with <span class="roboto-bold" id="built-templates">all assets organized into folders by type</span> (audio, images, etc.), making navigation intuitive and minimizing the risk of broken links or misplaced files as the project evolves.
-                        </p>
-                    </li>
-
-                    <li>
-                        <span class="roboto-bold">Webpages:</span> I built out <a href="index.html">index</a> (the homepage) with HTML. Then, I added more webpages, like this one. I prioritize a coding style to support <span class="roboto-bold">readability</span> and <span class="roboto-bold" id="accessibility">maintainability</span>. I use alt and title attributes, along with section tags, to enchance <span class="roboto-bold" id="built-styling">accessibility</span>.
-                    </li>
-
-                    <li>
-                        <p>
-                            <span class="roboto-bold" id="responsiveness">Responsiveness:</span> I ensured the website is consistent and accessible across both computer monitors and mobile screens by implementing <span class="roboto-bold">responsive design</span> with CSS media queries. I enjoyed working with CSS selectors, especially leveraging powerful classes and as-is DOM elements. The <span class="roboto-bold">animations</span> add a dynamic touch. I utilized <span class="roboto-bold">CSS variables</span> (custom properties) for the colors in the stylesheet (instead of hex color codes) for <span class="roboto-bold">reusability</span> and <span class="roboto-bold">theming</span>. The variables are great for <span class="roboto-bold">maintenance</span> and <span class="roboto-bold" id="creative">readability</span>.
-                        </p>
-
-                        <p>
-                            <span class="roboto-bold">Styling:</span> I adhered to the <span class="roboto-bold">Americans with Disabilities Act (ADA) Guidelines</span> for font size and applied <span class="roboto-bold">strong design principles</span>, such as hierarchy. (ADA Guidelines also closely aligns with the <span class="roboto-bold">Web Content Accessibility Guidelines (WCAG)</span>.)
-                        </p>
-
-                        <p>
-                            <span class="roboto-bold">Navigation Features:</span> The navigation bar mimics conditional rendering, enhancing the <span class="roboto-bold">user experience (UX)</span> as users move between pages. This method allows for seamless navigation within the static structure, adhering to GitHub Pages' requirements and conserving space on the always-visible navigation bar. This ensures direct access to all site content while prioritizing <span class="roboto-bold">user interface (UI)</span> design. (Currently, I designed the navigation bar to display in a single line on larger screens, and to wrap into two lines on mobile devices. I've been considering the implications of non-conditional rendering.) I also added a fixed up arrow in the bottom right of the website, so the user can <span class="roboto-bold">"fast scroll"</span> up to the top of whatever webpage they're browsing.
-                        </p>
-
-                        <p>
-                            <span class="roboto-bold">Custom Icons and Branding:</span> I set a <span class="roboto-bold" id="built-learning">color palette for theming in the CSS</span>. I matched the theming colors of the site's branding exactly with the colors of the icons. This approach allowed me to create cohesive, high-quality icons that fit seamlessly with the overall design and aesthetic of the site.
-                        </p>
-                    </li>
-                    
-                    <li>
-                        <span class="roboto-bold">Learning:</span> I implemented a new-to-me technology, Facebook/Meta's<span class="roboto-bold"> Open Graph</span>. I also learned more about <span class="roboto-bold">GitHub Actions</span> and utilized <span class="roboto-bold">GitHub Pages</span> for the first time with this site. I enjoyed diving into <span class="roboto-bold">advanced CSS</span> as well. Overall, I also deepened my understanding of the website's construction, especially after employing <span class="roboto-bold" id="built-gratitude">documentation</span> of it's creation.
-                    </li>
+                    <img src="/assets/img/built/250307-built-thank-you-courtney-hedger.jpg" title="Thank you" alt="Thank you">
 
                     <li>
                         <span class="roboto-bold">Gratitude:</span> Thank you for visiting! I'm grateful for opportunity to show you my work and skills.

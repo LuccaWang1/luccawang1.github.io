@@ -1,18 +1,23 @@
 /* Styling specific for the blog webpage */
 
 /* 
-colors:
+colors: 
+Used these tool to determine website design color palette: 
+1) WCAG info. on contrast minimum (documentation): https://www.w3.org/TR/WCAG/#contrast-minimum
+2)Contrast ratio tool by Lea Verou: https://www.siegemedia.com/contrast-ratio#%23a85d77-on-white
+
 ---white: #FFFFFF (background, font color on nav, main/primary light color)
---light pink: #ecc6d3 (secondary light color, used for nav hover, and links active)
+--light-pink: #ecc6d3 (secondary light color, used for nav hover, and links active)
+--light-blue: #DAFAFF
 
 --blush: #E7769D (mid-value zone for color palette, nav links active, and 
 
---dark blue-green: #006171; (main/primary dark color: background of nav, font color, links color)
---cherry red: #E0004E (secondary dark color)
+--cobalt-blue: #0047AB; (main/primary dark color: background of nav, font color, links color)
+--cherry-red: #E0004E (secondary dark color)
  */
 
- /* all font as Roboto */
-:root {
+ /* VARIABLES */
+ :root {
     --roboto: "Roboto", sans-serif;
     --font-weight: 400;
     --font-style: normal;
@@ -21,12 +26,12 @@ colors:
     --light-blue: #DAFAFF;
     --blush: #E7769D;
     --cherry-red: #E0004E;
-    --blue-teal: #006171;
+    --cobalt-blue: #0047AB;
 }
 
 .blog-post { 
     z-index: -2;
-    color: var(--blue-teal);
+    color: var(--cobalt-blue);
     background-color: hsla(340, 45%, 85%, 0.3); /* hue, saturation, lightness, alpha https://www.w3schools.com/cssref/pr_background-color.php */
     margin-bottom: 50px;
     padding: 10px 25px 25px 25px; /* creates space inside el, corresponds to property directly below */

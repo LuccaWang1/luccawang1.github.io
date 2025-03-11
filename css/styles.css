@@ -12,11 +12,11 @@ Used these tool to determine website design color palette:
 
 --blush: #E7769D (mid-value zone for color palette, nav links active, and 
 
---blue-teal: #006171; (main/primary dark color: background of nav, font color, links color)
+--cobalt-blue: #0047AB; (main/primary dark color: background of nav, font color, links color)
 --cherry-red: #E0004E (secondary dark color)
  */
 
-/* all font as Roboto */
+ /* VARIABLES */
 :root {
     --roboto: "Roboto", sans-serif;
     --font-weight: 400;
@@ -26,7 +26,7 @@ Used these tool to determine website design color palette:
     --light-blue: #DAFAFF;
     --blush: #E7769D;
     --cherry-red: #E0004E;
-    --blue-teal: #006171;
+    --cobalt-blue: #0047AB;
 }
 
 /* styling applies to ALL elements */
@@ -44,7 +44,7 @@ html, body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
-    color: var(--blue-teal);
+    color: var(--cobalt-blue);
     font-size: 25px; /* So 25px is the default for text in the body of the webpages, but see .footer-sign-off below */
     height: 100%;
     scroll-behavior: smooth;
@@ -186,21 +186,21 @@ html, body {
     animation-duration: 2s;
     animation-iteration-count: 2; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
-    background-color: var(--blue-teal);
+    background-color: var(--cobalt-blue);
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 /* transparent state */
 .navbar.scrolled {
-    background-color: rgba(0, 97, 113, 0.8); /* 80% transparency of --blue-teal */
+    background-color: rgb(0, 71, 171, 0.8); /* 80% transparency of --cobalt-blue */
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
 @keyframes change-me-animation-3 {
-    0% {background-color: var(--blue-teal);} /* initial color */
+    0% {background-color: var(--cobalt-blue);} /* initial color */
     50% {background-color: var(--cherry-red);} /* transition to new color */
-    100% {background-color: var(--blue-teal)} /* transition back to initial color */
+    100% {background-color: var(--cobalt-blue)} /* transition back to initial color */
 }
 
 ul {
@@ -295,7 +295,7 @@ h2 {
 h3 {
     text-align: left;
     font-size: 40px;
-    color: var(--blue-teal);
+    color: var(--cobalt-blue);
 }
 
 h4 {
@@ -305,20 +305,20 @@ h4 {
     animation-timing-function: linear; /* smooth transition */
     text-align: left;
     font-size: 35px;
-    color: var(--blue-teal);
+    color: var(--cobalt-blue);
 }
 
 /* change me animation 1 isn't in the html code, bc it's automatically applied to the H1 headers and the .text-changing class (which is at the very bottom of the webpage) (above) */
 @keyframes change-me-animation-1 {
-    0% {color: var(--blue-teal);} /* initial color */
+    0% {color: var(--cobalt-blue);} /* initial color */
     50% {color: var(--cherry-red);} /* transition to new color */
-    100% {color: var(--blue-teal)} /* transition back to initial color */
+    100% {color: var(--cobalt-blue)} /* transition back to initial color */
 }
 
 h5 {
     text-align: left;
     font-size: 33px;
-    color: var(--blue-teal);
+    color: var(--cobalt-blue);
 }
 
 /* .sidebar h5 {
@@ -439,7 +439,7 @@ img {
 
 @keyframes change-me-animation-2 {
     0% {border-bottom-color: var(--light-blue);} /* initial color */
-    50% {border-bottom-color: var(--blue-teal);} /* transition to new color */
+    50% {border-bottom-color: var(--cobalt-blue);} /* transition to new color */
     100% {border-bottom-color: var(--light-blue)} /* transition back to initial color */
 }
 
@@ -460,7 +460,7 @@ img {
 
 /* links */
 a {
-    color:var(--blue-teal);
+    color:var(--cobalt-blue);
 }
 
 a:hover {
@@ -515,7 +515,7 @@ a:active {
 }
 
 .red-button:hover {
-    background-color: var(--blue-teal);
+    background-color: var(--cobalt-blue);
     color: var(--white);
 }
 
@@ -621,7 +621,7 @@ audio {
 /* .sidebar {
     width: 250px;
     color: var(--white)'
-    background-color: var(--blue-teal);
+    background-color: var(--cobalt-blue);
     padding: 25px;
     position: fixed;
     height: 100%;
@@ -633,7 +633,7 @@ audio {
 /* .sidebar a {
     display: block;
     color: var(--white);
-    background-color: var(--blue-teal);
+    background-color: var(--cobalt-blue);
     font-size: 25px;
     text-decoration: none;
     padding: 10px;

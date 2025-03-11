@@ -12,12 +12,12 @@ Used these tool to determine website design color palette:
 
 --blush: #E7769D (mid-value zone for color palette, nav links active, and 
 
---blue-teal: #006171; (main/primary dark color: background of nav, font color, links color)
+--cobalt-blue: #0047AB; (main/primary dark color: background of nav, font color, links color)
 --cherry-red: #E0004E (secondary dark color)
  */
 
  /* VARIABLES */
-:root {
+ :root {
     --roboto: "Roboto", sans-serif;
     --font-weight: 400;
     --font-style: normal;
@@ -26,7 +26,7 @@ Used these tool to determine website design color palette:
     --light-blue: #DAFAFF;
     --blush: #E7769D;
     --cherry-red: #E0004E;
-    --blue-teal: #006171;
+    --cobalt-blue: #0047AB;
 }
 
 /* BUILT PAGE STYLES */

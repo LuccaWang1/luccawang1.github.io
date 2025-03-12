@@ -48,10 +48,6 @@ figcaption, blockquote {
     text-align: center;
 }
 
-/* blockquote {
-    
-} */
-
 #blog-section ul li {
     margin-bottom: 10px;
     margin-left: 20px;
@@ -78,40 +74,45 @@ figcaption, blockquote {
 
 .blog-post-recent-exp-tech-stack {
     display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 800px;
-    margin: 10px auto;
+    margin: 0px auto 25px auto;
 }
 
 .blog-post-recent-exp-tech-stack ul {
     list-style: none;
-    margin: 0;
+    margin: 0 0 25px 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: nowrap;
     gap: 15px;
     width: 100%;
-    overflow: hidden;
+    justify-content: center;
 }
 
 .blog-post-recent-exp-tech-stack li {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 1;
     flex-basis: 14.28%; /* 7 skills in the list, so allow each item to take up roughtly 1/7th of the container */
     max-width: 14.28%;
-    margin: 0;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+}
+
+.blog-post-recent-exp-tech-stack .icon-img-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .blog-post-recent-exp-tech-stack .icon-img-inline img {
-    width: 100%;
-    height: auto;
-    max-width: 50px;
+    max-height: 60px !important;
+    display: block;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -126,27 +127,22 @@ figcaption, blockquote {
     }
 
     .blog-post-recent-exp-tech-stack li {
-        flex-shrink: 2; /* allow list items to shrink more on smaller screens */
         flex-basis: 20%;
         max-width: 20%;
-    }
-
-    .blog-post-recent-exp-tech-stack .icon-img-inline img {
-        max-width: 40px; /* shrink images on smaller screens */
-    }
-
-    .blog-post-recent-exp-tech-stack .icon-text {
-        display: none;
     }
 }
 
 @media screen and (max-width: 690px) {
-    .blog-post-recent-exp-tech-stack {
-        margin: 25px 0;
+    .blog-post-recent-exp-tech-stack .icon-img-inline img {
+        max-height: 25px !important;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        height: auto;
     }
 
-    .blog-post-recent-exp-tech-stack img {
-        margin-bottom: 0px !important;
+    #generic-photo-1 {
+        display: none;
     }
 }
 
@@ -158,32 +154,5 @@ figcaption, blockquote {
 
     h3 {
         margin-top: 0px !important;
-    }
-
-    .blog-post-recent-exp-tech-stack {
-        margin: 10px 0;
-        width: 100%;
-        max-width: 375px;
-    }
-
-    .blog-post-recent-exp-tech-stack ul {
-        /* justify-content: space-between;  */
-        /* adjust space between items */
-        gap: 5px;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0px;
-    }
-
-    .blog-post-recent-exp-tech-stack li {
-        flex-shrink: 3; /* allow list items to shrink more on smaller screens */
-        flex-basis: 25%;
-        max-width: 25%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .blog-post-recent-exp-tech-stack img {
-        max-width: 30px; /* shrink images on smaller screens */
     }
 }

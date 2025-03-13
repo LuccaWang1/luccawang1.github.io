@@ -2,7 +2,7 @@
 
 window.addEventListener('scroll', function() {
     const topArrowIcon = document.querySelector('#top-img-icon');
-    const scrollThreshold = 150; // set scroll threshold to 100px
+    const scrollThreshold = 150; // set scroll threshold to 150px
 
     if (window.scrollY > scrollThreshold) {
         topArrowIcon.classList.add('visible');

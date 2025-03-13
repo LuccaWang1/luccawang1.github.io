@@ -8,12 +8,13 @@ Used these tool to determine website design color palette:
 
 ---white: #FFFFFF (background, font color on nav, main/primary light color)
 --light-pink: #ecc6d3 (secondary light color, used for nav hover, and links active)
---light-blue: #DAFAFF
 
 --blush: #E7769D (mid-value zone for color palette, nav links active, and 
 
---cobalt-blue: #0047AB; (main/primary dark color: background of nav, font color, links color)
 --cherry-red: #E0004E (secondary dark color)
+
+--dark-teal: #006862; (main/primary dark color: background of nav, font color, links color)
+--oxblood: #4A0404;
  */
 
  /* VARIABLES */
@@ -23,10 +24,10 @@ Used these tool to determine website design color palette:
     --font-style: normal;
     --white: #FFFFFF;
     --light-pink: #ecc6d3;
-    --light-blue: #DAFAFF;
     --blush: #E7769D;
     --cherry-red: #E0004E;
-    --cobalt-blue: #0047AB;
+    --dark-teal: #006862; /* RGB 0, 104, 98, HSL 176, 100%, 20% */
+    --oxblood: #4A0404; /* rgb(74, 4, 4) */
 }
 
 /* BUILT PAGE STYLES */
@@ -100,7 +101,9 @@ h2 {
 .built-index-columns li:nth-child(9) { order: 9; }
 
 /* for media screen / media queries: 
-Media query:800
+Media query:876
+
+            800
 
             690
 
@@ -108,6 +111,18 @@ Media query:800
 
             375 */
 /* responsiveness */
+@media (max-width: 876px) {
+    .built-index-columns ol li a {
+        font-size: 21px !important;
+    }
+}
+
+@media (max-width: 604px) {
+    .built-index-columns ol li a {
+        font-size: 17px !important;
+    }
+}
+
 @media (max-width: 525px) {
     .built-index-columns {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile screens */

@@ -492,7 +492,6 @@ img {
 }
 
 /* class on the Projects a tags (2) */
-/* is now green button */
 .red-button {
     display: inline-block;
     padding: 10px 20px;
@@ -586,7 +585,6 @@ audio {
     margin: 0px;
     padding: 5px;
     background-color: rgba(224, 0, 78, 0.8);
-    border-radius: 50%;
 }
 
 /* these next two are to smooth the visibility toggle, to make a smooth fade effect, using opacity and transition */

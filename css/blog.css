@@ -60,7 +60,7 @@ figcaption, blockquote {
 }
 
 .blog-post a:active {
-    color: var(--white);
+    color: var(--cherry-red);
 }
 
 .anchor-links-to-blog-posts {

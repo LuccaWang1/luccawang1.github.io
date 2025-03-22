@@ -606,6 +606,13 @@ audio {
     text-decoration: none !important;
 }
 
+#welcome h2 a {
+    animation-name: change-me-animation-1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; /* repeat the animation */
+    animation-timing-function: linear; /* smooth transition */
+}
+
 /* .sidebar {
     width: 250px;
     color: var(--white)'

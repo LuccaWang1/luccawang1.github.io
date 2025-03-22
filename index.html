@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Lucca Wang is a Full-stack Software Engineer with experience in Python, Django, JavaScript, React, SQL, Docker, AWS, and MUI. She has strong problem-solving skills, a focus on clean documentation, and a drive to keep learning. She is a former communications professional and HTML email developer. Visit her website at https://luccawang.dev/.">
         <meta property="article:published_time" content="2024-06-13T18:00:00Z" />
-        <meta property="aricle:modified_time" content="2025-03-15T17:00:00Z" />
+        <meta property="aricle:modified_time" content="2025-03-22T00:00:00Z" />
 
         <!-- Open Graph internet protocol for the LinkedIn & Meta social card - so info. comes up with the url link -->
         <meta property="og:title" content="Lucca Wang | Software + Data" />
@@ -108,18 +108,24 @@
                 </div>
                     
                 <div class="h1-container">
-                    <h1 alt="Lucca Wang" title="Lucca Wang" id="name" class="roboto-bold name">
-                        Lucca Wang
+                    <h1 alt="Lucca Wang" title="Link to About" id="name" class="roboto-bold name">
+                        <a href="#about-anchor-right-to-it">
+                            Lucca Wang
+                        </a>
                     </h1>
                 </div>
 
                 <div class="container-sides-120px">
-                    <h2 alt="Software | Data" class="roboto-regular">
-                        Software | Data
+                    <h2 alt="Software | Data" title="Link to About" class="roboto-regular">
+                        <a href="#about-anchor-right-to-it" style="text-decoration: none;">
+                            Software | Data
+                        </a>
                     </h2>
 
-                    <h3 alt="Mature creative thinker, problem solver, and communicator with previous professional work experience." title="Mature creative thinker, problem solver, and communicator with previous professional work experience." class="roboto-regular">
-                        Mature creative thinker, problem solver, and communicator with previous professional work experience.
+                    <h3 alt="Mature creative thinker, problem solver, and communicator with previous professional work experience." title="Link to About" class="roboto-regular">
+                        <a href="#about-anchor-right-to-it"  style="text-decoration: none;">
+                            Mature creative thinker, problem solver, and communicator with previous professional work experience.
+                        </a>
                     </h3>
 
                     <div id="location">
@@ -128,7 +134,9 @@
                         Putting the anchor here fulfills how I want it to function: How I want it to function is that when a user clicks on "About" in the navbar, they will see the "About" header/h2 in the center top of their screen/viewport. 
                         
                         2) Although in the code, the navbar is the section above About (instead of this Welcome section here), the navbar cannot fulfill how I want it to function detailed in 1 above, since the navbar is sticky. This means that if the user is at a point further down on the page, then when the About hyperlink is clicked, the behavior will be to keep the viewport where it is, since the anchor is just going basically, to itself. So the anchor needs to be in the section above the navbar -- the anchor needs to be in a fixed section, not one that could be at any point of the webpage at any given time and reference itself and thus not move to the actual section. (The anchor is purposefully above where it would actually start for that viewport positioning, but this is a note for inside the code about WHY it's in the Welcome section, above the navbar section, above the About section. :) ) -->
-                        <img src="/assets/img/location/icons8-location-50.png" style="margin-left: 0; max-height: 26px; display:inline-block;" alt="Las Cruces, NM" title="Las Cruces, NM" id="about-anchor"> Las Cruces, NM
+                        <a href="#about-anchor-right-to-it"  style="text-decoration: none;" title="Link to About">
+                            <img src="/assets/img/location/icons8-location-50.png" style="margin-left: 0; max-height: 26px; display:inline-block;" alt="Las Cruces, NM" id="about-anchor"> Las Cruces, NM
+                        </a>
                         <!-- max height is 26px, which is 1px bigger than the biggest font size of body, 25px -->
                     </div>
                 </div>
@@ -140,7 +148,7 @@
                     <ul>
                         <!-- these are anchor links that hop the user the the part of the page they clicked on -->
                         <li>
-                            <a href="#about-anchor" alt="About" title="About" class="roboto-bold">About</a>
+                            <a href="#about-anchor-right-to-it" alt="About" title="About" class="roboto-bold">About</a>
                         </li>
                         
                         <li>
@@ -164,7 +172,7 @@
 
             <section id="about">
                 <div class="container-sides-120px">
-                    <h2>
+                    <h2 id="about-anchor-right-to-it">
                         About
                     </h2>
 
@@ -174,11 +182,11 @@
                         </a>
 
                         <h3 class="roboto-bold" id="recent-work-2024-2025">
-                            I'm Lucca Wang, a full-stack software engineer with a relentless drive to learn and grow.
+                            I'm Lucca Wang, a full-stack software engineer with a relentless drive to learn and <a href="#index-growth">grow</a>.
                         </h3>
 
                         <p>
-                            In my recent role as a <span class="roboto-bold">full-stack developer</span> in Enterprise (2024-2025), I developed software in <span class="roboto-bold"><a href="#skills-anchor">Python</a></span>, <span class="roboto-bold">Django</span>, <span class="roboto-bold">React</span>, and our old friend <span class="roboto-bold">HTML</span>, contributing to the <span class="roboto-bold">full-stack</span> (both <span class="roboto-bold">frontend</span> and <span class="roboto-bold">backend</span> repositories). I improved code <span class="roboto-bold">maintainability</span>, <span class="roboto-bold">user experience</span>, and <span class="roboto-bold">system performance</span>.
+                            In my recent role as a <span class="roboto-bold"><a href="https://luccawang.dev/blog.html#blog-post-my-recent-professional-experience">full-stack developer</a></span> in Enterprise (2024-2025), I developed software in <span class="roboto-bold"><a href="#skills-anchor">Python</a></span>, <span class="roboto-bold">Django</span>, <span class="roboto-bold">React</span>, and our old friend <span class="roboto-bold">HTML</span>, contributing to the <span class="roboto-bold">full-stack</span> (both <span class="roboto-bold">frontend</span> and <span class="roboto-bold">backend</span> repositories). I improved code <span class="roboto-bold">maintainability</span>, <span class="roboto-bold">user experience</span>, and <span class="roboto-bold">system performance</span>.
                         </p>
 
                         <p>
@@ -194,7 +202,7 @@
                         </p>
                         
                         <p>
-                            In addition to my software engineering and problem solving skills, <span class="roboto-bold">I have skills in <a href="https://luccawang.dev/built.html">documentation</a> and communication, knowledge of art and design, and a relentless drive to learn and grow</span>. Of course I'm a continual <span class="roboto-bold">self-taught developer</span>, but I also possess a certificate in Software Engineering from <span class="roboto-bold">Hackbright Academy</span>'s full-time software engineering program. Last year, I was awarded a scholarship by <span class="roboto-bold">O'Reilly Learning Platform</span> for unlimited access to all things technology and business. Among other things, I'm poking around AI and <a href="https://luccawang.dev/blog.html#blog-post-insights-oreilly-altaf-rehmani-genai">GenAI in Enterprise</a>. Previously, I earned undergraduate degrees in journalism and mass communication and studio art from Drake University and the San Francisco Art Institute (SFAI).
+                            In addition to my software engineering and problem solving skills, <span class="roboto-bold">I have skills in <a href="https://luccawang.dev/built.html" id="index-growth">documentation</a> and communication, knowledge of art and design, and a relentless drive to learn and grow</span>. Of course I'm a continual <span class="roboto-bold">self-taught developer</span>, but I also possess a certificate in Software Engineering from <span class="roboto-bold">Hackbright Academy</span>'s full-time software engineering program. Last year, I was awarded a scholarship by <span class="roboto-bold">O'Reilly Learning Platform</span> for unlimited access to all things technology and business. Among other things, I'm poking around AI and <a href="https://luccawang.dev/blog.html#blog-post-insights-oreilly-altaf-rehmani-genai">GenAI in Enterprise</a>. Previously, I earned undergraduate degrees in journalism and mass communication and studio art from Drake University and the San Francisco Art Institute (SFAI).
                         </p>
 
                         <p>

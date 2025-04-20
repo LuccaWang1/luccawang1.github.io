@@ -573,13 +573,15 @@ audio {
     text-decoration: none;
 }
 
-.top-arrow-container {
+.arrow-container {
     position: fixed;
     bottom: 60px;
     right: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     z-index: 2000;
     width: auto;
     height: auto;
@@ -589,12 +591,11 @@ audio {
     opacity: 0;
     width: 50%;
     transition: opacity 0.3s ease; /* smooth fade-in/out */
-    position: relative; /* position w/in top-arrow-container */
+    position: relative; /* position w/in arrow-container */
     z-index: 2000;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2)); /* x-offset y-offset blur-radius color */
     margin: 0px;
     padding: 5px;
-    background-color: rgba(224, 0, 78, 0.8);
 }
 
 /* these next two are to smooth the visibility toggle, to make a smooth fade effect, using opacity and transition */
@@ -604,6 +605,27 @@ audio {
 }
 
 #top-img-icon.hidden {
+    opacity: 0; /* fade out */
+}
+
+#bottom-img-icon {
+    opacity: 0;
+    width: 50%;
+    transition: opacity 0.3s ease; /* smooth fade-in/out */
+    position: relative; /* position w/in arrow-container */
+    z-index: 2000;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2)); /* x-offset y-offset blur-radius color */
+    margin: 0px;
+    padding: 5px;
+}
+
+/* these next two are to smooth the visibility toggle, to make a smooth fade effect, using opacity and transition */
+#bottom-img-icon.visible {
+    /* display: block; */
+    opacity: 1; /* make visible */
+}
+
+#bottom-img-icon.hidden {
     opacity: 0; /* fade out */
 }
 
@@ -758,12 +780,16 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         padding: 0px;
     }
 
-    .top-arrow-container {
+    .arrow-container {
         bottom: 50px;
         right: 30px;
     }
     
     #top-img-icon {
+        width: 45%;
+    }
+
+    #bottom-img-icon {
         width: 45%;
     }
 }
@@ -874,12 +900,16 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         margin-bottom: 30px;
     }
 
-    .top-arrow-container {
+    .arrow-container {
         bottom: 40px;
         right: 15px;
     }
     
     #top-img-icon {
+        width: 40%;
+    }
+
+    #bottom-img-icon {
         width: 40%;
     }
 }
@@ -964,12 +994,16 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         margin-bottom: 25px;
     }
 
-    .top-arrow-container {
+    .arrow-container {
         bottom: 45px;
         right: 0;
     }
     
     #top-img-icon {
+        width: 35%;
+    }
+
+    #bottom-img-icon {
         width: 35%;
     }
 }

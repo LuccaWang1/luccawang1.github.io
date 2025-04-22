@@ -6,8 +6,8 @@ document.querySelector('#bottom-img-icon').addEventListener('click', function(e)
     e.preventDefault(); // good practice to have, so will keep, but don't necessarily need here just bc there's no default behavior for the icon (link a link)
 
     window.scrollTo({
-        // change the line directly below
-        top: 0,
+        // documnet.body.scrollHeight takes the biggest pixel amount, and has the scroll go to the point, so the bottom of the webpage
+        top: document.body.scrollHeight,
         behavior: 'smooth'
     })
 });

@@ -2,9 +2,15 @@
 
 window.addEventListener('scroll', function() {
     const bottomArrowIcon = this.document.querySelector('#bottom-img-icon');
-    const scrollThreshold = 150; // set scroll threshold to 150px
+    const hideArrowDistanceFromBottom = 75; // hide this bottom "down" arrow this many pixels from the bottom (75)
 
-    if (window.scrollY > scrollThreshold) {
+    const currentScroll = this.window.scrollY;
+    const viewportBottom = this.window.innerHeight + currentScroll;
+    const documentBottom = this.document.body.scrollHeight;
+
+    // have the down arrow always be visible (bottomArrowIcon.classList.add('visible')), until 75px (hideArrowDistanceFromBottom) from the bottom (documentBottom)
+
+    if (viewportBottom < documentBottom - hideArrowDistanceFromBottom) {
         bottomArrowIcon.classList.add('visible');
         bottomArrowIcon.classList.remove('hidden');
     } else {

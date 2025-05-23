@@ -33,12 +33,22 @@ Used these tool to determine website design color palette:
 .blog-post { 
     z-index: -2;
     color: var(--dark-teal);
-    background-color: hsla(340, 45%, 85%, 0.3); /* hue, saturation, lightness, alpha https://www.w3schools.com/cssref/pr_background-color.php */
+    background-color: hsla(0, 0%, 100%, 1); /* hue, saturation, lightness, alpha https://www.w3schools.com/cssref/pr_background-color.php */
     margin-bottom: 50px;
     padding: 10px 25px 25px 25px; /* creates space inside el, corresponds to property directly below */
-    box-shadow: 0 0 0 10px hsla(340, 45%, 85%, 0.3); /* simulating border w/ same color & transparency */
+    box-shadow: 0 0 0 10px hsla(0, 91%, 15%, 1); /* simulating border w/ same color & transparency */
     border-radius: 5px;
 }
+
+/* .blog-post { OLD
+    z-index: -2;
+    color: var(--dark-teal);
+    background-color: hsla(340, 45%, 85%, 0.3); hue, saturation, lightness, alpha https://www.w3schools.com/cssref/pr_background-color.php
+    margin-bottom: 50px;
+    padding: 10px 25px 25px 25px; creates space inside el, corresponds to property directly below
+    box-shadow: 0 0 0 10px hsla(340, 45%, 85%, 0.3); simulating border w/ same color & transparency
+    border-radius: 5px;
+} */
 
 p, img, figure {
     margin-bottom: 25px;

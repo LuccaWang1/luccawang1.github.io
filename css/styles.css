@@ -17,7 +17,7 @@ Used these tool to determine website design color palette:
 --oxblood: #4A0404;
  */
 
- /* VARIABLES */
+/* VARIABLES */
 :root {
     --roboto: "Roboto", sans-serif;
     --font-weight: 400;
@@ -37,7 +37,7 @@ Used these tool to determine website design color palette:
     box-sizing: border-box;
     font-family: var(--roboto);
     font-weight: var(--roboto-weight);
-    font-style: var(--roboto-style)
+    font-style: var(--roboto-style);
 }
 
 /* body */
@@ -157,7 +157,7 @@ html, body {
     gap: 20px;
 }
 
-.icon-text-pair { 
+.icon-text-pair {
     display: flex;
     flex-direction: column;
     align-items: center;

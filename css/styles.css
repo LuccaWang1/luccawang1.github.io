@@ -697,14 +697,13 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         text-decoration: none;
     }
 
-    .navbar .container-sides-120px {
-        padding: 0px !important;
+    /* .navbar .container-sides-120px {
         margin: 20px auto !important;
-    }
+    } */
 
-    .navbar {
+    /* .navbar {
         padding: 0px !important;
-    }
+    } */
 
     h1 {
         font-size: 72px !important;
@@ -873,9 +872,9 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         margin: 15px 0px 5px 0px; /* top right bottom left */
     }
 
-    .navbar .container-sides-120px {
+    /* .navbar .container-sides-120px {
         margin: 15px auto !important;
-    }
+    } */
 
     body, nav a {
         font-size: 21px !important;
@@ -1086,9 +1085,9 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
     }
 
     /* all text same margins nav and body */
-    .navbar .container-sides-120px {
+    /* .navbar .container-sides-120px {
         margin: 0px !important;
-    }
+    } */
 
     body, #index .navbar, #built .navbar {
         font-size: 19px !important;
@@ -1098,9 +1097,9 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         font-size: 19px !important;
     }
 
-    .navbar li a {
+    /* .navbar li a {
         padding: 5px 10px;
-    }
+    } */
 
     body {
         white-space: normal;

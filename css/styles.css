@@ -967,7 +967,11 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
         padding: 0 20px; /* first value: 0px top & bottom, second value: adds 30px padding on the left and right */
     }
 
-    body, nav a {
+    nav a {
+        font-size: 15px !important;
+    }
+
+    body {
         font-size: 20px !important;
     }
 
@@ -1085,9 +1089,9 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
     }
 
     /* all text same margins nav and body */
-    /* .navbar .container-sides-120px {
+    .navbar .container-sides-120px {
         margin: 0px !important;
-    } */
+    }
 
     body, #index .navbar, #built .navbar {
         font-size: 19px !important;

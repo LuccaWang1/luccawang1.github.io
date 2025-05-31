@@ -1,5 +1,6 @@
 "use strict";
 
 document.getElementById("toggle-toc").addEventListener("click", function () {
-    document.getElementById("toc").classList.toggle("hidden");
+    const toc = document.getElementById("toc");
+    toc.classList.toggle("hidden");
 })

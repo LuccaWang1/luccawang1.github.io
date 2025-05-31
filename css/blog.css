@@ -126,6 +126,27 @@ figcaption, blockquote {
     margin: 0;
 }
 
+#toc.hidden {
+    display: none;
+}
+
+#toc a {
+    display: block;
+    padding: 4px 0;
+    text-decoration: none;
+}
+
+#toggle-toc {
+    margin-bottom: 25px;
+}
+
+#blog-section button {
+    color: var(--white);
+    background-color: var(--oxblood);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 768px) {
     .blog-post-recent-exp-tech-stack {
         margin: 35px 0;

@@ -525,6 +525,27 @@ img {
     color: var(--white) !important;
 }
 
+#toc.hidden {
+    display: none;
+}
+
+#toc a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+}
+
+#toggle-toc {
+    margin-bottom: 25px;
+}
+
+.horizontal-list {
+    display: flex;
+    list-style: decimal;
+    padding: 0;
+    margin: 0;
+}
+
 #about p {
     margin-bottom: 25px;
 }

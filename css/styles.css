@@ -201,7 +201,7 @@ html, body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 8px; /* thickness of the underline */
+    height: 4px; /* thickness of the underline */
     background-color: var(--oxblood);
 }
 
@@ -394,7 +394,7 @@ img {
     display: block; /* so it'll behave like a block */
     margin-left: auto; /* centering images */
     margin-right: auto; /* ^centering images */
-    border-radius: 5px ; /* rounded corners of images */
+    border-radius: 5px; /* rounded corners of images */
     max-width: 100%;
     height: auto;
     z-index: 0; /* weight of 0 default to go behind the navbar when user is scrolling */
@@ -443,10 +443,7 @@ img {
 
 /* project images - so they are the same size */
 .projects {
-    width: 100%;
-    height: auto;
     object-fit: cover;
-    border-radius: 5px !important;
 }
 
 /* for project titles - h3 */
@@ -471,9 +468,8 @@ img {
     white-space: normal; /* normal white space handling */
 }
 
-#projects h3, p, img, .skills-list-div-margin-bottom {
+#projects h3, p, .skills-list-div-margin-bottom {
     margin-bottom: 25px;
-    border-radius: 5px !important;
 }
 
 /* except the centered-icons on the top and box - no margin bottom */
@@ -482,19 +478,6 @@ img {
     display:inline-block; 
     padding-bottom: 0;
     margin: 0px !important;
-}
-
-/* most everything has a margin-bottom of 25px in the app --- now except for this in the projects section because it already looks like it's a lot of space */
-#projects .lets-eat-img, .lets-eat-p-directly-above-img {
-    margin-bottom: 0px !important;
-}
-
-#projects .pet-planner h3 {
-    margin-bottom: 0px !important;
-}
-
-#projects h3 {
-    margin-bottom: 0px !important;
 }
 
 /* buttons that are a tags in the Projects section - did this to create a button, didn't use "button" tag */
@@ -667,6 +650,30 @@ audio {
     animation-duration: 20s;
     animation-iteration-count: infinite; /* repeat the animation */
     animation-timing-function: linear; /* smooth transition */
+}
+
+/* PROJECTS */
+/* most everything has a margin-bottom of 25px in the app --- now except for this in the projects section because it already looks like it's a lot of space */
+#projects .project .projects {
+    padding: 0px;
+    margin: 0px;
+}
+
+#projects .pet-planner h3 {
+    margin-bottom: 0px !important;
+}
+
+#projects h3 {
+    margin-bottom: 0px !important;
+}
+
+/* PHOTO BORDER */
+#about img, .projects, #built-details img, .blog-post #blog-photo-border {
+    border: 4px solid var(--oxblood);
+}
+
+#built-details img {
+    margin-bottom: 25px;
 }
 
 /* .sidebar {

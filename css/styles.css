@@ -583,7 +583,7 @@ audio {
 .arrow-container {
     position: fixed;
     bottom: 60px;
-    right: 40px;
+    right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -591,6 +591,21 @@ audio {
     gap: 10px;
     z-index: 2000;
     width: auto;
+    height: auto;
+}
+
+.arrow-container a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.arrow-container a img {
+    display: inline-block;
+    max-width: 100%;
     height: auto;
 }
 
@@ -812,7 +827,7 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
 
     .arrow-container {
         bottom: 50px;
-        right: 30px;
+        /* right: 30px; */
     }
     
     #top-img-icon {
@@ -932,7 +947,7 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
 
     .arrow-container {
         bottom: 40px;
-        right: 15px;
+        /* right: 15px; */
     }
     
     #top-img-icon {
@@ -1030,7 +1045,7 @@ Media query 375: 54, 34, 27, 25, 23, 22, 19, 15 */
 
     .arrow-container {
         bottom: 45px;
-        right: 0;
+        right: 5px !important;
     }
     
     #top-img-icon {
